@@ -13,5 +13,5 @@ if "Moritz" in students:
 sentence = "Ja, die Monika studiert hier!"  # Satz wird erstellt
 if "!" in sentence:  # wenn es im Satz ein Ausrufezeichen gibt,wird der folgende Befehl ausgegeben.
     print("Ja, dieses Zeichen existiert hier!")
-else:  # absonsten dieser hier
+else:  # ansonsten dieser hier
     print("Nein, dieses Zeichen gibts in diesem Satz nicht!")
