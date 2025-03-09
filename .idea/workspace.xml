@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="09.03.2025" />
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="09.03.2025">
+      <change afterPath="$PROJECT_DIR$/6.44 Funktionen 2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.45 Ausblick auf Objekte.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.46 Arbeiten mit Dateien.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +61,8 @@
     "Python.5.35 Wann welche Liste.executor": "Run",
     "Python.5.39 Schleifen mit Break und Continue.executor": "Run",
     "Python.6.43 Funktionen.executor": "Run",
+    "Python.6.44 Funktionen 2.executor": "Run",
+    "Python.6.45 Ausblick auf Objekte.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -237,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741516850219</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="09.03.2025">
+      <option name="closed" value="true" />
+      <created>1741535500348</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741535500348</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

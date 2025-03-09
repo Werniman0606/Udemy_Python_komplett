@@ -1,0 +1,1 @@
+""" In Python können wir Daten aus einer Datei (z.B. eine CSV-Datei) einlesen und verarbeiten. So können wir z.b. Daten aus Excel einlesen oder dorthin exportieren"""
