@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="09.03.2025">
-      <change afterPath="$PROJECT_DIR$/6.44 Funktionen 2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6.45 Ausblick auf Objekte.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6.46 Arbeiten mit Dateien.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.49 Datei schreiben.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.48 Dateien öffnen.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.48 Dateien öffnen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +62,8 @@
     "Python.6.43 Funktionen.executor": "Run",
     "Python.6.44 Funktionen 2.executor": "Run",
     "Python.6.45 Ausblick auf Objekte.executor": "Run",
+    "Python.6.48 Dateien öffnen.executor": "Run",
+    "Python.6.49 Datei schreiben.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -191,7 +192,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
@@ -252,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741535500348</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="09.03.2025">
+      <option name="closed" value="true" />
+      <created>1741542142925</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741542142925</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
