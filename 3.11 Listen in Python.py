@@ -29,3 +29,6 @@ print(meine_liste[3])  # Gibt "Hallo" aus (das vierte Element)
 
 zahlen.append(99)
 print(zahlen)
+
+for i in zahlen:
+    print(i)
