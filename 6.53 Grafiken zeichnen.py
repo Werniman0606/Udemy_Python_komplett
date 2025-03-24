@@ -2,4 +2,7 @@
 
 # Wir müssen dazu ein Modul zum Zeichnen einbinden
 
-%mathplotlib inline
+import matplotlib.pyplot as plt
+
+xs = [1,2,3] 
+ys = [4,7,4]
