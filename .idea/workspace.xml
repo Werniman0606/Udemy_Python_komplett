@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="17.03.2025">
-      <change afterPath="$PROJECT_DIR$/6.52 CSV-Dateien lesen und Einträge überspringen.py" afterDir="false" />
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="24.03.2025">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datei.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datei.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.53 Grafiken zeichnen.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.53 Grafiken zeichnen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,36 +46,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.2.9 Strings in Python.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3.11 Listen in Python.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3.12 Listen - Die pop-Funktion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.25 Ausdrücke verknüpfen und Booleans.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.28 Der in-Operator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.32 Elif.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.33 - Die While-Schleife.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.34 Die For-Schleife.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.35 Wann welche Liste.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.39 Schleifen mit Break und Continue.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.43 Funktionen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.44 Funktionen 2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.45 Ausblick auf Objekte.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.48 Dateien öffnen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.49 Datei schreiben.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.50 Das With-Construct.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.51 CSV öffnen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DoppelteDateipfade.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zeichenzählen.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.2.9 Strings in Python.executor": "Run",
+    "Python.3.11 Listen in Python.executor": "Run",
+    "Python.3.12 Listen - Die pop-Funktion.executor": "Run",
+    "Python.4.25 Ausdrücke verknüpfen und Booleans.executor": "Run",
+    "Python.4.28 Der in-Operator.executor": "Run",
+    "Python.4.32 Elif.executor": "Run",
+    "Python.5.33 - Die While-Schleife.executor": "Run",
+    "Python.5.34 Die For-Schleife.executor": "Run",
+    "Python.5.35 Wann welche Liste.executor": "Run",
+    "Python.5.39 Schleifen mit Break und Continue.executor": "Run",
+    "Python.6.43 Funktionen.executor": "Run",
+    "Python.6.44 Funktionen 2.executor": "Run",
+    "Python.6.45 Ausblick auf Objekte.executor": "Run",
+    "Python.6.48 Dateien öffnen.executor": "Run",
+    "Python.6.49 Datei schreiben.executor": "Run",
+    "Python.6.50 Das With-Construct.executor": "Run",
+    "Python.6.51 CSV öffnen.executor": "Run",
+    "Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor": "Run",
+    "Python.6.53 Grafiken zeichnen.executor": "Run",
+    "Python.DoppelteDateipfade.executor": "Run",
+    "Python.Zeichenzählen.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.2.9 Strings in Python">
+}]]></component>
+  <component name="RunManager">
     <configuration name="2.9 Strings in Python" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Udemy_Python_komplett" />
       <option name="ENV_FILES" value="" />
@@ -192,7 +192,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
       </set>
     </attachedChunks>
   </component>
@@ -285,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742308204217</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="24.03.2025">
+      <option name="closed" value="true" />
+      <created>1742827120636</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742827120637</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,6 +312,7 @@
     <MESSAGE value="09.03.2025" />
     <MESSAGE value="10.03.2025" />
     <MESSAGE value="17.03.2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="17.03.2025" />
+    <MESSAGE value="24.03.2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="24.03.2025" />
   </component>
 </project>
