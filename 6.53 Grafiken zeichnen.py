@@ -10,5 +10,3 @@ plt.plot(xs, ys)  # die Funktion plplot wird aufgerufen und es wird ihr gesagt, 
 # Werte immer relational zu ihrer Position in der Liste benutzt. D.h. der 1.Wert in der ersten Liste wird auch zusammen mit dem 1.Wert in
 # der 2.Liste benutzt.
 plt.show()  # nun wird das bisher im internen Speicher erzeugte Modul ausgegeben
-
-

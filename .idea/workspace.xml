@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="24.03.2025">
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="25.03.2025">
+      <change afterPath="$PROJECT_DIR$/6.54 Geburtsstatistiken.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/6.53 Grafiken zeichnen.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.53 Grafiken zeichnen.py" afterDir="false" />
     </list>
@@ -67,6 +68,7 @@
     "Python.6.51 CSV öffnen.executor": "Run",
     "Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor": "Run",
     "Python.6.53 Grafiken zeichnen.executor": "Run",
+    "Python.6.54 Geburtsstatistiken.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -293,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742827120637</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="25.03.2025">
+      <option name="closed" value="true" />
+      <created>1742914212356</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742914212356</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,6 +323,7 @@
     <MESSAGE value="10.03.2025" />
     <MESSAGE value="17.03.2025" />
     <MESSAGE value="24.03.2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.03.2025" />
+    <MESSAGE value="25.03.2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="25.03.2025" />
   </component>
 </project>
