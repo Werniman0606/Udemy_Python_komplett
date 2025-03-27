@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="25.03.2025">
-      <change afterPath="$PROJECT_DIR$/6.54 Geburtsstatistiken.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.56 Aufgabe Geburtsstatistiken.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.59 Übungsblatt Funktionen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.53 Grafiken zeichnen.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.53 Grafiken zeichnen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.54 Geburtsstatistiken.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.54 Geburtsstatistiken.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +70,11 @@
     "Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor": "Run",
     "Python.6.53 Grafiken zeichnen.executor": "Run",
     "Python.6.54 Geburtsstatistiken.executor": "Run",
+    "Python.6.56 Aufgabe Geburtsstatistiken.executor": "Run",
+    "Python.6.59 Übungsblatt Funktionen.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
+    "Python.scratch.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -303,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742914212356</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="25.03.2025">
+      <option name="closed" value="true" />
+      <created>1743001352713</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743001352713</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,5 +337,16 @@
     <MESSAGE value="24.03.2025" />
     <MESSAGE value="25.03.2025" />
     <option name="LAST_COMMIT_MESSAGE" value="25.03.2025" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/6.54 Geburtsstatistiken.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
