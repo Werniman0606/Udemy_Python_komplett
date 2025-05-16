@@ -14,10 +14,10 @@ del d["Helsinki"]
 print(d)  # Ausgabe: {'Berlin': 'BER', 'Saigon': 'SGN', 'London': 'LON'} Helsinki wurde gelöscht
 
 # Um Werte auszugeben,kann man entweder mit eckigen Klammern oder der Get-Funktion arbeiten:
-print(d["Saigon"]) # Ausgabe: SGN
-print(d.get("Saigon")) # Ausgabe: SGN
+print(d["Saigon"])  # Ausgabe: SGN
+print(d.get("Saigon"))  # Ausgabe: SGN
 
-#Warum sollte man besser mit der ersteren Methode mit den eckigen Klammern arbeiten ?
+# Warum sollte man besser mit der ersteren Methode mit den eckigen Klammern arbeiten ?
 # Weil erstere Methode einen KeyError ausgibt,wenn es den gesuchten Begriff nicht gibt,so dass man Fehler schneller
 # bemerkt, während die 2.Methode einfach stur weiterläuft.
-s
+# Test
