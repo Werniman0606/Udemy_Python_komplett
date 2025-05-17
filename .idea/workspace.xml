@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="25.03.2025">
-      <change afterPath="$PROJECT_DIR$/7.68 Dictionaries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.70 Tupel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.71 Tupel packen und entpacken.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.64 List stitching.py" beforeDir="false" afterPath="$PROJECT_DIR$/7.64 List slicing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +30,12 @@
     &quot;assignee&quot;: &quot;Werniman0606&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="ab259af5-9775-4150-8028-fa83919f3635" />
-        <option name="url" value="https://github.com/Werniman0606/Udemy_Python_komplett" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Werniman0606/Udemy_Python_komplett&quot;,
+    &quot;accountId&quot;: &quot;fb7e18a6-d55b-42a4-b7fe-f3e7995446a4&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -78,6 +74,8 @@
     "Python.7.64 List slicing.executor": "Run",
     "Python.7.64 List stitching.executor": "Run",
     "Python.7.68 Dictionaries.executor": "Run",
+    "Python.7.70 Tupel.executor": "Run",
+    "Python.7.71 Tupel packen und entpacken.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
     "Python.scratch.executor": "Run",
@@ -90,7 +88,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -214,7 +213,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-dfff61a61320-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.159" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
       </set>
     </attachedChunks>
   </component>
@@ -228,6 +228,7 @@
       <updated>1738927261635</updated>
       <workItem from="1747400300857" duration="235000" />
       <workItem from="1747400697411" duration="1867000" />
+      <workItem from="1747487718166" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="10.02.2025">
       <option name="closed" value="true" />
