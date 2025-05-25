@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="17.05.25">
-      <change afterPath="$PROJECT_DIR$/7.72 Dictionaries und Schleifen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7.73 Aufgabe zu Dictionaries und schleifen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.33 - Die While-Schleife.py" beforeDir="false" afterPath="$PROJECT_DIR$/5.33 Die While-Schleife.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.71 Tupel packen und entpacken.py" beforeDir="false" afterPath="$PROJECT_DIR$/7.71 Tupel packen und entpacken.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +28,12 @@
     &quot;assignee&quot;: &quot;Werniman0606&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Werniman0606/Udemy_Python_komplett&quot;,
-    &quot;accountId&quot;: &quot;fb7e18a6-d55b-42a4-b7fe-f3e7995446a4&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Werniman0606/Udemy_Python_komplett",
+    "accountId": "ab259af5-9775-4150-8028-fa83919f3635"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -49,55 +45,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.2.9 Strings in Python.executor": "Run",
-    "Python.3.11 Listen in Python.executor": "Run",
-    "Python.3.12 Listen - Die pop-Funktion.executor": "Run",
-    "Python.4.25 Ausdrücke verknüpfen und Booleans.executor": "Run",
-    "Python.4.28 Der in-Operator.executor": "Run",
-    "Python.4.32 Elif.executor": "Run",
-    "Python.5.33 - Die While-Schleife.executor": "Run",
-    "Python.5.34 Die For-Schleife.executor": "Run",
-    "Python.5.35 Wann welche Liste.executor": "Run",
-    "Python.5.39 Schleifen mit Break und Continue.executor": "Run",
-    "Python.6.43 Funktionen.executor": "Run",
-    "Python.6.44 Funktionen 2.executor": "Run",
-    "Python.6.45 Ausblick auf Objekte.executor": "Run",
-    "Python.6.48 Dateien öffnen.executor": "Run",
-    "Python.6.49 Datei schreiben.executor": "Run",
-    "Python.6.50 Das With-Construct.executor": "Run",
-    "Python.6.51 CSV öffnen.executor": "Run",
-    "Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor": "Run",
-    "Python.6.53 Grafiken zeichnen.executor": "Run",
-    "Python.6.54 Geburtsstatistiken.executor": "Run",
-    "Python.6.56 Aufgabe Geburtsstatistiken.executor": "Run",
-    "Python.6.59 Übungsblatt Funktionen.executor": "Run",
-    "Python.7.64 List slicing.executor": "Run",
-    "Python.7.64 List stitching.executor": "Run",
-    "Python.7.68 Dictionaries.executor": "Run",
-    "Python.7.70 Tupel.executor": "Run",
-    "Python.7.71 Tupel packen und entpacken.executor": "Run",
-    "Python.7.72 Dictionaries und Schleifen.executor": "Run",
-    "Python.7.73 Aufgabe zu Dictionaries und schleifen.executor": "Run",
-    "Python.DoppelteDateipfade.executor": "Run",
-    "Python.Zeichenzählen.executor": "Run",
-    "Python.scratch.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.2.9 Strings in Python.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3.11 Listen in Python.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3.12 Listen - Die pop-Funktion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4.25 Ausdrücke verknüpfen und Booleans.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4.28 Der in-Operator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4.32 Elif.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5.33 - Die While-Schleife.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5.34 Die For-Schleife.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5.35 Wann welche Liste.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5.39 Schleifen mit Break und Continue.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.43 Funktionen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.44 Funktionen 2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.45 Ausblick auf Objekte.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.48 Dateien öffnen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.49 Datei schreiben.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.50 Das With-Construct.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.51 CSV öffnen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.53 Grafiken zeichnen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.54 Geburtsstatistiken.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.56 Aufgabe Geburtsstatistiken.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6.59 Übungsblatt Funktionen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.64 List slicing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.64 List stitching.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.68 Dictionaries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.70 Tupel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.71 Tupel packen und entpacken.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.72 Dictionaries und Schleifen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7.73 Aufgabe zu Dictionaries und schleifen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DoppelteDateipfade.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Zeichenzählen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Python.2.9 Strings in Python">
     <configuration name="2.9 Strings in Python" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Udemy_Python_komplett" />
       <option name="ENV_FILES" value="" />
@@ -217,8 +213,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
-        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+        <option value="bundled-python-sdk-dfff61a61320-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.159" />
       </set>
     </attachedChunks>
   </component>
