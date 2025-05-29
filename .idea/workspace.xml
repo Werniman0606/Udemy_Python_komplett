@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="24.05.25">
-      <change afterPath="$PROJECT_DIR$/8.89 In Python ist alles ein Objekt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.90 Wie Variablen, Klassen und Methoden benennen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.91 Statische Variablen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8.94 Übungen Objektorientierung.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uebung Objektorientierung.ipynb" afterDir="false" />
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="25.05.25">
+      <change afterPath="$PROJECT_DIR$/9.95 Module in Python - Einführung.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.96 Code aus separater Datei laden.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.97 Verschiednee Importmöglichkeiten für Module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hallo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +83,8 @@
     "Python.8.89 In Python ist alles ein Objekt.executor": "Run",
     "Python.8.91 Statische Variablen.executor": "Run",
     "Python.8.94 Übungen Objektorientierung.executor": "Run",
+    "Python.9.96 Code aus separater Datei laden.executor": "Run",
+    "Python.9.97 Verschiednee Importmöglichkeiten für Module.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
     "Python.scratch.executor": "Run",
@@ -97,7 +98,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -370,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748213375802</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="25.05.25">
+      <option name="closed" value="true" />
+      <created>1748286717276</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1748286717276</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +408,8 @@
     <MESSAGE value="25.03.2025" />
     <MESSAGE value="17.05.25" />
     <MESSAGE value="24.05.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.05.25" />
+    <MESSAGE value="25.05.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="25.05.25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
