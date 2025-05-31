@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="28.05.25">
-      <change afterPath="$PROJECT_DIR$/9.98 Module in einem Ordner erstellen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hallom/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hallom/datei.py" afterDir="false" />
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="31.05.25">
+      <change afterPath="$PROJECT_DIR$/10.102 Einfügung in Crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.101 Beispiele für ein Modul.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datei2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.97 Verschiednee Importmöglichkeiten für Module.py" beforeDir="false" afterPath="$PROJECT_DIR$/9.97 Verschiedene Importmöglichkeiten für Module.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +82,7 @@
     "Python.8.89 In Python ist alles ein Objekt.executor": "Run",
     "Python.8.91 Statische Variablen.executor": "Run",
     "Python.8.94 Übungen Objektorientierung.executor": "Run",
+    "Python.9.101 Beispiele für ein Modul.executor": "Run",
     "Python.9.96 Code aus separater Datei laden.executor": "Run",
     "Python.9.97 Verschiednee Importmöglichkeiten für Module.executor": "Run",
     "Python.9.98 Module in einem Ordner erstellen.executor": "Run",
@@ -389,7 +389,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748551982823</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="31.05.25">
+      <option name="closed" value="true" />
+      <created>1748704650847</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748704650847</updated>
+    </task>
+    <task id="LOCAL-00020" summary="31.05.25">
+      <option name="closed" value="true" />
+      <created>1748705938983</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1748705938983</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +436,8 @@
     <MESSAGE value="24.05.25" />
     <MESSAGE value="25.05.25" />
     <MESSAGE value="28.05.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="28.05.25" />
+    <MESSAGE value="31.05.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="31.05.25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
