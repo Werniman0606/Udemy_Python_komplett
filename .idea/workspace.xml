@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="05.06.25">
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="09.06.25">
+      <change afterPath="$PROJECT_DIR$/10.105 beautifulsoup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.106 Exkurs css-selectors 1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.107 Exkurs css-selectors 2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.108 Elemente finden 1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.109 Elemente finden 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.104 HTML-Code holen.py" beforeDir="false" afterPath="$PROJECT_DIR$/10.104 HTML-Code holen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +55,8 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "Python.10.104 HTML-Code holen.executor": "Run",
+    "Python.10.105 beautifulsoup.executor": "Run",
+    "Python.10.108 Elemente finden 1.executor": "Run",
     "Python.2.9 Strings in Python.executor": "Run",
     "Python.3.11 Listen in Python.executor": "Run",
     "Python.3.12 Listen - Die pop-Funktion.executor": "Run",
@@ -230,7 +236,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-dfff61a61320-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.159" />
+        <option value="bundled-python-sdk-53e2683a6804-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26094.141" />
       </set>
     </attachedChunks>
   </component>
@@ -446,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749159310440</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="09.06.25">
+      <option name="closed" value="true" />
+      <created>1749487147900</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749487147900</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +494,8 @@
     <MESSAGE value="31.05.25" />
     <MESSAGE value="03.05.25" />
     <MESSAGE value="05.06.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="05.06.25" />
+    <MESSAGE value="09.06.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="09.06.25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
