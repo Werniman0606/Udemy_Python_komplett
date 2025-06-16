@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="13.06.25">
-      <change afterPath="$PROJECT_DIR$/10.110 - Elemente finden - urllib.py" afterDir="false" />
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="16.06.25">
+      <change afterPath="$PROJECT_DIR$/10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.114 Ergebnisse als CSV-Datei schreiben.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.118 Python Wissen - Generatoren.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.109 Elemente finden 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/10.109 Elemente finden 2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,9 @@
     "Python.10.108 Elemente finden 1.executor": "Run",
     "Python.10.109 Elemente finden 2.executor": "Run",
     "Python.10.110 - Elemente finden - urllib.executor": "Run",
+    "Python.10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.executor": "Run",
+    "Python.10.114 Ergebnisse als CSV-Datei schreiben.executor": "Run",
+    "Python.10.118 Python Wissen - Generatoren.executor": "Run",
     "Python.2.9 Strings in Python.executor": "Run",
     "Python.3.11 Listen in Python.executor": "Run",
     "Python.3.12 Listen - Die pop-Funktion.executor": "Run",
@@ -93,6 +97,7 @@
     "Python.9.97 Verschiednee Importmöglichkeiten für Module.executor": "Run",
     "Python.9.98 Module in einem Ordner erstellen.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
+    "Python.Wechselkursrechner.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
     "Python.datei.executor": "Run",
     "Python.scratch.executor": "Run",
@@ -491,7 +496,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749865150581</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="16.06.25">
+      <option name="closed" value="true" />
+      <created>1750091897329</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1750091897329</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +541,8 @@
     <MESSAGE value="09.06.25" />
     <MESSAGE value="11.06.25" />
     <MESSAGE value="13.06.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="13.06.25" />
+    <MESSAGE value="16.06.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="16.06.25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
