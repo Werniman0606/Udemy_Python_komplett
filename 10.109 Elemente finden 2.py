@@ -36,6 +36,7 @@ all_articles = fetcher.fetch()  # Hier wird der Rückgabewert in 'all_articles' 
 # Jetzt können wir die Artikel ausgeben
 for article in all_articles:
     print(article)  # Jedes Artikel-Objekt wird ausgegeben
+    print(article.title) # Der Name des Objektes wird ausgegeben (d.h. die Überschriften)
 """
 Was der Code macht:
 
