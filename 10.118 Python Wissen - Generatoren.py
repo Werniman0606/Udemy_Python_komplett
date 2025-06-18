@@ -12,7 +12,7 @@ In dieser Lektion lernst du:
 
 """
 
-
+# Bisher hätten wir eine Liste über eine Funktion wie folgt generiert und ausgegeben
 def gen_list():
     # Initialisiert eine leere Liste.
     liste = []

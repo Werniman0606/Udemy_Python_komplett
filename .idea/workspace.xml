@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="16.06.25">
-      <change afterPath="$PROJECT_DIR$/10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.114 Ergebnisse als CSV-Datei schreiben.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.118 Python Wissen - Generatoren.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.119 Generatoren im Crawler einbauen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dateinamen umbenennen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generatoren-Demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.110 - Elemente finden - urllib.py" beforeDir="false" afterPath="$PROJECT_DIR$/10.110 Elemente finden - urllib.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.118 Python Wissen - Generatoren.py" beforeDir="false" afterPath="$PROJECT_DIR$/10.118 Python Wissen - Generatoren.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +62,7 @@
     "Python.10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.executor": "Run",
     "Python.10.114 Ergebnisse als CSV-Datei schreiben.executor": "Run",
     "Python.10.118 Python Wissen - Generatoren.executor": "Run",
+    "Python.10.119 Generatoren im Crawler einbauen.executor": "Run",
     "Python.2.9 Strings in Python.executor": "Run",
     "Python.3.11 Listen in Python.executor": "Run",
     "Python.3.12 Listen - Die pop-Funktion.executor": "Run",
@@ -96,7 +99,9 @@
     "Python.9.96 Code aus separater Datei laden.executor": "Run",
     "Python.9.97 Verschiednee Importmöglichkeiten für Module.executor": "Run",
     "Python.9.98 Module in einem Ordner erstellen.executor": "Run",
+    "Python.Dateinamen umbenennen.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
+    "Python.Generatoren-Demo.executor": "Run",
     "Python.Wechselkursrechner.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
     "Python.datei.executor": "Run",
@@ -504,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750091897329</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="16.06.25">
+      <option name="closed" value="true" />
+      <created>1750105579973</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1750105579973</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
