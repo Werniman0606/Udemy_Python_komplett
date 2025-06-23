@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="23.06.25">
-      <change afterPath="$PROJECT_DIR$/10.121 Crawler in ein richtiges Programm wandeln.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crawler/ArticleFetcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crawler/CrawledArticle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Crawler/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11.123 Exceptions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +59,7 @@
     "Python.10.114 Ergebnisse als CSV-Datei schreiben.executor": "Run",
     "Python.10.118 Python Wissen - Generatoren.executor": "Run",
     "Python.10.119 Generatoren im Crawler einbauen.executor": "Run",
+    "Python.11.123 Exceptions.executor": "Run",
     "Python.2.9 Strings in Python.executor": "Run",
     "Python.3.11 Listen in Python.executor": "Run",
     "Python.3.12 Listen - Die pop-Funktion.executor": "Run",
@@ -534,7 +531,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750695387654</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="23.06.25">
+      <option name="closed" value="true" />
+      <created>1750700947540</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1750700947540</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
