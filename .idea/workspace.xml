@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="23.06.25">
-      <change afterPath="$PROJECT_DIR$/11.123 Exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/Fibonacci.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +98,7 @@
     "Python.9.98 Module in einem Ordner erstellen.executor": "Run",
     "Python.Dateinamen umbenennen.executor": "Run",
     "Python.DoppelteDateipfade.executor": "Run",
+    "Python.Fibonacci.executor": "Run",
     "Python.Generatoren-Demo.executor": "Run",
     "Python.Wechselkursrechner.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
@@ -539,7 +540,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750700947540</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="23.06.25">
+      <option name="closed" value="true" />
+      <created>1750705421148</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1750705421148</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
