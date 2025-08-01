@@ -5,7 +5,7 @@ import subprocess
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe' # <-- HIER GEÄNDERT!
 
 # Hauptordner (Celebrities)
-BASE_DIR = r'e:\Bilder\Celebrities'
+BASE_DIR = r'e:\Bilder2\Celebrities'
 
 # Erlaubte Bildformate
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')
@@ -13,7 +13,7 @@ ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')
 def is_tag_already_present(file_path, person_name):
     """Prüft, ob der gegebene Personenname bereits im XMP-Subject vorhanden ist"""
     try:
-        command = f'"{EXIFTOOL_PATH}" -XMP:Subject -s3 "{file_path}"'
+        command = f'"{EXIFTOOL_PATH}" "-XMP:Subject+=People|{person_name}" -overwrite_original "{file_path}"'
         result = subprocess.run(
             command,
             stdout=subprocess.PIPE,
@@ -36,20 +36,22 @@ def tag_file(file_path, person_name):
         return
 
     try:
-        command = f'"{EXIFTOOL_PATH}" -XMP:Subject+=People|{person_name} -overwrite_original "{file_path}"'
-        # Hier ändern wir die Ausgabe von DEVNULL zu PIPE, um die tatsächliche Ausgabe zu prüfen
+        command = [
+            EXIFTOOL_PATH,
+            f'-XMP:Subject+=People|{person_name}',
+            '-overwrite_original',
+            file_path
+        ]
         result = subprocess.run(
             command,
-            stdout=subprocess.PIPE, # Ausgabe erfassen
-            stderr=subprocess.PIPE, # Fehler erfassen
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
             text=True,
-            shell=True
+            shell=False  # Dies ist der entscheidende Punkt!
         )
-        # Prüfen, ob der Befehl erfolgreich war (ExifTool gibt oft "1 image files updated" aus)
         if "1 image files updated" in result.stdout:
             print(f"  🏷️ Erfolgreich getaggt: {os.path.basename(file_path)} → People|{person_name}")
         else:
-            # Falls ExifTool keinen Erfolg meldet, aber auch keinen Fehler über stderr
             print(f"  🤔 Tagging beendet (keine direkte Erfolgsmeldung): {os.path.basename(file_path)} (Meldung: {result.stdout.strip()})")
             if result.stderr:
                  print(f"    ExifTool-Fehlerdetails: {result.stderr.strip()}")
