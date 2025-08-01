@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="04.07.25">
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="31.07.2025">
+      <change afterPath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bilder taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder taggen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dateiname umbenennen 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateiname umbenennen 2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,81 +48,82 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.10.104 HTML-Code holen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.105 beautifulsoup.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.108 Elemente finden 1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.109 Elemente finden 2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.110 - Elemente finden - urllib.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.114 Ergebnisse als CSV-Datei schreiben.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.118 Python Wissen - Generatoren.executor&quot;: &quot;Run&quot;,
-    &quot;Python.10.119 Generatoren im Crawler einbauen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.11.123 Exceptions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2.9 Strings in Python.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3.11 Listen in Python.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3.12 Listen - Die pop-Funktion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.25 Ausdrücke verknüpfen und Booleans.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.28 Der in-Operator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.32 Elif.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.33 - Die While-Schleife.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.34 Die For-Schleife.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.35 Wann welche Liste.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5.39 Schleifen mit Break und Continue.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.43 Funktionen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.44 Funktionen 2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.45 Ausblick auf Objekte.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.48 Dateien öffnen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.49 Datei schreiben.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.50 Das With-Construct.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.51 CSV öffnen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.53 Grafiken zeichnen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.54 Geburtsstatistiken.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.56 Aufgabe Geburtsstatistiken.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6.59 Übungsblatt Funktionen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.64 List slicing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.64 List stitching.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.68 Dictionaries.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.70 Tupel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.71 Tupel packen und entpacken.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.72 Dictionaries und Schleifen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7.73 Aufgabe zu Dictionaries und schleifen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.8.89 In Python ist alles ein Objekt.executor&quot;: &quot;Run&quot;,
-    &quot;Python.8.91 Statische Variablen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.8.94 Übungen Objektorientierung.executor&quot;: &quot;Run&quot;,
-    &quot;Python.9.101 Beispiele für ein Modul.executor&quot;: &quot;Run&quot;,
-    &quot;Python.9.96 Code aus separater Datei laden.executor&quot;: &quot;Run&quot;,
-    &quot;Python.9.97 Verschiednee Importmöglichkeiten für Module.executor&quot;: &quot;Run&quot;,
-    &quot;Python.9.98 Module in einem Ordner erstellen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Bilder taggen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Dateien verschieben.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Dateiname umbenennen 2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Dateinamen umbenennen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DoppelteDateipfade.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Fibonacci.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Generatoren-Demo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Wechselkursrechner.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Zeichenzählen.executor&quot;: &quot;Run&quot;,
-    &quot;Python.crawler.executor&quot;: &quot;Run&quot;,
-    &quot;Python.datei.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.10.104 HTML-Code holen.executor": "Run",
+    "Python.10.105 beautifulsoup.executor": "Run",
+    "Python.10.108 Elemente finden 1.executor": "Run",
+    "Python.10.109 Elemente finden 2.executor": "Run",
+    "Python.10.110 - Elemente finden - urllib.executor": "Run",
+    "Python.10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.executor": "Run",
+    "Python.10.114 Ergebnisse als CSV-Datei schreiben.executor": "Run",
+    "Python.10.118 Python Wissen - Generatoren.executor": "Run",
+    "Python.10.119 Generatoren im Crawler einbauen.executor": "Run",
+    "Python.11.123 Exceptions.executor": "Run",
+    "Python.2.9 Strings in Python.executor": "Run",
+    "Python.3.11 Listen in Python.executor": "Run",
+    "Python.3.12 Listen - Die pop-Funktion.executor": "Run",
+    "Python.4.25 Ausdrücke verknüpfen und Booleans.executor": "Run",
+    "Python.4.28 Der in-Operator.executor": "Run",
+    "Python.4.32 Elif.executor": "Run",
+    "Python.5.33 - Die While-Schleife.executor": "Run",
+    "Python.5.34 Die For-Schleife.executor": "Run",
+    "Python.5.35 Wann welche Liste.executor": "Run",
+    "Python.5.39 Schleifen mit Break und Continue.executor": "Run",
+    "Python.6.43 Funktionen.executor": "Run",
+    "Python.6.44 Funktionen 2.executor": "Run",
+    "Python.6.45 Ausblick auf Objekte.executor": "Run",
+    "Python.6.48 Dateien öffnen.executor": "Run",
+    "Python.6.49 Datei schreiben.executor": "Run",
+    "Python.6.50 Das With-Construct.executor": "Run",
+    "Python.6.51 CSV öffnen.executor": "Run",
+    "Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor": "Run",
+    "Python.6.53 Grafiken zeichnen.executor": "Run",
+    "Python.6.54 Geburtsstatistiken.executor": "Run",
+    "Python.6.56 Aufgabe Geburtsstatistiken.executor": "Run",
+    "Python.6.59 Übungsblatt Funktionen.executor": "Run",
+    "Python.7.64 List slicing.executor": "Run",
+    "Python.7.64 List stitching.executor": "Run",
+    "Python.7.68 Dictionaries.executor": "Run",
+    "Python.7.70 Tupel.executor": "Run",
+    "Python.7.71 Tupel packen und entpacken.executor": "Run",
+    "Python.7.72 Dictionaries und Schleifen.executor": "Run",
+    "Python.7.73 Aufgabe zu Dictionaries und schleifen.executor": "Run",
+    "Python.8.89 In Python ist alles ein Objekt.executor": "Run",
+    "Python.8.91 Statische Variablen.executor": "Run",
+    "Python.8.94 Übungen Objektorientierung.executor": "Run",
+    "Python.9.101 Beispiele für ein Modul.executor": "Run",
+    "Python.9.96 Code aus separater Datei laden.executor": "Run",
+    "Python.9.97 Verschiednee Importmöglichkeiten für Module.executor": "Run",
+    "Python.9.98 Module in einem Ordner erstellen.executor": "Run",
+    "Python.Bilder taggen.executor": "Run",
+    "Python.Dateien verschieben.executor": "Run",
+    "Python.Dateiname umbenennen 2.executor": "Run",
+    "Python.Dateinamen umbenennen.executor": "Run",
+    "Python.DoppelteDateipfade.executor": "Run",
+    "Python.Fibonacci.executor": "Run",
+    "Python.Generatoren-Demo.executor": "Run",
+    "Python.Getaggte Bilder verschieben.executor": "Run",
+    "Python.Wechselkursrechner.executor": "Run",
+    "Python.Zeichenzählen.executor": "Run",
+    "Python.crawler.executor": "Run",
+    "Python.datei.executor": "Run",
+    "Python.scratch.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu" />
@@ -568,7 +569,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753654089134</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="31.07.2025">
+      <option name="closed" value="true" />
+      <created>1754021268535</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1754021268535</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +618,8 @@
     <MESSAGE value="18.06.25" />
     <MESSAGE value="23.06.25" />
     <MESSAGE value="04.07.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="04.07.25" />
+    <MESSAGE value="31.07.2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="31.07.2025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
