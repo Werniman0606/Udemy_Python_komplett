@@ -7,7 +7,7 @@ import shutil
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
 
 # Quell- und Zielverzeichnis
-SOURCE_DIR = r'e:\Bilder'
+SOURCE_DIR = r'e:\Bilder2'
 DESTINATION_DIR = r'e:\Bilder-getaggt'
 
 # Erlaubte Bildformate
