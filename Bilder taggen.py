@@ -7,7 +7,7 @@ import time
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
 
 # Verzeichnis, in dem nach Bildern gesucht werden soll
-BASE_DIR = r'e:\Bilder2'
+BASE_DIR = r'e:\Bilder\Celebrities'
 
 # Erlaubte Bildformate
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')
