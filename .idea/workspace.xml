@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="04.08.2025">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bilder taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder taggen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -645,7 +647,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754343962577</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="04.08.2025">
+      <option name="closed" value="true" />
+      <created>1754355271502</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1754355271502</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
