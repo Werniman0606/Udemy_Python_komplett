@@ -4,7 +4,7 @@ import json
 import codecs
 
 # Konfigurieren des zu durchsuchenden Ordners
-ROOT_FOLDER = r"e:\Bilder"
+ROOT_FOLDER = r"e:\Bilder2\Celebrities\V"
 
 # EXIFTOOL PFAD ANPASSUNG
 EXIFTOOL_PATH = r"d:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe"

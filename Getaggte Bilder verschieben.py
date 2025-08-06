@@ -8,10 +8,10 @@ import time
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
 
 # Basisverzeichnis, in dem nach Bildern gesucht werden soll
-SOURCE_DIR = r'e:\Bilder2\Celebrities'
+SOURCE_DIR = r'e:\Bilder    '
 
 # Zielverzeichnis, in das die getaggten Dateien verschoben werden sollen
-DEST_DIR = r'e:\Bilder-getaggt\Celebrities'
+DEST_DIR = r'e:\Bilder-getaggt'
 
 # Erlaubte Bildformate
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')
