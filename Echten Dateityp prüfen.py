@@ -3,7 +3,7 @@ import filetype
 
 # Konfigurieren des zu durchsuchenden Ordners
 # Ändern Sie diesen Pfad, wenn Ihr Ordner woanders liegt
-ROOT_FOLDER = r"f:"
+ROOT_FOLDER = r"/run/media/marco/Laufwerk D"
 
 
 def get_real_extension(filepath):
@@ -67,7 +67,7 @@ def main():
 
             # Überprüft, ob die Datei eine bekannte Bild- oder Mediendatei ist
             if not any(filename.lower().endswith(ext) for ext in
-                       ('.jpg', '.jpeg', '.gif', '.png', '.bmp', '.mp4', '.mov')):
+                       ('.jpg', '.jpeg', '.gif', '.png', '.bmp', '.mp4', '.mov', '.mkv')):
                 continue
 
             real_extension = get_real_extension(filepath)

@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="04.08.2025">
-      <change afterPath="$PROJECT_DIR$/Modelnamen erkennen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder in Ordnern nach Ordner benennen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder von Personen finden,zu denen es einen Ordner gibt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateien verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Echten Dateityp prüfen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Echten Dateityp prüfen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Werniman0606/Udemy_Python_komplett&quot;,
-    &quot;accountId&quot;: &quot;ab259af5-9775-4150-8028-fa83919f3635&quot;
+    &quot;accountId&quot;: &quot;a92019f5-550b-408c-9d06-c6550ba84602&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -98,7 +101,9 @@
     &quot;Python.9.96 Code aus separater Datei laden.executor&quot;: &quot;Run&quot;,
     &quot;Python.9.97 Verschiednee Importmöglichkeiten für Module.executor&quot;: &quot;Run&quot;,
     &quot;Python.9.98 Module in einem Ordner erstellen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Bilder in Ordnern nach Ordner benennen.executor&quot;: &quot;Run&quot;,
     &quot;Python.Bilder taggen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Bilder von Personen finden,zu denen es einen Ordner gibt.executor&quot;: &quot;Run&quot;,
     &quot;Python.Dateien verschieben.executor&quot;: &quot;Run&quot;,
     &quot;Python.Dateiname aus Facetags generieren.executor&quot;: &quot;Run&quot;,
     &quot;Python.Dateiname umbenennen 2.executor&quot;: &quot;Run&quot;,
@@ -127,7 +132,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -136,7 +141,7 @@
       <recent name="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.2.9 Strings in Python">
     <configuration name="2.9 Strings in Python" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Udemy_Python_komplett" />
       <option name="ENV_FILES" value="" />
@@ -262,7 +267,6 @@
         <env name="PYTHONIOENCODING" value="utf8" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -289,7 +293,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-03e874896e21-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.439" />
+        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
       </set>
     </attachedChunks>
   </component>
@@ -725,6 +729,10 @@
           <url>file://$PROJECT_DIR$/6.54 Geburtsstatistiken.py</url>
           <line>38</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Echten Dateityp prüfen.py</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
