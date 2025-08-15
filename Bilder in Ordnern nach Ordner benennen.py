@@ -59,7 +59,7 @@ def rename_images_with_folder_name(base_path):
 if __name__ == "__main__":
     # Define the base directory.
     # IMPORTANT: Use a "raw string" (r'...') to avoid issues with backslashes.
-    base_directory = r'/run/media/marco/Laufwerk D/RedditDownload/reddit_sub_VintageSmut'
+    base_directory = r'/run/media/marco/Laufwerk D/RedditDownload/reddit_sub_GermanCelebs/'
 
     # A complete backup of your files is strongly recommended before running any script that modifies them.
     # It's also a good idea to first test the script on a small, dedicated test folder.
