@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="04.08.2025">
-      <change afterPath="$PROJECT_DIR$/Modelnamen erkennen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bilder nach ihrem Ordner benennen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/komplett getaggte Bilder verschieben.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bilder taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder taggen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateinamen umbenennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateinamen umbenennen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Echten Dateityp prüfen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Echten Dateityp prüfen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +103,9 @@
     &quot;Python.9.96 Code aus separater Datei laden.executor&quot;: &quot;Run&quot;,
     &quot;Python.9.97 Verschiednee Importmöglichkeiten für Module.executor&quot;: &quot;Run&quot;,
     &quot;Python.9.98 Module in einem Ordner erstellen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BIlder suchen und in Unterordner verschieben.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Bilder nach Ordner benennen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Bilder nach ihrem Ordner benennen.executor&quot;: &quot;Run&quot;,
     &quot;Python.Bilder taggen.executor&quot;: &quot;Run&quot;,
     &quot;Python.Dateien verschieben.executor&quot;: &quot;Run&quot;,
     &quot;Python.Dateiname aus Facetags generieren.executor&quot;: &quot;Run&quot;,
@@ -116,6 +124,7 @@
     &quot;Python.Zeichenzählen.executor&quot;: &quot;Run&quot;,
     &quot;Python.crawler.executor&quot;: &quot;Run&quot;,
     &quot;Python.datei.executor&quot;: &quot;Run&quot;,
+    &quot;Python.komplett getaggte Bilder verschieben.executor&quot;: &quot;Run&quot;,
     &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -289,7 +298,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-03e874896e21-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.439" />
+        <option value="bundled-python-sdk-d9fa9deec7cb-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.515" />
       </set>
     </attachedChunks>
   </component>
@@ -673,7 +682,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754439242065</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="04.08.2025">
+      <option name="closed" value="true" />
+      <created>1754530823499</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1754530823499</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

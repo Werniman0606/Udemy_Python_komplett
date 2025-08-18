@@ -2,6 +2,8 @@ import os
 import subprocess
 import time
 import shutil
+import uuid
+import sys
 
 # --- KONFIGURATION START ---
 # Pfad zu exiftool
@@ -16,6 +18,7 @@ TEMP_DIR = r'e:\temp_exiftool'
 # Erlaubte Bildformate
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg')
 
+
 # --- KONFIGURATION ENDE ---
 
 def verify_tags(file_path, person_names):
@@ -23,19 +26,14 @@ def verify_tags(file_path, person_names):
     Überprüft, ob die Tags für alle Personen in der Datei vorhanden sind.
     """
     try:
-        command_verify = [
-            EXIFTOOL_PATH,
-            '-XMP-dc:creator',
-            '-XMP-digiKam:TagsList',
-            '-s3',
-            file_path
-        ]
+        command_verify = f'chcp 65001 & "{EXIFTOOL_PATH}" -XMP-dc:creator -XMP-digiKam:TagsList -s3 "{file_path}"'
 
         result_verify = subprocess.run(
             command_verify,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
+            shell=True,
             check=False,
             encoding='utf-8',
             errors='ignore'
@@ -64,10 +62,13 @@ def tag_file_with_person_names(file_path):
         return False, "Ignoriert: Dateiname entspricht nicht dem Muster."
 
     try:
-        # Erstelle temporäres Verzeichnis, falls es nicht existiert
         os.makedirs(TEMP_DIR, exist_ok=True)
-        temp_file_path = os.path.join(TEMP_DIR, filename)
-        shutil.copy2(file_path, temp_file_path)
+
+        # Erstelle einen sicheren, temporären Dateinamen (ohne Sonderzeichen)
+        temp_safe_filename = str(uuid.uuid4()) + os.path.splitext(filename)[1]
+        temp_safe_path = os.path.join(TEMP_DIR, temp_safe_filename)
+
+        shutil.copy2(file_path, temp_safe_path)
 
         start_index = filename.find('[') + 1
         end_index = filename.find(']_')
@@ -82,46 +83,41 @@ def tag_file_with_person_names(file_path):
             return False, "Ignoriert: Keine gültigen Namen gefunden."
 
         print(f"Lösche alte Tags für: '{filename}'")
-        # Tags leeren
-        command_delete = [
-            EXIFTOOL_PATH,
-            '-overwrite_original_in_place',
-            '-XMP-dc:creator=',
-            '-XMP-digiKam:TagsList=',
-            '-charset', 'filename=utf8', # Kodierung für Dateinamen erzwingen
-            temp_file_path
-        ]
-        subprocess.run(command_delete, check=True)
 
-        # Tags für jede Person sammeln
-        tag_commands = [
-            EXIFTOOL_PATH,
-            '-overwrite_original_in_place',
-            '-charset', 'filename=utf8'
-        ]
+        # Schreibe die Befehle in eine temporäre args-Datei
+        args_file_path = os.path.join(TEMP_DIR, "tags.args")
+        with open(args_file_path, "w", encoding="utf-8") as f:
+            f.write("-overwrite_original_in_place\n")
+            f.write("-XMP-dc:creator=\n")
+            f.write("-XMP-digiKam:TagsList=\n")
+            f.write("-charset filename=utf8\n")
+            f.write("\n")
 
-        for name in person_names:
-            capitalized_name = name.title()
-            digikam_person_tag = f"Personen/{capitalized_name}"
+            for name in person_names:
+                capitalized_name = name.title()
+                digikam_person_tag = f"Personen/{capitalized_name}"
+                f.write(f"-XMP-dc:creator+={capitalized_name}\n")
+                f.write(f"-XMP-digiKam:TagsList+={digikam_person_tag}\n")
 
-            tag_commands.extend([
-                f'-XMP-dc:creator+={capitalized_name}',
-                f'-XMP-digiKam:TagsList+={digikam_person_tag}',
-            ])
+        # Führe ExifTool mit der args-Datei aus
+        tag_commands = f'chcp 65001 & "{EXIFTOOL_PATH}" -@ "{args_file_path}" "{temp_safe_path}"'
+        subprocess.run(tag_commands, check=True, shell=True)
 
-        # Tags in einem einzigen Befehl hinzufügen
-        tag_commands.append(temp_file_path)
-        subprocess.run(tag_commands, check=True)
+        os.remove(args_file_path)
 
         # Nach dem Taggen sofort verifizieren
-        success_verify, output_verify = verify_tags(temp_file_path, person_names)
+        success_verify, output_verify = verify_tags(temp_safe_path, person_names)
 
         if success_verify:
-            shutil.move(temp_file_path, file_path) # Bearbeitete Datei zurück verschieben
+            # Benenne die temporäre Datei zurück in den Originalnamen
+            temp_final_path = os.path.join(TEMP_DIR, filename)
+            os.rename(temp_safe_path, temp_final_path)
+
+            shutil.move(temp_final_path, file_path)
             tagged_names = ', '.join([name.title() for name in person_names])
-            return True, f"Erfolgreich getaggt und verifiziert mit Namen: '{tagged_names}'."
+            return True, f"✅ Erfolgreich getaggt und verifiziert mit Namen: '{tagged_names}'."
         else:
-            shutil.move(temp_file_path, file_path) # Originaldatei zurück verschieben
+            shutil.move(temp_safe_path, file_path)
             tagged_names = ', '.join([name.title() for name in person_names])
             return False, f"❌ Tags konnten nicht korrekt verifiziert werden für '{tagged_names}'. Gefundene Tags: {output_verify}"
 
@@ -132,6 +128,7 @@ def tag_file_with_person_names(file_path):
         return False, f"Exiftool-Fehler beim Taggen: {error_output}"
     except Exception as e:
         return False, f"Unerwarteter Fehler beim Taggen: {e}"
+
 
 def main():
     print("Starte den Tagging-Vorgang für Bilder...")
@@ -156,9 +153,7 @@ def main():
                 success, message = tag_file_with_person_names(file_path)
                 if success:
                     tagged_count += 1
-                    print(f"✅ {file}: {message}")
-                else:
-                    print(f"❌ {file}: {message}")
+                print(f"{'✅' if success else '❌'} {file}: {message}")
 
     end_time = time.time()
     duration = end_time - start_time
@@ -167,6 +162,7 @@ def main():
     print("Vorgang abgeschlossen.")
     print(f"Insgesamt {tagged_count} Dateien getaggt.")
     print(f"Dauer: {duration:.2f} Sekunden")
+
 
 if __name__ == '__main__':
     main()
