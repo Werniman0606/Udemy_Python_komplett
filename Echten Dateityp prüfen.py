@@ -3,7 +3,7 @@ import filetype
 
 # Konfigurieren des zu durchsuchenden Ordners
 # Ändern Sie diesen Pfad, wenn Ihr Ordner woanders liegt
-ROOT_FOLDER = r"e:\Bilder\Celebrities"
+ROOT_FOLDER = r"e:\Bilder"
 
 
 def get_real_extension(filepath):

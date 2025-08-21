@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="04.08.2025">
-      <change afterPath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bilder nach ihrem Ordner benennen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/komplett getaggte Bilder verschieben.py" afterDir="false" />
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="18.08.25">
+      <change beforePath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder taggen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dateinamen umbenennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateinamen umbenennen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Echten Dateityp prüfen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Echten Dateityp prüfen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/komplett getaggte Bilder verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/komplett getaggte Bilder verschieben.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +142,7 @@
       <recent name="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.2.9 Strings in Python">
     <configuration name="2.9 Strings in Python" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Udemy_Python_komplett" />
       <option name="ENV_FILES" value="" />
@@ -690,7 +687,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754530823499</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="18.08.25">
+      <option name="closed" value="true" />
+      <created>1755553339348</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1755553339348</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -733,7 +738,8 @@
     <MESSAGE value="04.07.25" />
     <MESSAGE value="31.07.2025" />
     <MESSAGE value="04.08.2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="04.08.2025" />
+    <MESSAGE value="18.08.25" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.08.25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
