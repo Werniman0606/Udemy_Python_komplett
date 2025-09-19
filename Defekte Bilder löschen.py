@@ -7,7 +7,7 @@ import time
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
 
 # Basisverzeichnis, in dem nach Bildern gesucht werden soll
-SOURCE_DIR = r'e:\Bilder2'
+SOURCE_DIR = r'd:\extracted\rips'
 
 # Erlaubte Bildformate
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg')

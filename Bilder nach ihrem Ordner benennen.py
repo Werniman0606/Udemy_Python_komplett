@@ -3,7 +3,7 @@ import time
 
 # --- CONFIGURATION START ---
 # Source directory where the script will start looking for files
-SOURCE_DIR = r'd:\RedditDownload\reddit_sub_VintageSmut'
+SOURCE_DIR = r'd:\extracted\rips\reddit_sub_GermanCelebs'
 
 # Allowed image formats
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')

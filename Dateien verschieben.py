@@ -89,7 +89,7 @@ def organize_celebrity_images(base_path):
 
 # --- Verwendung des Skripts ---
 if __name__ == "__main__":
-    base_directory = r'/run/media/marco/Laufwerk E/Bilder/Celebrities'
+    base_directory = r'd:\RedditDownload\reddit_sub_GermanCelebs'
 
     # --- SICHERHEITSHINWEIS ---
     # Dieses Skript nimmt permanente Änderungen an deinen Dateinamen und Dateipfaden vor.

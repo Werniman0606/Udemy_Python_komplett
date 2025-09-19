@@ -3,7 +3,7 @@ import shutil
 import re
 
 source_directory = r'E:\Bilder\Sexbilder'
-destination_directory = r'D:\extracted\Test'
+destination_directory = r'd:\extracted\rips'
 
 # Create the destination folder if it doesn't exist
 os.makedirs(destination_directory, exist_ok=True)

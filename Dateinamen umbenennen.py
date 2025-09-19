@@ -130,7 +130,7 @@ if __name__ == "__main__":
     # WICHTIG: Verwende einen "Raw String" (beginnt mit 'r'), um Probleme mit Backslashes ('\')
     #          als Escape-Zeichen in Windows-Pfaden zu vermeiden.
     # Alternativ könnten doppelte Backslashes ('\\') verwendet werden: 'e:\\Bilder\\Celebrities'
-    base_directory = r'd:\RedditDownloads\reddit_sub_GermanCelebs'
+    base_directory = r'd:\RedditDownload\reddit_sub_GermanCelebs'
 
     # --- SICHERHEITSHINWEIS ---
     # Dieses Skript nimmt permanente Änderungen an deinen Dateinamen vor.

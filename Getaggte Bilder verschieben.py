@@ -8,10 +8,10 @@ import time
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
 
 # Base directory to search for images
-SOURCE_DIR = r'e:\Bilder\Celebrities'
+SOURCE_DIR = r'e:\Bilder\Celebrities\C\Chloe Morgane'
 
 # Destination directory for tagged files
-DEST_DIR = r'e:\Bilder-getaggt\Celebrities'
+DEST_DIR = r'e:\Bilder-getaggt\Celebrities\C\Chloe Morgane'
 
 # Allowed image formats
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')
