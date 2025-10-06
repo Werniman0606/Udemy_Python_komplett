@@ -10,7 +10,7 @@ import sys
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
 
 # Basisverzeichnis, in dem nach Bildern gesucht werden soll
-SOURCE_DIR = r'e:\Bilder\Celebrities'
+SOURCE_DIR = r'e:\Bilder\Celebrities\S\Swetlana Loeper'
 
 # Temporäres Verzeichnis für die Verarbeitung
 TEMP_DIR = r'e:\temp_exiftool'

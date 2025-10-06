@@ -3,7 +3,7 @@ import filetype
 
 # Konfigurieren des zu durchsuchenden Ordners
 # Ändern Sie diesen Pfad, wenn Ihr Ordner woanders liegt
-ROOT_FOLDER = r"d:\extracted\rips"
+ROOT_FOLDER = r"f:"
 
 
 def get_real_extension(filepath):

@@ -8,10 +8,10 @@ import time
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
 
 # Basisverzeichnis, in dem nach Bildern gesucht werden soll
-SOURCE_DIR = r'e:\Bilder\Celebrities\C\Chloe Morgane'
+SOURCE_DIR = r'e:\Bilder'
 
 # Zielverzeichnis, in das die getaggten Dateien verschoben werden sollen
-DEST_DIR = r'e:\Bilder-getaggt\Celebrities\C\Chloe Morgane'
+DEST_DIR = r'e:\Bilder-getaggt'
 
 # Erlaubte Bildformate
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff', '.gif')
@@ -21,11 +21,13 @@ ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff', '.gif')
 
 def get_tag_counts(file_path):
     """
-    Zählt die Anzahl der Gesichtsregionen und getaggten Personen mit einem robusteren Befehl.
+    Zählt die Anzahl der Gesichtsregionen und getaggten Personen, indem
+    explizit nach beiden notwendigen XMP-Tags gesucht wird.
     """
     try:
-        # Fragen Sie alle relevanten Tags ab
-        command = f'chcp 65001 & "{EXIFTOOL_PATH}" -XMP-MP:RegionPersonDisplayName -XMP-dc:creator -T "{file_path}"'
+        # Fragen Sie explizit nach beiden Tags: dem Namen und der Region.
+        # Digikam speichert die Koordinate der Region und den Personennamen als separate Tags.
+        command = f'chcp 65001 & "{EXIFTOOL_PATH}" -XMP-MP:RegionPersonDisplayName -XMP-MP:RegionPersonRegion -T "{file_path}"'
 
         result = subprocess.run(
             command,
@@ -40,18 +42,18 @@ def get_tag_counts(file_path):
 
         output_list = result.stdout.strip().split('\t')
 
-        region_count = 0
-        creator_count = 0
+        # Beide Ausgaben müssen vorhanden sein, um einen vollständigen Tag zu erkennen.
+        # Der erste Eintrag ist RegionPersonDisplayName, der zweite ist RegionPersonRegion.
+        if len(output_list) == 2 and output_list[0] != '-' and output_list[1] != '-':
+            # Zähle die Anzahl der durch Kommas getrennten Namen.
+            name_count = output_list[0].count(',') + 1
+            region_count = output_list[1].count(',') + 1
 
-        # Die Regionen-Ausgabe ist der erste Eintrag
-        if len(output_list) > 0 and output_list[0] and output_list[0] != '-':
-            region_count = output_list[0].count(',') + 1
+            # Die Anzahl der Namen muss mit der Anzahl der Regionen übereinstimmen
+            if name_count == region_count:
+                return name_count, name_count
 
-        # Der Creator-Tag ist der zweite Eintrag
-        if len(output_list) > 1 and output_list[1] and output_list[1] != '-':
-            creator_count = output_list[1].count(',') + 1
-
-        return region_count, creator_count
+        return 0, 0
 
     except Exception as e:
         print(f"⚠️ Fehler beim Lesen von Tags für {file_path}: {e}")
@@ -96,9 +98,9 @@ def main():
             if file.lower().endswith(ALLOWED_EXTENSIONS):
                 region_count, creator_count = get_tag_counts(file_path)
 
-                # Neue Bedingung: Es muss mindestens einen Creator-Tag geben
-                # UND die Anzahl der Regionen muss mit der Anzahl der Tags übereinstimmen.
-                if creator_count > 0 and region_count == creator_count:
+                # Die Bedingung ist jetzt einfach: Es muss mindestens eine vollständige
+                # Gesichtsregion (mit Name und Koordinaten) vorhanden sein.
+                if creator_count > 0:
                     if move_file(file_path, DEST_DIR):
                         print(
                             f"✅ Verschiebe: {file_path} (Regionen: {region_count}, Tags: {creator_count})")
