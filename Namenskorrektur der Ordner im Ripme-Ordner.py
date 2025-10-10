@@ -5,7 +5,7 @@ from fuzzywuzzy import fuzz
 # --- Konfiguration ---
 ZIEL_PFAD = r"e:\Bilder\Celebrities"
 QUELLE_PFAD = r"d:\extracted\rips\reddit_sub_GermanCelebs"
-SCHWELLENWERT = 75
+SCHWELLENWERT = 70
 
 
 # --- Ende Konfiguration ---
@@ -28,7 +28,6 @@ def sammle_zielnamen(pfad):
 
     except FileNotFoundError:
         print(f"FEHLER: Zielpfad '{pfad}' nicht gefunden. Bitte prüfen Sie die ZIEL_PFAD Variable.")
-        sys.exit(1)
     except Exception as e:
         print(f"FEHLER beim Lesen des Zielpfads: {e}")
         sys.exit(1)

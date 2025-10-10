@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="18.08.25">
-      <change afterPath="$PROJECT_DIR$/Doppelte MP3s finden und auf D verschieben.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gepackte Dateien aufräumen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Löscht Tags ohne Region.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Namenskorrektur der Ordner im Ripme-Ordner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Textdateien ersetzen.py" afterDir="false" />
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="06.10.2025">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder taggen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bilder von Personen finden,zu denen es einen Ordner gibt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder von Personen finden,zu denen es einen Ordner gibt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateiname umbenennen 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateiname umbenennen 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Defekte Bilder löschen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Defekte Bilder löschen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Echten Dateityp prüfen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Echten Dateityp prüfen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/komplett getaggte Bilder verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/komplett getaggte Bilder verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Namenskorrektur der Ordner im Ripme-Ordner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Namenskorrektur der Ordner im Ripme-Ordner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,14 +322,6 @@
       <workItem from="1747400300857" duration="235000" />
       <workItem from="1747400697411" duration="1867000" />
       <workItem from="1747487718166" duration="31000" />
-    </task>
-    <task id="LOCAL-00001" summary="10.02.2025">
-      <option name="closed" value="true" />
-      <created>1739207506148</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1739207506148</updated>
     </task>
     <task id="LOCAL-00002" summary="10.02.2025">
       <option name="closed" value="true" />
@@ -719,7 +707,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755788158065</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="06.10.2025">
+      <option name="closed" value="true" />
+      <created>1759758371709</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1759758371709</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -763,7 +759,8 @@
     <MESSAGE value="31.07.2025" />
     <MESSAGE value="04.08.2025" />
     <MESSAGE value="18.08.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="18.08.25" />
+    <MESSAGE value="06.10.2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="06.10.2025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

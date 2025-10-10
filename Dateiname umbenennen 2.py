@@ -81,7 +81,7 @@ def rename_images_with_folder_name(base_path):
 # --- Verwendung des Skripts ---
 if __name__ == "__main__":
     # Definiere den Basispfad zu deinem 'Vintage'-Ordner.
-    base_directory = r'e:\Bilder\Celebrities' # Ohne abschließenden Backslash
+    base_directory = r'd:\extracted\Vintage' # Ohne abschließenden Backslash
     # --- SICHERHEITSHINWEIS ---
     # Dieses Skript nimmt permanente Änderungen an deinen Dateinamen vor.
     # Es wird DRINGEND empfohlen, VOR der Ausführung dieses Skripts eine
