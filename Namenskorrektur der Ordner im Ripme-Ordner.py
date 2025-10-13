@@ -4,7 +4,7 @@ from fuzzywuzzy import fuzz
 
 # --- Konfiguration ---
 ZIEL_PFAD = r"e:\Bilder\Celebrities"
-QUELLE_PFAD = r"d:\extracted\rips\reddit_sub_GermanCelebs"
+QUELLE_PFAD = r"d:\RedditDownloads\reddit_sub_GermanCelebs"
 SCHWELLENWERT = 70
 
 

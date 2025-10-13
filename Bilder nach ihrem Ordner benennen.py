@@ -3,7 +3,7 @@ import time
 
 # --- CONFIGURATION START ---
 # Source directory where the script will start looking for files
-SOURCE_DIR = r'd:\extracted\rips\reddit_sub_GermanCelebs'
+SOURCE_DIR = r'e:\Bilder\Celebrities'
 
 # Allowed image formats
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')
@@ -28,37 +28,46 @@ def main():
         if root == SOURCE_DIR:
             continue
 
-        # Get the name of the current folder
+        # Get the name of the current folder, e.g., "Beatrice Egli"
         folder_name = os.path.basename(root)
 
-        for file in files:
-            file_path = os.path.join(root, file)
+        # Das benötigte Präfix in der gewünschten Form, z.B. "[Beatrice Egli]_"
+        required_prefix = f'[{folder_name}]_'
 
+        for file in files:
             # Check if the file is an allowed image format
             if file.lower().endswith(ALLOWED_EXTENSIONS):
-                # Check if the file is already renamed to prevent duplicates
-                if not file.startswith(f'[{folder_name}]_'):
 
-                    # Create the new file name
-                    new_file_name = f'[{folder_name}]_{file}'
-                    new_file_path = os.path.join(root, new_file_name)
+                # *** WICHTIGE ANPASSUNG HIER ***
+                # Prüfen, ob der Dateiname BEREITS mit dem benötigten Präfix beginnt
+                if file.startswith(required_prefix):
+                    print(f"➡️ Skipping: '{file}' (Already correctly named)")
+                    continue  # Springe zur nächsten Datei
+                # *******************************
 
-                    try:
-                        os.rename(file_path, new_file_path)
-                        print(f"✅ Renamed: '{file}' -> '{new_file_name}'")
-                        renamed_count += 1
-                    except Exception as e:
-                        print(f"❌ Error renaming '{file}': {e}")
+                file_path = os.path.join(root, file)
+
+                # Create the new file name
+                new_file_name = f'{required_prefix}{file}'
+                new_file_path = os.path.join(root, new_file_name)
+
+                try:
+                    os.rename(file_path, new_file_path)
+                    print(f"✅ Renamed: '{file}' -> '{new_file_name}'")
+                    renamed_count += 1
+                except Exception as e:
+                    print(f"❌ Error renaming '{file}': {e}")
             else:
                 print(f"➡️ Skipping non-image file: '{file}'")
 
     end_time = time.time()
     duration = end_time - start_time
 
-    print("\n---")
+    print("\n" + "=" * 50)
     print("Process complete.")
     print(f"Total {renamed_count} files renamed.")
     print(f"Duration: {duration:.2f} seconds")
+    print("=" * 50)
 
 
 if __name__ == '__main__':

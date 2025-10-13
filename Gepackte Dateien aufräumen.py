@@ -4,7 +4,7 @@ from collections import defaultdict
 
 # --- Konfiguration ---
 # Der HAUPT-Archivordner, der REKURSIV (inkl. Unterordner) geprüft wird
-BASE_ARCHIVE_DIR = r"z:\Gepackte Programme"
+BASE_ARCHIVE_DIR = r"z:\Gepackte Programme\bereit installiert"
 # ---------------------
 
 # Blacklist von Dateien, die ignoriert werden sollen (nicht als Installer gelten)
