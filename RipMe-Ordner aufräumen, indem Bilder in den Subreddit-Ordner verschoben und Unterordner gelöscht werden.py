@@ -2,7 +2,7 @@ import os
 import shutil
 
 # --- Konfiguration ---
-HAUPT_ORDNER = r'd:\RedditDownloads'
+HAUPT_ORDNER = r'd:\rips'
 
 # Die Korrektur ist hier: '\\?\\' statt '\\?\'
 # Der Windows Long Path Prefix, um die 260-Zeichen-Grenze zu umgehen

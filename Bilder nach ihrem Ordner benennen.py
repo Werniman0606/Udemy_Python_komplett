@@ -1,5 +1,6 @@
 import os
 import time
+import re # Importiere das Modul für reguläre Ausdrücke
 
 # --- CONFIGURATION START ---
 # Source directory where the script will start looking for files
@@ -8,6 +9,10 @@ SOURCE_DIR = r'e:\Bilder\Celebrities'
 # Allowed image formats
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')
 
+# Regulärer Ausdruck, der ein Präfix in der Form "[...]_" matcht.
+# Das Muster sucht nach: [ (beliebige Zeichen) ] _
+# Die Zeichen '[]' müssen mit dem Backslash escaped werden, da sie Sonderzeichen sind.
+PRE_EXISTING_PREFIX_PATTERN = r'^\[.*?\]_'
 
 # --- CONFIGURATION END ---
 
@@ -38,13 +43,21 @@ def main():
             # Check if the file is an allowed image format
             if file.lower().endswith(ALLOWED_EXTENSIONS):
 
-                # *** WICHTIGE ANPASSUNG HIER ***
-                # Prüfen, ob der Dateiname BEREITS mit dem benötigten Präfix beginnt
-                if file.startswith(required_prefix):
-                    print(f"➡️ Skipping: '{file}' (Already correctly named)")
-                    continue  # Springe zur nächsten Datei
-                # *******************************
+                # *** WICHTIGE NEUE PRÜFUNG HIER ***
+                # 1. Prüfen, ob der Dateiname BEREITS das notwendige Präfix des aktuellen Ordners hat (alte Logik)
+                # 2. Prüfen, ob der Dateiname ein beliebiges Präfix in der Form "[...]_" hat (neue Logik)
 
+                # Prüfe mit Regex, ob ein beliebiges Namens-Präfix in eckigen Klammern vorhanden ist
+                if re.match(PRE_EXISTING_PREFIX_PATTERN, file):
+                    print(f"➡️ Skipping: '{file}' (Prefix '[...]_' already exists from another script)")
+                    continue  # Springe zur nächsten Datei, da die Datei bereits "getaggt" ist
+
+                # HINWEIS: Wenn du die alte Prüfung (nur auf das eigene Präfix) zusätzlich behalten willst,
+                # weil du die Regex-Prüfung zu breit findest:
+                # if file.startswith(required_prefix) or re.match(PRE_EXISTING_PREFIX_PATTERN, file):
+                #     ...
+
+                # Wenn keine eckigen Klammern vorhanden sind, wird normal umbenannt:
                 file_path = os.path.join(root, file)
 
                 # Create the new file name
