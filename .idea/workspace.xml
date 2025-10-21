@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="06.10.2025">
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="15.10.2025">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bilder nach ihrem Ordner benennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder nach ihrem Ordner benennen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bilder von Personen finden,zu denen es einen Ordner gibt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder von Personen finden,zu denen es einen Ordner gibt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Echten Dateityp prüfen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Echten Dateityp prüfen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Namenskorrektur der Ordner im Ripme-Ordner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Namenskorrektur der Ordner im Ripme-Ordner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RipMe-Ordner aufräumen, indem Bilder in den Subreddit-Ordner verschoben und Unterordner gelöscht werden.py" beforeDir="false" afterPath="$PROJECT_DIR$/RipMe-Ordner aufräumen, indem Bilder in den Subreddit-Ordner verschoben und Unterordner gelöscht werden.py" afterDir="false" />
@@ -322,14 +324,6 @@
       <workItem from="1747400300857" duration="235000" />
       <workItem from="1747400697411" duration="1867000" />
       <workItem from="1747487718166" duration="31000" />
-    </task>
-    <task id="LOCAL-00005" summary="09.03.2025">
-      <option name="closed" value="true" />
-      <created>1741516850219</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1741516850219</updated>
     </task>
     <task id="LOCAL-00006" summary="09.03.2025">
       <option name="closed" value="true" />
@@ -715,7 +709,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760326664209</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="15.10.2025">
+      <option name="closed" value="true" />
+      <created>1760550624978</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1760550624980</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -760,7 +762,8 @@
     <MESSAGE value="04.08.2025" />
     <MESSAGE value="18.08.25" />
     <MESSAGE value="06.10.2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="06.10.2025" />
+    <MESSAGE value="15.10.2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="15.10.2025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

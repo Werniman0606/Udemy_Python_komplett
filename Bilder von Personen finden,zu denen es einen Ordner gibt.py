@@ -6,7 +6,7 @@ import shutil
 source_folder_with_celebs = r'e:\Bilder\Celebrities'
 
 # Der Ordner, der die zu verschiebenden Dateien enthält. os.walk durchsucht diesen ebenfalls rekursiv.
-folder_with_files_to_move = r'd:\extracted\rips\reddit_sub_GermanCelebs'
+folder_with_files_to_move = r'd:\RedditDownloads'
 
 # --- 1. Personenordner und Namen sammeln (rekursiv) ---
 print(f"Sammle Namen aus allen Unterordnern in: {source_folder_with_celebs}\n")
