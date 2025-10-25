@@ -3,10 +3,10 @@ import shutil
 
 # --- Definiere die Pfade ---
 # Der Ordner, der die Personenordner enthält. os.walk durchsucht diesen rekursiv.
-source_folder_with_celebs = r'e:\Bilder\Celebrities'
+source_folder_with_celebs = r'e:\Celebrities'
 
 # Der Ordner, der die zu verschiebenden Dateien enthält. os.walk durchsucht diesen ebenfalls rekursiv.
-folder_with_files_to_move = r'd:\RedditDownloads'
+folder_with_files_to_move = r'd:\RedditDownloads\reddit_sub_GermanCelebs'
 
 # --- 1. Personenordner und Namen sammeln (rekursiv) ---
 print(f"Sammle Namen aus allen Unterordnern in: {source_folder_with_celebs}\n")

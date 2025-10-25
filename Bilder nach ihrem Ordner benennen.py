@@ -4,7 +4,7 @@ import re # Importiere das Modul für reguläre Ausdrücke
 
 # --- CONFIGURATION START ---
 # Source directory where the script will start looking for files
-SOURCE_DIR = r'd:\extracted\Celebrities'
+SOURCE_DIR = r'd:\RedditDownloads\reddit_sub_GermanCelebs'
 
 # Allowed image formats
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff')
