@@ -1,3 +1,24 @@
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): mp3_archiv_duplikat_bereinigung.py
+# Dateiname Vorschlag (Technisch): mp3_tag_duplicate_mover.py
+#
+# Beschreibung: Dieses Skript dient der Bereinigung einer großen Musiksammlung
+#               (Archive) basierend auf einer neuen Songliste (Quelle).
+#               Es identifiziert Duplikate nicht über den Dateinamen oder Hash,
+#               sondern über die normalisierten ID3-Tags 'Interpret' (TPE1) und
+#               'Titel' (TIT2).
+#
+#               Vorgehensweise:
+#               1. Erstellt eine Referenz-Datenbank aller (Interpret, Titel)-Paare
+#                  aus dem Quellordner (SOURCE_DIR).
+#               2. Durchsucht rekursiv alle Archiv-Ordner (ARCHIVE_DIRS).
+#               3. Wenn ein Song im Archiv denselben normalisierten Key wie in der
+#                  Referenz hat, wird er als Duplikat betrachtet.
+#               4. Das Duplikat wird aus dem Archiv in den Zielordner
+#                  (DUPLICATE_TARGET_DIR) verschoben, wobei die Archiv-Struktur
+#                  (z.B. 'M-R/Michael Jackson/song.mp3') beibehalten wird.
+# ==============================================================================
+
 import os
 import shutil
 from mutagen.mp3 import MP3
@@ -31,29 +52,31 @@ def normalize_tag(tag_value):
     if not tag_value:
         return ""
 
+    # Konvertiert den Mutagen-Wert zu String, entfernt Whitespace und konvertiert zu Kleinbuchstaben
     value = str(tag_value[0]).strip().lower()
 
     # Entfernt gängige Satzzeichen für einen robusten Vergleich
     for char in ["'", "`", "’", "´", ".", ","]:
         value = value.replace(char, "")
 
-    return value.replace(" ", "")  # Entfernt auch Leerzeichen für höchste Toleranz
+    return value.replace(" ", "")  # Entfernt auch Leerzeichen für höchste Toleranz (z.B. "mj" vs. "m.j.")
 
 
 def get_mp3_tags(file_path):
     """
     Liest Interpret (TPE1) und Titel (TIT2) aus MP3-Datei aus und normalisiert sie.
+    Gibt ein Tupel (normalisierter_Interpret, normalisierter_Titel) zurück.
     """
     try:
         audio = MP3(file_path)
         # Verwenden Sie die Mutagen-Schlüssel
-        artist = audio.get('TPE1', [''])[0]
-        title = audio.get('TIT2', [''])[0]
+        artist = audio.get('TPE1', [''])[0] # TPE1: Artist/Interpret
+        title = audio.get('TIT2', [''])[0]  # TIT2: Title/Titel
 
-        # Erstellt den Schlüssel (Artist, Title)
+        # Erstellt den normalisierten Schlüssel (Artist, Title)
         key = (normalize_tag([artist]), normalize_tag([title]))
 
-        if all(key):  # Nur wenn Artist UND Title erfolgreich ausgelesen wurden
+        if all(key):  # Nur wenn Interpret UND Titel erfolgreich ausgelesen und nicht leer sind
             return key
 
     except ID3NoHeaderError:
@@ -80,7 +103,7 @@ def find_and_move_duplicates(source_dir, archive_dirs, target_dir):
             if file.lower().endswith('.mp3'):
                 key = get_mp3_tags(os.path.join(root, file))
                 if key:
-                    reference_keys.add(key)
+                    reference_keys.add(key) # Fügt den normalisierten (Artist, Title)-Key hinzu
 
     if not reference_keys:
         print("Keine gültigen Interpret-Titel-Kombinationen in der Quelle gefunden. Vorgang abgebrochen.")
@@ -96,7 +119,7 @@ def find_and_move_duplicates(source_dir, archive_dirs, target_dir):
     print("\nPhase 2: Durchsuche Archive nach Duplikaten und verschiebe sie...")
 
     for base_archive in archive_dirs:
-        archive_name = os.path.basename(base_archive)
+        archive_name = os.path.basename(base_archive) # Name des Archiv-Basisordners (z.B. 'A-D')
         print(f"  > Prüfe Archiv-Basisordner: {base_archive}")
 
         for root, _, files in os.walk(base_archive):
@@ -109,7 +132,7 @@ def find_and_move_duplicates(source_dir, archive_dirs, target_dir):
                     if archive_key and archive_key in reference_keys:
 
                         # Die Unterordner-Struktur relativ zum Basisarchiv ermitteln
-                        # Bsp: 'z:\MP3s\M-R' ist Basis; 'Michael Jackson' ist relativ
+                        # Bsp: 'z:\MP3s\M-R\Michael Jackson' ist root; relative_path wird 'Michael Jackson'
                         relative_path = os.path.relpath(root, base_archive)
 
                         # Zielpfad erstellen: d:\extracted\Dubletten\M-R\Michael Jackson\...
@@ -130,9 +153,11 @@ def find_and_move_duplicates(source_dir, archive_dirs, target_dir):
     print("\n" + "=" * 70)
     print("--- Duplikat-Vorgang abgeschlossen ---")
     print(f"Gesamt: {moved_count} Duplikate im Archiv gefunden und verschoben.")
-    print("Bitte überprüfen Sie den Ordner '{DUPLICATE_TARGET_DIR}'.")
+    print(f"Bitte überprüfen Sie den Ordner '{DUPLICATE_TARGET_DIR}'.")
     print("=" * 70)
 
 
 # Skript ausführen
-find_and_move_duplicates(SOURCE_DIR, ARCHIVE_DIRS, DUPLICATE_TARGET_DIR)
+if __name__ == '__main__':
+    # HINWEIS: Dieses Skript löscht Dateien aus den Archiv-Ordnern, indem es sie verschiebt!
+    find_and_move_duplicates(SOURCE_DIR, ARCHIVE_DIRS, DUPLICATE_TARGET_DIR)

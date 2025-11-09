@@ -1,4 +1,16 @@
-import os
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): dateiname_namen_titel_formatieren.py
+# Dateiname Vorschlag (Technisch): filename_capitalize_prefix.py
+#
+# Beschreibung: Dieses Skript durchsucht einen bestimmten Ordner und prüft alle
+#               Dateien, die das Namensschema '[Vorname Nachname]_...' aufweisen.
+#               Es ändert die Schreibweise im Präfix so, dass die Anfangsbuchstaben
+#               von Vor- und Nachnamen in Großbuchstaben umgewandelt werden
+#               (z.B. '[amy lee]_bild.jpg' wird zu '[Amy Lee]_bild.jpg').
+#               Dies dient der Standardisierung der Namenskonvention.
+# ==============================================================================
+
+import os  # Importiert das 'os'-Modul für Betriebssystem-Interaktionen
 
 # --- KONFIGURATION START ---
 # Der Ordner, in dem die Bilder liegen.
@@ -11,7 +23,7 @@ FOLDER_PATH = r'e:\Bilder2\Girls'
 def rename_files(folder):
     """
     Durchsucht einen Ordner nach Bilddateien und benennt sie um,
-    indem die Anfangsbuchstaben von Vor- und Nachnamen in Großbuchstaben umgewandelt werden.
+    indem die Anfangsbuchstaben von Vor- und Nachnamen im Präfix auf Großbuchstaben umgewandelt werden.
     """
     if not os.path.isdir(folder):
         print(f"Fehler: Der angegebene Ordner '{folder}' existiert nicht.")
@@ -33,7 +45,7 @@ def rename_files(folder):
                 end_of_name_part = filename.find(']_')
                 if end_of_name_part != -1:
 
-                    # Extrahiere den Teil mit Vor- und Nachnamen
+                    # Extrahiere den Teil mit Vor- und Nachnamen (z.B. 'amy lee' oder 'marie-louise')
                     name_part = filename[1:end_of_name_part]
 
                     # Splitte den Namen in Teile am ersten Leerzeichen
@@ -44,14 +56,20 @@ def rename_files(folder):
                         firstname = parts[0]
                         lastname = parts[1]
 
-                        # Setze die Anfangsbuchstaben auf Großbuchstaben
+                        # Setze die Anfangsbuchstaben auf Großbuchstaben (z.B. 'amy' -> 'Amy')
                         capitalized_firstname = firstname.capitalize()
                         capitalized_lastname = lastname.capitalize()
 
                         # Setze den neuen Namensteil zusammen
                         new_name_part = f"{capitalized_firstname} {capitalized_lastname}"
 
+                        # Prüfen, ob eine Änderung überhaupt notwendig ist
+                        if name_part == new_name_part:
+                            # print(f"  Keine Änderung notwendig: {filename}")
+                            continue
+
                         # Erstelle den neuen, vollständigen Dateinamen
+                        # Ersetze nur das erste Vorkommen (das ist der Präfix)
                         new_filename = filename.replace(name_part, new_name_part, 1)
 
                         # Zeige dem Benutzer die geplante Änderung

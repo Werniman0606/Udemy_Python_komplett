@@ -1,3 +1,15 @@
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): bilder_modellordner_taggen.py
+# Dateiname Vorschlag (Technisch): rename_prefix_model_folder.py
+#
+# Beschreibung: Dieses Skript durchläuft alle Unterordner in einem Basispfad
+#               (z.B. die "Modell-Ordner" unter "Vintage"). Es benennt alle
+#               Bilddateien in diesen Ordnern um, indem es den Namen des
+#               jeweiligen Modell-Ordners als Präfix in eckigen Klammern
+#               voranstellt (z.B. '1.jpg' in 'Peggy Sue' wird zu '[Peggy Sue]_1.jpg').
+#               Dateien, die bereits den korrekten Präfix besitzen, werden übersprungen.
+# ==============================================================================
+
 import os # Importiert das 'os'-Modul, das Funktionen für die Interaktion mit dem Betriebssystem bereitstellt.
 
 def rename_images_with_folder_name(base_path):
@@ -55,6 +67,7 @@ def rename_images_with_folder_name(base_path):
 
                     if extension.lower() in image_extensions:
                         # Prüft, ob die Datei bereits das gewünschte Namensformat hat.
+                        # Beispiel: Prüft, ob 'Peggy Sue]_1.jpg' mit '[Peggy Sue]_' beginnt.
                         if not filename.startswith(f"[{model_folder_name}]_"):
                             # Erstellt den neuen Dateinamen gemäß der Spezifikation:
                             # '[Modellordnername]_Originaldateiname.Originalerweiterung'

@@ -1,3 +1,13 @@
+# ==============================================================================
+# Dateiname Vorschlag: exiftool_selective_xmp_cleanup.py
+#
+# Beschreibung: Dieses Skript verwendet ExifTool, um selektiv unerwünschte
+#               XMP-Metadaten-Tags aus Bilddateien zu entfernen (zu "bereinigen").
+#               Es behält nur die in der ALLOWED_TAGS-Liste definierten XMP-
+#               Namespaces bei (z.B. digiKam oder mwg-rs) und löscht alle anderen.
+#               Die Originaldateien werden dabei direkt überschrieben.
+# ==============================================================================
+
 import os
 import subprocess
 import time
@@ -24,7 +34,7 @@ ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff', '.gif')
 
 def get_xmp_namespaces(file_path):
     """
-    Liest alle XMP-Namespaces einer Datei aus.
+    Liest alle XMP-Namespaces einer Datei aus, indem es ExifTool zur Abfrage nutzt.
     Gibt eine Liste von Namensräumen zurück, z.B. ['XMP-photoshop:', 'XMP-digiKam:'].
     """
     command = [EXIFTOOL_PATH, '-xmp:all', '-s', '-s', '-G1', file_path]
@@ -52,7 +62,8 @@ def get_xmp_namespaces(file_path):
 
 def remove_unwanted_tags(file_path):
     """
-    Entfernt alle XMP-Tags, die nicht in der ALLOWED_TAGS-Liste sind.
+    Bestimmt die zu löschenden XMP-Tags (alles außer ALLOWED_TAGS) und führt
+    den Löschvorgang mit ExifTool aus, wobei die Originaldatei überschrieben wird.
     """
     print(f"\n🔄 Verarbeite {os.path.basename(file_path)}...")
 
@@ -62,13 +73,14 @@ def remove_unwanted_tags(file_path):
     tags_to_delete = []
     for namespace in current_namespaces:
         if namespace not in ALLOWED_TAGS:
+            # Beispiel: Wenn 'XMP-photoshop:' nicht erlaubt ist, wird '-XMP-photoshop:all' erstellt
             tags_to_delete.append(f'-{namespace}all')
 
     if not tags_to_delete:
         print(f"✅ Keine unerwünschten XMP-Tags zum Entfernen gefunden.")
         return False
 
-    # NEUER Befehl: -overwrite_original_in_place
+    # NEUER Befehl: -overwrite_original_in_place sorgt für direktes Überschreiben ohne .original-Datei
     command = [EXIFTOOL_PATH] + tags_to_delete + ['-overwrite_original_in_place', file_path]
     print(f"DEBUG: Löschbefehl: {command}")
 
@@ -105,6 +117,7 @@ def main():
     processed_count = 0
     start_time = time.time()
 
+    # Durchläuft alle Dateien im Quellverzeichnis und seinen Unterordnern
     for root, dirs, files in os.walk(SOURCE_DIR):
         for file in files:
             file_path = os.path.join(root, file)

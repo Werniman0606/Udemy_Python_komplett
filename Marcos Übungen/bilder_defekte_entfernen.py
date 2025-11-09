@@ -1,3 +1,17 @@
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): bilder_defekte_entfernen.py
+# Dateiname Vorschlag (Technisch): exiftool_corrupted_file_cleaner.py
+#
+# Beschreibung: Dieses Skript durchsucht rekursiv ein Verzeichnis nach Bildern
+#               (JPEG/JPG) und prüft diese auf zwei Arten auf Defekte:
+#               1. Physische Größe: Die Datei muss größer sein als MINIMUM_FILE_SIZE.
+#               2. Struktur: ExifTool wird mit dem '-validate'-Befehl aufgerufen,
+#                  um Metadaten- und Dateistrukturfehler (z.B. "Truncated file")
+#                  zu erkennen.
+#               Alle als defekt identifizierten Dateien werden anschließend dauerhaft
+#               vom Dateisystem gelöscht.
+# ==============================================================================
+
 import os
 import subprocess
 import time
@@ -7,7 +21,7 @@ import time
 EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
 
 # Basisverzeichnis, in dem nach Bildern gesucht werden soll
-SOURCE_DIR = r'd:\extracted\rips'
+SOURCE_DIR = r'd:\RedditDownloads\reddit_sub_GermanCelebs'
 
 # Erlaubte Bildformate
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg')
@@ -24,6 +38,7 @@ def check_for_critical_errors(file_path):
     Prüft eine Bilddatei mit Exiftool auf kritische Fehler.
     Analysiert die gesamte Ausgabe, um visuelle Defekte zu erkennen.
     """
+    # '-validate' führt grundlegende Strukturprüfungen der Datei durch.
     command = [EXIFTOOL_PATH, '-validate', file_path]
 
     try:
@@ -36,22 +51,25 @@ def check_for_critical_errors(file_path):
             errors='ignore'
         )
 
+        # Die gesamte Ausgabe (stdout + stderr) wird analysiert
         output = (result.stdout + result.stderr).lower()
 
         critical_keywords = [
             "bad end of image",
-            "truncated file",
+            "truncated file", # Häufigstes Problem bei unvollständigen Downloads
             "corrupted file",
             "damaged file",
             "missing jpeg sos marker",
             "error",
         ]
 
+        # Wenn eines der kritischen Stichwörter gefunden wird, gilt die Datei als defekt
         if any(keyword in output for keyword in critical_keywords):
             print(f"⚠️ KRITISCHER FEHLER (Exiftool) gefunden in: {file_path}")
             print(f"   Exiftool-Ausgabe: {output.strip()}")
             return True
 
+        # Wenn Exiftool einen Fehlercode ungleich Null zurückgibt und es keine reine Warnung ist
         if result.returncode != 0 and "warning" not in output:
             print(f"⚠️ Exiftool gab einen Fehlercode ({result.returncode}) zurück für: {file_path}")
             print(f"   Exiftool-Ausgabe: {output.strip()}")
@@ -60,7 +78,8 @@ def check_for_critical_errors(file_path):
         return False
 
     except FileNotFoundError:
-        print(f"❌ Fehler: Exiftool-Pfad '{EXIFTOOL_PATH}' ist ungültig. Skript wird beendet.")
+        # Hier wird nur der Fehler gemeldet, da die Hauptfunktion dies bereits prüft.
+        print(f"❌ Fehler: Exiftool-Pfad '{EXIFTOOL_PATH}' ist ungültig. Prüfung übersprungen.")
         return False
     except Exception as e:
         print(f"❌ Unerwarteter Fehler bei der Prüfung von '{file_path}': {e}")
@@ -100,14 +119,16 @@ def main():
             if file.lower().endswith(ALLOWED_EXTENSIONS):
                 checked_count += 1
 
-                # Führt beide Prüfungen durch
+                # Führt beide Prüfungen durch (Dateigröße ODER kritischer Exiftool-Fehler)
                 if check_for_critical_errors(file_path) or check_file_size(file_path):
                     print(f"❗ Defektes Bild gefunden: {file_path}")
                     files_to_delete.append(file_path)
                 else:
-                    print(f"✅ {file_path} scheint in Ordnung zu sein.")
+                    # Optional: Zeile auskommentieren, wenn die Ausgabe nur bei Fehlern erfolgen soll
+                    # print(f"✅ {file_path} scheint in Ordnung zu sein.")
+                    pass
 
-    print("\n---")
+    print("\n" + "=" * 50)
     print(f"Prüfung abgeschlossen. {len(files_to_delete)} Dateien werden gelöscht.")
     print("Starte den Löschvorgang...")
 
@@ -121,12 +142,15 @@ def main():
     end_time = time.time()
     duration = end_time - start_time
 
-    print("\n---")
+    print("\n" + "=" * 50)
     print("Vorgang abgeschlossen.")
     print(f"Insgesamt {checked_count} Dateien überprüft.")
     print(f"Insgesamt {len(files_to_delete)} defekte Dateien gelöscht.")
     print(f"Dauer: {duration:.2f} Sekunden")
+    print("=" * 50)
 
 
 if __name__ == '__main__':
+    # ACHTUNG: Das Skript löscht Dateien permanent! Vor der ersten Ausführung
+    # auf einer Kopie testen oder die os.remove-Zeile auskommentieren.
     main()

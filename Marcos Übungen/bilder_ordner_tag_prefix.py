@@ -1,3 +1,16 @@
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): bilder_ordner_tag_prefix.py
+# Dateiname Vorschlag (Technisch): rename_prefix_if_missing.py
+#
+# Beschreibung: Dieses Skript durchläuft alle Unterordner ab einem Basispfad
+#               (SOURCE_DIR) und versieht die Bilddateien in diesen Ordnern mit
+#               einem Präfix. Das Präfix ist der Name des jeweiligen
+#               Elternordners in eckigen Klammern, gefolgt von einem Unterstrich
+#               (z.B. [Beatrice Egli]_). Dateien, die bereits ein beliebiges
+#               Präfix im Format '[...]_' besitzen, werden übersprungen, um
+#               Doppeltagging oder Konflikte zu vermeiden.
+# ==============================================================================
+
 import os
 import time
 import re # Importiere das Modul für reguläre Ausdrücke
@@ -29,7 +42,7 @@ def main():
 
     # Walk through the source directory and its subdirectories
     for root, dirs, files in os.walk(SOURCE_DIR):
-        # Exclude the base directory itself
+        # Exclude the base directory itself (da das Basis-Verzeichnis i.d.R. keinen Namen hat)
         if root == SOURCE_DIR:
             continue
 
@@ -43,19 +56,10 @@ def main():
             # Check if the file is an allowed image format
             if file.lower().endswith(ALLOWED_EXTENSIONS):
 
-                # *** WICHTIGE NEUE PRÜFUNG HIER ***
-                # 1. Prüfen, ob der Dateiname BEREITS das notwendige Präfix des aktuellen Ordners hat (alte Logik)
-                # 2. Prüfen, ob der Dateiname ein beliebiges Präfix in der Form "[...]_" hat (neue Logik)
-
                 # Prüfe mit Regex, ob ein beliebiges Namens-Präfix in eckigen Klammern vorhanden ist
                 if re.match(PRE_EXISTING_PREFIX_PATTERN, file):
                     print(f"➡️ Skipping: '{file}' (Prefix '[...]_' already exists from another script)")
                     continue  # Springe zur nächsten Datei, da die Datei bereits "getaggt" ist
-
-                # HINWEIS: Wenn du die alte Prüfung (nur auf das eigene Präfix) zusätzlich behalten willst,
-                # weil du die Regex-Prüfung zu breit findest:
-                # if file.startswith(required_prefix) or re.match(PRE_EXISTING_PREFIX_PATTERN, file):
-                #     ...
 
                 # Wenn keine eckigen Klammern vorhanden sind, wird normal umbenannt:
                 file_path = os.path.join(root, file)

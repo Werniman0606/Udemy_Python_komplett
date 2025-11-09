@@ -1,4 +1,17 @@
-import os # Importiert das 'os'-Modul für Betriebssystem-Interaktionen
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): bilder_videos_initial_sortierung.py
+# Dateiname Vorschlag (Technisch): initial_folder_creator_sorter.py
+#
+# Beschreibung: Dieses Skript dient der Erstorganisation von Dateien (Bilder und
+#               Videos), die sich direkt im Basispfad befinden. Es erwartet, dass
+#               diese Dateien nach dem Muster "[Personenname]_..." benannt sind.
+#               Basierend auf dem extrahierten Namen erstellt es automatisch die
+#               vollständige Zielordnerstruktur (Buchstabenordner und Personenordner)
+#               und verschiebt die Datei dorthin. Es unterstützt nun auch Videoformate.
+# ==============================================================================
+
+import os  # Importiert das 'os'-Modul für Betriebssystem-Interaktionen
+
 
 def organize_celebrity_images(base_path):
     """
@@ -36,9 +49,9 @@ def organize_celebrity_images(base_path):
         old_file_path = os.path.join(base_path, filename)
 
         if os.path.isfile(old_file_path):
-            name, extension = os.path.splitext(filename)
+            # Prüfen der Dateiendung (case-insensitive)
+            _, extension = os.path.splitext(filename)
 
-            # Überprüfung gegen die erweiterte Liste der erlaubten Erweiterungen
             if extension.lower() in allowed_extensions:
                 # Prüfen, ob die Datei dem Muster '[Personenname]_' entspricht
                 # Das Muster beginnt mit '[' und endet mit ']_'
@@ -48,7 +61,13 @@ def organize_celebrity_images(base_path):
                         # Beispiel: '[Amy Lee]_Anette Olzon.jpg' -> 'Amy Lee'
                         person_name_end_index = filename.find(']_')
                         if person_name_end_index != -1:
-                            person_folder_name = filename[1:person_name_end_index] # Von nach '[' bis vor ']_'
+                            person_folder_name = filename[1:person_name_end_index]  # Von nach '[' bis vor ']_'
+
+                            # Sicherstellen, dass der extrahierte Name nicht leer ist
+                            if not person_folder_name:
+                                print(f"  Überspringe '{filename}': Personenname im Präfix ist leer.")
+                                continue
+
                             # Den ersten Buchstaben des Personennamens als Buchstaben-Ordner verwenden
                             char_folder_name = person_folder_name[0].upper()
 
@@ -68,15 +87,18 @@ def organize_celebrity_images(base_path):
                                 os.makedirs(person_folder_path)
 
                             # Datei verschieben
-                            if not os.path.exists(new_file_path): # Nur verschieben, wenn Zieldatei noch nicht existiert
+                            if not os.path.exists(
+                                    new_file_path):  # Nur verschieben, wenn Zieldatei noch nicht existiert
                                 os.rename(old_file_path, new_file_path)
-                                print(f"  Verschoben: '{filename}' nach '{new_file_path}'")
+                                print(f"  ✅ VERSCHOBEN: '{filename}' nach '{new_file_path}'")
                             else:
                                 print(f"  Überspringe '{filename}': Zieldatei '{new_file_path}' existiert bereits.")
                         else:
-                            print(f"  Überspringe '{filename}': Ungültiges Namensformat im Basispfad.")
+                            print(f"  Überspringe '{filename}': Ungültiges Namensformat im Basispfad (kein ']_').")
                     except OSError as e:
                         print(f"  Fehler beim Verschieben von '{filename}': {e}")
+                    except IndexError:
+                        print(f"  Überspringe '{filename}': Fehler beim Extrahieren des Namens (Indexfehler).")
                 else:
                     print(f"  Überspringe '{filename}' im Basispfad (entspricht nicht dem '[Name]_'-Muster).")
             else:
@@ -89,7 +111,7 @@ def organize_celebrity_images(base_path):
 
 # --- Verwendung des Skripts ---
 if __name__ == "__main__":
-    base_directory = r'd:\RedditDownload\reddit_sub_GermanCelebs'
+    base_directory = r'd:\extracted\rips\Unsortiert'
 
     # --- SICHERHEITSHINWEIS ---
     # Dieses Skript nimmt permanente Änderungen an deinen Dateinamen und Dateipfaden vor.

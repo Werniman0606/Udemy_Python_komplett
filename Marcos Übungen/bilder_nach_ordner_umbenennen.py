@@ -1,3 +1,15 @@
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): bilder_nach_ordner_umbenennen.py
+# Dateiname Vorschlag (Technisch): rename_prefix_with_folder.py
+#
+# Beschreibung: Dieses Skript durchläuft rekursiv (inklusive Unterordnern)
+#               alle Bilddateien ab einem Basispfad. Es benennt jede Bilddatei
+#               um, indem es den Namen ihres direkten Elternordners in eckigen
+#               Klammern als Präfix vor den ursprünglichen Dateinamen setzt.
+#               (Beispiel: 1.jpg in Ordner "Stars" wird zu [Stars]_1.jpg).
+#               Bereits getaggte Dateien werden übersprungen.
+# ==============================================================================
+
 import os
 import shutil
 
@@ -40,7 +52,7 @@ def rename_images_with_folder_name(base_path):
                 name, extension = os.path.splitext(filename)
 
                 # Construct the new filename
-                # Example: [Bonnie Tyler]_1.jpg
+                # Example: 1.jpg in Ordner "Bonnie Tyler" wird zu [Bonnie Tyler]_1.jpg
                 new_filename = f"[{parent_folder_name}]_{name}{extension}"
                 new_file_path = os.path.join(root, new_filename)
 
@@ -59,7 +71,7 @@ def rename_images_with_folder_name(base_path):
 if __name__ == "__main__":
     # Define the base directory.
     # IMPORTANT: Use a "raw string" (r'...') to avoid issues with backslashes.
-    base_directory = r'd:\extracted\rips\reddit_sub_GermanCelebs'
+    base_directory = r'e:\Celebrities'
 
     # A complete backup of your files is strongly recommended before running any script that modifies them.
     # It's also a good idea to first test the script on a small, dedicated test folder.

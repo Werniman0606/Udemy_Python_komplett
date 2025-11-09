@@ -1,3 +1,18 @@
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): exif_fehlerhafte_face_tags_loeschen.py
+# Dateiname Vorschlag (Technisch): exiftool_incomplete_tag_cleaner.py
+#
+# Beschreibung: Dieses Skript durchsucht rekursiv ein Verzeichnis nach Bildern
+#               und identifiziert "unvollständige" Personen-Tags. Diese treten auf,
+#               wenn ein Personenname (XMP-MP:RegionPersonDisplayName) gespeichert ist,
+#               aber die zugehörige Gesichtsregion/Koordinate
+#               (XMP-MP:RegionPersonRegion) fehlt.
+#               Um die Inkonsistenz zu beheben, wird die gesamte XMP-Struktur
+#               aus der betroffenen Datei entfernt und die Datei neu geschrieben.
+#               Dies ist eine radikale, aber effektive Methode zur Bereinigung
+#               fehlerhafter Metadaten.
+# ==============================================================================
+
 import os
 import subprocess
 import time
@@ -17,10 +32,11 @@ ALLOWED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.webp', '.tif', '.tiff', '.gif')
 
 def check_for_incomplete_tags(file_path):
     """
-    Prüft, ob eine Datei einen Namenstag, aber keine Region hat.
+    Prüft, ob eine Datei einen Namenstag (DisplayName), aber keine Region (Region) hat.
     Gibt True zurück, wenn ein unvollständiger Tag gefunden wird.
     """
     try:
+        # Fragt explizit nach beiden Tags im Tabulator-getrennten Format (-T).
         command = f'chcp 65001 & "{EXIFTOOL_PATH}" -XMP-MP:RegionPersonDisplayName -XMP-MP:RegionPersonRegion -T "{file_path}"'
         result = subprocess.run(
             command,
@@ -34,8 +50,11 @@ def check_for_incomplete_tags(file_path):
         )
         output_list = result.stdout.strip().split('\t')
 
-        if len(output_list) == 2 and output_list[0] != '-' and output_list[1] == '-':
-            print(f"⚠️ Unvollständiger Tag gefunden in: {file_path}")
+        # Logik für unvollständigen Tag: DisplayName ist vorhanden ('-') UND Region ist NICHT vorhanden ('-')
+        if len(output_list) == 2 and output_list[0].strip() != '-' and output_list[1].strip() == '-':
+            # Umfassendere Prüfung: Überprüfen, ob die tatsächlichen Listenlängen übereinstimmen müssten
+            # (Dieser Ansatz ist einfacher und deckt den häufigsten Fehlerfall ab)
+            print(f"⚠️ UNVOLLSTÄNDIGER TAG gefunden in: {file_path}")
             return True
         return False
 
@@ -46,12 +65,14 @@ def check_for_incomplete_tags(file_path):
 
 def remove_digikam_tags(file_path):
     """
-    Löscht alle XMP-Tags aus der Datei, indem die Datei neu aufgebaut wird.
+    Löscht ALLE XMP-Tags aus der Datei, indem die Datei neu aufgebaut wird
+    (kopiert alle Tags außer XMP in eine temporäre Datei und benennt um).
     """
     try:
         # Erstellt eine neue Datei, wobei die gesamte XMP-Struktur ausgeschlossen wird.
         temp_file = file_path + '.temp'
-        command = f'chcp 65001 & "{EXIFTOOL_PATH}" -tagsFromFile "{file_path}" -xmp:all -o "{temp_file}" "{file_path}"'
+        # -tagsFromFile liest alle Tags; -xmp:all schließt explizit alle XMP-Tags aus
+        command = f'chcp 65001 & "{EXIFTOOL_PATH}" -tagsFromFile "{file_path}" -XMP:All= -o "{temp_file}" "{file_path}"'
         result = subprocess.run(
             command,
             stdout=subprocess.PIPE,
@@ -63,10 +84,12 @@ def remove_digikam_tags(file_path):
             errors='ignore'
         )
 
+        # Prüfen, ob ExifTool die neue Datei erfolgreich erstellt hat
         if "1 image files created" in result.stdout:
+            # Originaldatei löschen und temporäre Datei umbenennen
             os.remove(file_path)
             os.rename(temp_file, file_path)
-            print(f"✅ Tags erfolgreich gelöscht aus: {file_path}")
+            print(f"✅ XMP-Tags erfolgreich gelöscht und Datei bereinigt: {file_path}")
             return True
         else:
             print(f"❌ Fehler beim Löschen von Tags in: {file_path}")
@@ -76,9 +99,8 @@ def remove_digikam_tags(file_path):
             return False
 
     except Exception as e:
-        print(f"❌ Fehler beim Löschen von Tags für {file_path}: {e}")
+        print(f"❌ Unerwarteter Fehler beim Löschen von Tags für {file_path}: {e}")
         return False
-
 
 
 def main():
@@ -89,6 +111,11 @@ def main():
         print(f"❌ Fehler: Quellverzeichnis '{SOURCE_DIR}' nicht gefunden.")
         return
 
+    # Sicherheitsprüfung für Exiftool
+    if not os.path.isfile(EXIFTOOL_PATH):
+        print(f"❌ Fehler: Exiftool-Pfad '{EXIFTOOL_PATH}' ist ungültig. Skript wird beendet.")
+        return
+
     removed_count = 0
     start_time = time.time()
 
@@ -97,18 +124,21 @@ def main():
             file_path = os.path.join(root, file)
             if file.lower().endswith(ALLOWED_EXTENSIONS):
                 if check_for_incomplete_tags(file_path):
+                    # Nur wenn ein unvollständiger Tag gefunden wird, wird der Löschvorgang gestartet
                     if remove_digikam_tags(file_path):
                         removed_count += 1
                 else:
-                    print(f"➡️ Keine unvollständigen Tags gefunden in: {file_path}")
+                    # print(f"➡️ Keine unvollständigen Tags gefunden in: {file_path}")
+                    pass  # Kommentiert, um die Konsolenausgabe zu reduzieren
 
     end_time = time.time()
     duration = end_time - start_time
 
-    print("\n---")
+    print("\n" + "=" * 50)
     print("Vorgang abgeschlossen.")
-    print(f"Insgesamt {removed_count} Dateien bereinigt.")
+    print(f"Insgesamt {removed_count} Dateien bereinigt (XMP-Tags entfernt).")
     print(f"Dauer: {duration:.2f} Sekunden")
+    print("=" * 50)
 
 
 if __name__ == '__main__':

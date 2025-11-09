@@ -1,12 +1,31 @@
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): bilder_nach_name_sortieren_uebergreifend.py
+# Dateiname Vorschlag (Technisch): cross_folder_celebrity_sorter.py
+#
+# Beschreibung: Dieses Skript dient der automatischen Sortierung von Dateien.
+#               Es gleicht Dateien aus einem Quellordner (folder_with_files_to_move,
+#               z.B. ein Sammelordner) mit einer bereits bestehenden,
+#               durch Personenordner organisierten Zielstruktur (source_folder_with_celebs) ab.
+#
+#               Die Zuordnung erfolgt in zwei Prioritäten:
+#               1. Höchste Priorität: Der Name eines Prominenten wird im Namen des
+#                  aktuellen Quellordners (root) gesucht.
+#               2. Zweite Priorität: Der LÄNGSTE passende Prominentenname wird im
+#                  Dateinamen (filename) gesucht (Best-Match-Logik).
+#               Bei erfolgreichem Abgleich wird die Datei in den entsprechenden
+#               Zielordner unter e:\Bilder\Celebrities verschoben.
+# ==============================================================================
+
 import os
 import shutil
+import re # Obwohl re in der Hauptlogik nicht direkt verwendet wird, ist es nützlich für die Namensextraktion
 
 # --- Definiere die Pfade ---
 # Der Ordner, der die Personenordner enthält. os.walk durchsucht diesen rekursiv.
-source_folder_with_celebs = r'e:\Celebrities'
+source_folder_with_celebs = r'e:\Bilder\Celebrities'
 
 # Der Ordner, der die zu verschiebenden Dateien enthält. os.walk durchsucht diesen ebenfalls rekursiv.
-folder_with_files_to_move = r'd:\RedditDownloads\reddit_sub_GermanCelebs'
+folder_with_files_to_move = r'd:\Bilder'
 
 # --- 1. Personenordner und Namen sammeln (rekursiv) ---
 print(f"Sammle Namen aus allen Unterordnern in: {source_folder_with_celebs}\n")
@@ -74,7 +93,8 @@ for root, _, files in os.walk(folder_with_files_to_move):
             for celeb_name_lower in celeb_folders.keys():
                 # Prüfe, ob der Dateiname den Prominentennamen (in Kleinbuchstaben) enthält.
                 if celeb_name_lower in filename.lower():
-                    # Wähle den längsten Namen, der gefunden wurde.
+                    # Wähle den längsten Namen, der gefunden wurde, um Kurznamen (z.B. "Ann")
+                    # nicht vor längeren Namen (z.B. "Annabelle") zu priorisieren.
                     if len(celeb_name_lower) > best_match_length:
                         best_match_length = len(celeb_name_lower)
                         best_match_name = celeb_name_lower

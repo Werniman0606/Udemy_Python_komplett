@@ -4,22 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="15.10.2025">
-      <change afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Practise Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Sample Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Busführerschein/General Knowledge Practise Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Busführerschein/General Knowledge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Busführerschein/Passenger Endorsement.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Busführerschein/Practise Passenger Transport Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Busführerschein/S Endorsement Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Umbenannte FIles auf doppelte Namen prüfen.py" afterDir="false" />
+    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="25.10.2025">
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/Bilder_abgleich_nach_vorname.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_auto_sortierung_neuordner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_face_tagging_verschieben.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_tag_qualitaet_sortierer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/dateien_nach_muster_in_chaosordner_verschieben.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/dateiendung_korrigieren.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/dateiname_aus_digikam_tags_rekonstruieren.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/dateiname_prefix_aus_name_setzen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/dateiname_prefix_jahr_verschieben.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/dateiname_tag_haeufigkeit_zaehlen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/dateisuche_pfad_ueberpruefung.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/laengster_dateiname_finden.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/tagging_inkonsistenzen_finden.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder nach ihrem Ordner benennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder nach ihrem Ordner benennen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bilder von Personen finden,zu denen es einen Ordner gibt.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder von Personen finden,zu denen es einen Ordner gibt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Echten Dateityp prüfen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Echten Dateityp prüfen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RipMe-Ordner aufräumen, indem Bilder in den Subreddit-Ordner verschoben und Unterordner gelöscht werden.py" beforeDir="false" afterPath="$PROJECT_DIR$/RipMe-Ordner aufräumen, indem Bilder in den Subreddit-Ordner verschoben und Unterordner gelöscht werden.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alle-Nicht-Digikam-Tags löschen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/exif_metadaten_bereinigung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BIlder suchen und in Unterordner verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_name_sortieren_uebergreifend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bilder in Ordnern nach Ordner benennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_ordner_umbenennen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bilder nach ihrem Ordner benennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_ordner_tag_prefix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bilder taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/exif_namen_aus_dateiname_taggen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bilder von Personen finden,zu denen es einen Ordner gibt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Air Brake Practise Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Practise Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Air Brake Sample Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Sample Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Air Brake Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/General Knowledge Practise Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/General Knowledge Practise Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/General Knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/General Knowledge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Passenger Endorsement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Passenger Endorsement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Practise Passenger Transport Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Practise Passenger Transport Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/S Endorsement Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/S Endorsement Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateien verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_videos_initial_sortierung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/exif_prefix_umbenennung_zwei_stufen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateiname umbenennen 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_modellordner_taggen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateinamen umbenennen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dateinamensformat ändern.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/dateiname_namen_titel_formatieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Defekte Bilder löschen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_defekte_entfernen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Doppelte MP3s finden und auf D verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/mp3_archiv_duplikat_bereinigung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Echten Dateityp prüfen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gepackte Dateien aufräumen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/installer_duplikate_manuell_bereinigen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Getaggte Bilder verschieben.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Löscht Tags ohne Region.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/exif_fehlerhafte_face_tags_loeschen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fibonacci.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelnamen erkennen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Namenskorrektur der Ordner im Ripme-Ordner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/ordnernamen_fuzzy_korrigieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RipMe-Ordner aufräumen, indem Bilder in den Subreddit-Ordner verschoben und Unterordner gelöscht werden.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/ordner_entschachteln_pfadlimit_umgehen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testskript.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Textdateien ersetzen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Umbenannte FIles auf doppelte Namen prüfen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zeichenzählen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/komplett getaggte Bilder verschieben.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,14 +162,17 @@
     "Python.DoppelteDateipfade.executor": "Run",
     "Python.Echten Dateityp prüfen.executor": "Run",
     "Python.Fibonacci.executor": "Run",
+    "Python.Files verschieben nach Namensabgleich.executor": "Run",
     "Python.General Knowledge Practise Test.executor": "Run",
     "Python.General Knowledge.executor": "Run",
     "Python.Generatoren-Demo.executor": "Run",
     "Python.Gepackte Dateien aufräumen.executor": "Run",
     "Python.Getaggte Bilder verschieben.executor": "Run",
+    "Python.Häufigsten Personennamen im Dateinamen finden.executor": "Run",
     "Python.Löscht Tags ohne Region.executor": "Run",
     "Python.Modelnamen erkennen.executor": "Run",
     "Python.Namenskorrektur der Ordner im Ripme-Ordner.executor": "Run",
+    "Python.Nicht-Modelnamen erkennen und verschieben.executor": "Run",
     "Python.Passenger Endorsement.executor": "Run",
     "Python.Practise Passenger Transport Test.executor": "Run",
     "Python.RipMe-Ordner aufräumen, indem Bilder in den Subreddit-Ordner verschoben und Unterordner gelöscht werden.executor": "Run",
@@ -147,12 +183,23 @@
     "Python.Umlauf-Fix-Script.executor": "Run",
     "Python.Wechselkursrechner.executor": "Run",
     "Python.Zeichenzählen.executor": "Run",
+    "Python.bilder_defekte_entfernen.executor": "Run",
+    "Python.bilder_nach_ordner_umbenennen.executor": "Run",
     "Python.crawler.executor": "Run",
     "Python.datei.executor": "Run",
+    "Python.dateiendung_korrigieren.executor": "Run",
+    "Python.dateiname_aus_digikam_tags_rekonstruieren.executor": "Run",
+    "Python.dateiname_prefix_aus_name_setzen.executor": "Run",
+    "Python.installer_duplikate_manuell_bereinigen.executor": "Run",
     "Python.komplett getaggte Bilder verschieben.executor": "Run",
+    "Python.laengster_dateiname_finden.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.mp3_archiv_duplikat_bereinigung.executor": "Run",
+    "Python.ordner_entschachteln_pfadlimit_umgehen.executor": "Run",
+    "Python.ordnernamen_fuzzy_korrigieren.executor": "Run",
     "Python.scratch.executor": "Run",
     "Python.setup.executor": "Run",
+    "Python.tagging_inkonsistenzen_finden.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -169,6 +216,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu\Marcos Übungen" />
       <recent name="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu" />
     </key>
   </component>
@@ -303,7 +351,29 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dateiname aus Facetags generieren.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu\Marcos Übungen\exif_prefix_umbenennung_zwei_stufen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dateiname_prefix_aus_name_setzen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Udemy_Python_komplett" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu\Marcos Übungen\dateiname_prefix_aus_name_setzen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -320,7 +390,13 @@
       <item itemvalue="Python.DoppelteDateipfade" />
       <item itemvalue="Python.Umlauf-Fix-Script" />
       <item itemvalue="Python.4.32 Elif" />
+      <item itemvalue="Python.dateiname_prefix_aus_name_setzen" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dateiname_prefix_aus_name_setzen" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -340,14 +416,6 @@
       <workItem from="1747400300857" duration="235000" />
       <workItem from="1747400697411" duration="1867000" />
       <workItem from="1747487718166" duration="31000" />
-    </task>
-    <task id="LOCAL-00006" summary="09.03.2025">
-      <option name="closed" value="true" />
-      <created>1741535500348</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1741535500348</updated>
     </task>
     <task id="LOCAL-00007" summary="09.03.2025">
       <option name="closed" value="true" />
@@ -733,7 +801,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760550624980</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="25.10.2025">
+      <option name="closed" value="true" />
+      <created>1761415126038</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1761415126038</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -754,7 +830,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10.02.2025" />
     <MESSAGE value="09.03.2025" />
     <MESSAGE value="10.03.2025" />
     <MESSAGE value="17.03.2025" />
@@ -779,7 +854,8 @@
     <MESSAGE value="18.08.25" />
     <MESSAGE value="06.10.2025" />
     <MESSAGE value="15.10.2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="15.10.2025" />
+    <MESSAGE value="25.10.2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="25.10.2025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

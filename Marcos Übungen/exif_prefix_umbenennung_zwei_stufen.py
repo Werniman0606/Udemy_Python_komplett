@@ -1,10 +1,25 @@
+# ==============================================================================
+# Dateiname Vorschlag (Deutsch): exif_prefix_umbenennung_zwei_stufen.py
+# Dateiname Vorschlag (Technisch): exiftool_tag_to_filename_two_stage.py
+#
+# Beschreibung: Dieses Skript liest die in den XMP-Metadaten (speziell
+#               TagsList/Personen-Tags) gespeicherten Personennamen aus
+#               Bilddateien. Es generiert daraus einen Präfix im Format
+#               "[Name1, Name2]_" und benennt die Datei in einem
+#               Zwei-Stufen-Prozess um (erst mit Umlaut-Ersatz, dann mit
+#               korrekten Umlauten), um Kompatibilitätsprobleme zu umgehen.
+#               Die Umbenennung wird nur durchgeführt, wenn der aktuelle Name
+#               nicht dem erforderlichen Zielnamen entspricht.
+# ==============================================================================
+
 import os
 import subprocess
 import json
 import codecs
+import re
 
 # Konfigurieren des zu durchsuchenden Ordners
-ROOT_FOLDER = r"e:\Bilder\Celebrities"
+ROOT_FOLDER = r"d:\RedditDownloads\reddit_sub_GermanCelebs"
 
 # EXIFTOOL PFAD ANPASSUNG
 EXIFTOOL_PATH = r"d:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe"
@@ -12,10 +27,11 @@ EXIFTOOL_PATH = r"d:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe"
 
 def get_persons_from_file(filepath):
     """
-    Ruft ExifTool auf, um die TagsList zu lesen und extrahiert die Personennamen.
-    Entfernt doppelte Namen.
+    Ruft ExifTool auf, um die TagsList zu lesen (im JSON-Format) und extrahiert
+    die Personennamen, die mit "Personen/" beginnen. Entfernt doppelte Namen.
     """
     persons = []
+    # -j gibt die Ausgabe als JSON, -TagsList liest das Tag
     cmd = [EXIFTOOL_PATH, '-TagsList', '-j', filepath]
 
     try:
@@ -28,6 +44,7 @@ def get_persons_from_file(filepath):
         if output_json and output_json[0] and 'TagsList' in output_json[0]:
             digikam_tags = output_json[0]['TagsList']
 
+            # TagsList kann eine Liste oder ein einzelner String sein
             if isinstance(digikam_tags, list):
                 for tag in digikam_tags:
                     if tag.startswith("Personen/"):
@@ -48,8 +65,8 @@ def get_persons_from_file(filepath):
 
 def create_prefix(persons, safe_mode=False):
     """
-    Erstellt den Dateinamen-Präfix. Die Personen werden sortiert.
-    Wenn safe_mode=True, werden Umlaute ersetzt (Stufe 1).
+    Erstellt den Dateinamen-Präfix. Die Personen werden alphabetisch sortiert.
+    Wenn safe_mode=True, werden Umlaute ersetzt (ä -> ae, etc.) für die Stufe 1.
     """
     replacements = {
         'ä': 'ae', 'Ä': 'Ae',
@@ -75,6 +92,7 @@ def create_prefix(persons, safe_mode=False):
 def find_existing_prefix(filename):
     """
     Prüft, ob der Dateiname mit einem Präfix in eckigen Klammern beginnt und gibt diesen zurück.
+    Der Präfix muss mit '_]' enden, um gültig zu sein.
     """
     if filename.startswith('['):
         try:
@@ -90,7 +108,8 @@ def find_existing_prefix(filename):
 
 def rename_file_with_persons(filepath, persons):
     """
-    Benennt die Datei in zwei Schritten um: erst mit Ersatzzeichen, dann mit korrekten Umlauten.
+    Benennt die Datei in zwei Schritten um: erst mit Ersatzzeichen (Safe), dann mit korrekten Umlauten (Final).
+    Diese zweistufige Logik dient zur Vermeidung von Problemen bei der Umbenennung von Umlaut-Namen.
     """
     if not persons:
         return False
@@ -108,10 +127,10 @@ def rename_file_with_persons(filepath, persons):
 
     existing_prefix = find_existing_prefix(original_basename)
     if existing_prefix:
-        # **KORREKTUR:** Schneide den erkannten, alten Präfix vom Namen ohne Endung ab
+        # Schneide den erkannten, alten Präfix vom Namen ohne Endung ab
         base_name = filename_without_ext[len(existing_prefix):]
 
-    # --- 3. Neuberechnung der vollständigen neuen Pfade basierend auf dem KORRIGIERTEN Basisnamen ---
+    # --- 3. Neuberechnung der vollständigen neuen Pfade ---
 
     new_basename_safe = f"{safe_prefix}{base_name}{ext}"
     new_filepath_safe = os.path.join(original_dirname, new_basename_safe)
@@ -121,16 +140,14 @@ def rename_file_with_persons(filepath, persons):
 
     # Prüfen, ob der Dateiname bereits dem finalen, korrekten Schema entspricht
     if original_basename == new_basename_final:
-        # Dies ist der Zustand, in dem die Datei korrekt benannt ist (z.B. neue Gesichter == alte Gesichter)
-        return False
+        return False # Bereits korrekt benannt.
 
     # --- 4. Ausführung der Umbenennungslogik ---
 
     # Fall A: Originalname beginnt mit Safe-Präfix (Datei ist auf Stufe 1, muss auf Stufe 2)
-    # Beachte: Wir müssen den ursprünglichen Dateinamen verwenden, da wir den Pfad umbenennen.
     if existing_prefix and existing_prefix == safe_prefix:
         if safe_prefix == final_prefix:
-            return False  # Keine Umlaute, Stufe 1 ist bereits Stufe 2
+            return False # Keine Umlaute, Stufe 1 ist bereits Stufe 2
 
         try:
             if os.path.exists(new_filepath_final):
@@ -144,11 +161,9 @@ def rename_file_with_persons(filepath, persons):
             print(f"FEHLER beim Umbenennen (Stufe 1 -> Stufe 2) von '{original_basename}': {e}")
             return False
 
-    # Fall B: Allgemeine Umbenennung (Original -> Safe -> Final). Gilt auch für Aktualisierungen!
-    # Da original_basename != new_basename_final ist (siehe oben), wird umbenannt.
+    # Fall B: Allgemeine Umbenennung (Original/Aktualisierung -> Safe -> Final).
     try:
         # SCHRITT 1: Original oder Alter Präfix -> Safe (mit ae/oe/ue)
-        # Wir müssen in den neuen safe-Namen umbenennen
         os.rename(filepath, new_filepath_safe)
         print(f"Umbenannt (Original/Aktualisiert -> Stufe 1): '{original_basename}' -> '{new_basename_safe}'")
 
@@ -166,7 +181,7 @@ def rename_file_with_persons(filepath, persons):
             print(f"Umbenannt (Stufe 1 -> Stufe 2): '{new_basename_safe}' -> '{new_basename_final}'")
             return True
 
-        return True  # Umbenennung zu Stufe 1 ist der finale Zustand
+        return True  # Umbenennung zu Stufe 1 ist der finale Zustand (keine Umlaute)
 
     except FileExistsError:
         print(
@@ -179,7 +194,7 @@ def rename_file_with_persons(filepath, persons):
 
 def main():
     """
-    Hauptfunktion, die den Ordner durchläuft und Dateien verarbeitet.
+    Hauptfunktion, die den Ordner rekursiv durchläuft und Dateien verarbeitet.
     """
     if not os.path.isdir(ROOT_FOLDER):
         print(f"Fehler: Der angegebene Ordner '{ROOT_FOLDER}' existiert nicht.")
@@ -200,7 +215,7 @@ def main():
             if not filename.lower().endswith(('.jpg', '.jpeg', '.png', '.gif')):
                 continue
 
-            # Liest immer die aktuellen Metadaten, um den erforderlichen Namenspräfix zu bestimmen
+            # Liest die aktuellen Metadaten, um den erforderlichen Namenspräfix zu bestimmen
             persons = get_persons_from_file(filepath)
 
             if rename_file_with_persons(filepath, persons):
