@@ -21,7 +21,7 @@ import re
 
 # --- Konfiguration ---
 # Der Ordner, der die zu sortierenden Dateien enthält (z.B. 'Vintage')
-source_directory = r'e:\Bilder\Celebrities\V\Vintage'
+source_directory = r'd:\extracted\rips\reddit_sub_VintageSmut'
 # Der Name des Unterordners, in den die "Chaos"-Dateien verschoben werden
 chaos_directory_name = 'Chaos'
 # Der vollständige Zielpfad (wird automatisch erstellt: source_directory/Chaos)
@@ -89,4 +89,3 @@ print(f"\n--- Prozess abgeschlossen! ---")
 print(f"Dateien verschoben (Chaos-Muster): {moved_count}")
 print(f"Dateien übersprungen (Behalten): {skipped_count}")
 
-Would you like to try running this process on a different directory or define a new set of 'Chaos' patterns?

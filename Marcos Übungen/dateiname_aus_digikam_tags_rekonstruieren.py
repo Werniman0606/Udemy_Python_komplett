@@ -14,7 +14,7 @@ import codecs
 import re  # Füge re für die find_existing_prefix Korrektur hinzu
 
 # Konfigurieren des zu durchsuchenden Ordners
-ROOT_FOLDER = r"e:\Bilder\Celebrities\A\Alena Gerber"
+ROOT_FOLDER = r"e:\Bilder\Celebrities\D\Donna Edmondson"
 
 # EXIFTOOL PFAD ANPASSUNG
 EXIFTOOL_PATH = r"d:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe"

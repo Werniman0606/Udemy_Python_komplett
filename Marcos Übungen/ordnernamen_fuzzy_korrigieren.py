@@ -24,7 +24,7 @@ from fuzzywuzzy import fuzz  # Benötigt: pip install fuzzywuzzy python-levensht
 # Das Archiv/die Sammlung, aus der die KORREKTEN Ordnernamen gelesen werden (rekursiv)
 ZIEL_PFAD = r"e:\Bilder\Celebrities"
 # Der Ordner mit den zu prüfenden Ordnern (z.B. neue Downloads)
-QUELLE_PFAD = r"d:\RedditDownloads\reddit_sub_GermanCelebs"
+QUELLE_PFAD = r"d:\rips\reddit_sub_GermanCelebs"
 # Ähnlichkeitsschwelle (0-100), ab der eine Korrektur vorgeschlagen wird
 SCHWELLENWERT = 75
 

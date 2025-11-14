@@ -1,29 +1,62 @@
 # ==============================================================================
-# Dateiname Vorschlag (Deutsch): dateiname_namen_titel_formatieren.py
-# Dateiname Vorschlag (Technisch): filename_capitalize_prefix.py
+# Dateiname Vorschlag (Deutsch): dateiname_namen_titel_formatieren_korrigiert.py
+# Dateiname Vorschlag (Technisch): filename_capitalize_prefix_v2.py
 #
-# Beschreibung: Dieses Skript durchsucht einen bestimmten Ordner und prüft alle
-#               Dateien, die das Namensschema '[Vorname Nachname]_...' aufweisen.
-#               Es ändert die Schreibweise im Präfix so, dass die Anfangsbuchstaben
-#               von Vor- und Nachnamen in Großbuchstaben umgewandelt werden
-#               (z.B. '[amy lee]_bild.jpg' wird zu '[Amy Lee]_bild.jpg').
-#               Dies dient der Standardisierung der Namenskonvention.
+# Beschreibung: KORRIGIERTE VERSION. Behebt den Fehler bei Komma-getrennten
+#               Namen, indem jeder Name (Vorname Nachname) einzeln im Title-Case
+#               formatiert wird, um z.B. '[Sarah Reichow, Sven Reichow]'
+#               korrekt zu erhalten.
 # ==============================================================================
 
-import os  # Importiert das 'os'-Modul für Betriebssystem-Interaktionen
+import os
 
 # --- KONFIGURATION START ---
-# Der Ordner, in dem die Bilder liegen.
-# HINWEIS: Setzen Sie hier den korrekten Pfad zu Ihrem Ordner ein.
-FOLDER_PATH = r'e:\Bilder2\Girls'
+FOLDER_PATH = r'e:\Bilder'
 
 
 # --- KONFIGURATION ENDE ---
 
+def special_capitalize_name(full_name_part):
+    """
+    Formatiert einen einzelnen Namensteil (Vorname Nachname) korrekt in Title Case.
+    """
+    # Trimme Leerzeichen vor und nach dem Namen
+    full_name_part = full_name_part.strip()
+
+    # Splitte am ersten Leerzeichen (Vorname und Nachname trennen)
+    parts = full_name_part.split(' ', 1)
+
+    if len(parts) < 2:
+        # Dies ist ein einzelner Name oder hat keine Leerzeichen (z.B. 'sarah')
+        # Verwende .title(), um auch Namen mit Bindestrich ('Marie-louise') zu behandeln.
+        return full_name_part.title()
+
+    firstname = parts[0]
+    lastname_with_parts = parts[1]  # Der Rest
+
+    # Capitalize() für Vorname und Title() für Nachname (um Bindestriche zu behandeln)
+    # Wichtig: Wir splitten den Nachnamen nicht weiter, da er möglicherweise Namenszusätze enthält.
+
+    # Bessere Methode, um auch Bindestriche zu behandeln:
+    # Wir wenden .title() auf den gesamten Namen an, da es in diesem Kontext am robustesten ist.
+    # Wenn wir annehmen, dass Namen wie "Sarah-Reichow" korrekt formatiert werden sollen.
+
+    # Hier der Kompromiss: Wir wissen, dass es Vor- und Nachname sind, also splitten wir.
+    # Wir nutzen eine einfache, aber effektive Methode:
+
+    formatted_firstname = firstname.capitalize()
+
+    # Für den Nachnamensteil verwenden wir Title(), um z.B. 'von' oder 'd' 's' korrekt zu behandeln.
+    # Bei 'reichow' ist capitalize() ausreichend, aber title() bietet mehr Schutz für 'van der'.
+    formatted_lastname = lastname_with_parts.title()
+
+    return f"{formatted_firstname} {formatted_lastname}"
+
+
 def rename_files(folder):
     """
-    Durchsucht einen Ordner nach Bilddateien und benennt sie um,
-    indem die Anfangsbuchstaben von Vor- und Nachnamen im Präfix auf Großbuchstaben umgewandelt werden.
+    Durchsucht einen Ordner und benennt Dateien um, korrigiert die Schreibweise
+    von Komma-getrennten Namen im Präfix.
     """
     if not os.path.isdir(folder):
         print(f"Fehler: Der angegebene Ordner '{folder}' existiert nicht.")
@@ -35,56 +68,53 @@ def rename_files(folder):
 
     # Durchsuche alle Dateien im angegebenen Ordner
     for filename in os.listdir(folder):
-        # Wir wollen nur .jpg oder .jpeg Dateien bearbeiten
         if filename.lower().endswith(('.jpg', '.jpeg')):
 
-            # Überprüfe, ob der Dateiname der Konvention '[vorname nachname]_...' entspricht
             if filename.startswith('[') and '_' in filename:
 
-                # Finde das Ende des Namens-Teils, um Vor- und Nachnamen zu isolieren
                 end_of_name_part = filename.find(']_')
                 if end_of_name_part != -1:
 
-                    # Extrahiere den Teil mit Vor- und Nachnamen (z.B. 'amy lee' oder 'marie-louise')
-                    name_part = filename[1:end_of_name_part]
+                    # Extrahiere den Teil mit Vor- und Nachnamen (z.B. 'sarah reichow, sven reichow')
+                    name_part_lower = filename[1:end_of_name_part]
 
-                    # Splitte den Namen in Teile am ersten Leerzeichen
-                    parts = name_part.split(' ', 1)
+                    # --- KORRIGIERTE LOGIK START ---
 
-                    # Überprüfe, ob wir mindestens zwei Teile haben (Vorname und Nachname)
-                    if len(parts) == 2:
-                        firstname = parts[0]
-                        lastname = parts[1]
+                    # 1. Teile die Liste in einzelne Namen an den Kommas.
+                    individual_names = [name.strip() for name in name_part_lower.split(',')]
 
-                        # Setze die Anfangsbuchstaben auf Großbuchstaben (z.B. 'amy' -> 'Amy')
-                        capitalized_firstname = firstname.capitalize()
-                        capitalized_lastname = lastname.capitalize()
+                    formatted_names = []
 
-                        # Setze den neuen Namensteil zusammen
-                        new_name_part = f"{capitalized_firstname} {capitalized_lastname}"
+                    # 2. Formatiere jeden einzelnen Namen (Vorname Nachname) mit der Hilfsfunktion.
+                    for name in individual_names:
+                        formatted_name = special_capitalize_name(name)
+                        formatted_names.append(formatted_name)
 
-                        # Prüfen, ob eine Änderung überhaupt notwendig ist
-                        if name_part == new_name_part:
-                            # print(f"  Keine Änderung notwendig: {filename}")
-                            continue
+                    # 3. Füge die formatierten Namen wieder mit Komma und Leerzeichen zusammen.
+                    new_name_part = ", ".join(formatted_names)
 
-                        # Erstelle den neuen, vollständigen Dateinamen
-                        # Ersetze nur das erste Vorkommen (das ist der Präfix)
-                        new_filename = filename.replace(name_part, new_name_part, 1)
+                    # --- KORRIGIERTE LOGIK ENDE ---
 
-                        # Zeige dem Benutzer die geplante Änderung
-                        print(f"Ändere: '{filename}'")
-                        print(f"   zu:   '{new_filename}'")
+                    # Prüfen, ob eine Änderung überhaupt notwendig ist
+                    if name_part_lower == new_name_part.lower():
+                        continue
 
-                        # Benenne die Datei um
-                        old_path = os.path.join(folder, filename)
-                        new_path = os.path.join(folder, new_filename)
+                    # Erstelle den neuen, vollständigen Dateinamen
+                    # Ersetze nur das erste Vorkommen (das ist der Präfix)
+                    new_filename = filename.replace(name_part_lower, new_name_part, 1)
 
-                        try:
-                            os.rename(old_path, new_path)
-                            files_renamed += 1
-                        except Exception as e:
-                            print(f"Fehler beim Umbennen von '{filename}': {e}")
+                    print(f"Ändere: '{filename}'")
+                    print(f"   zu:   '{new_filename}'")
+
+                    # Benenne die Datei um
+                    old_path = os.path.join(folder, filename)
+                    new_path = os.path.join(folder, new_filename)
+
+                    try:
+                        os.rename(old_path, new_path)
+                        files_renamed += 1
+                    except Exception as e:
+                        print(f"Fehler beim Umbennen von '{filename}': {e}")
 
     print("\n---")
     print(f"Vorgang abgeschlossen. {files_renamed} Dateien wurden umbenannt.")

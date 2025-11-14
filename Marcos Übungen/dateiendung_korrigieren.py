@@ -18,7 +18,7 @@ import filetype  # Benötigt: pip install filetype
 
 # Konfigurieren des zu durchsuchenden Ordners
 # Ändern Sie diesen Pfad, wenn Ihr Ordner woanders liegt
-ROOT_FOLDER = r"d:\RedditDownloads\reddit_sub_GermanCelebs"
+ROOT_FOLDER = r"d:\extracted\rips"
 
 
 def get_real_extension(filepath):

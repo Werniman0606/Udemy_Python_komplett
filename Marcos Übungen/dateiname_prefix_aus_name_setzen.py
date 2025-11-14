@@ -15,7 +15,7 @@ import os
 import re
 
 # --- Konfiguration ---
-source_directory = r'd:\Bilder'  # Das Verzeichnis, in dem die umzubenennenden Dateien liegen
+source_directory = r'd:\extracted\rips\reddit_sub_VintageSmut'  # Das Verzeichnis, in dem die umzubenennenden Dateien liegen
 # ---------------------
 
 # Alternativ (einfacher und robuster): Wir extrahieren einfach die ersten beiden Wörter

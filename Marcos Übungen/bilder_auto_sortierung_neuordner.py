@@ -21,7 +21,7 @@ import re
 
 # --- Definiere die Pfade ---
 source_folder_with_celebs = r'e:\Bilder\Celebrities'
-folder_with_files_to_move = r'd:\Bilder'
+folder_with_files_to_move = r'e:\Bilder\Celebrities\B\Britta Hofmann'
 # Regulärer Ausdruck, um den Namen in eckigen Klammern zu finden: \[([^\]]+)\]
 # Gruppe 1 ([^\]]+) fängt den Inhalt der Klammern (z.B. "Heidi Klum, Leni Klum").
 NAME_PATTERN = re.compile(r'\[([^\]]+)\]')
@@ -142,5 +142,13 @@ for root, _, files in os.walk(folder_with_files_to_move):
                     except Exception as e:
                         print(f"  ⚠️ Fehler beim Erstellen/Verschieben von '{filename}' (Neu): {e}")
 
+        # KORRIGIERTER BLOCK FÜR NICHT ZUGEORDNETE DATEIEN:
         if not found_match:
-            print(f
+            print(f"  ❌ NICHT ZUGEORDNET: '{filename}' (Kein Match, kein erkannter Name im Muster)")
+
+# --- 4. Abschlussbericht ---
+print("\n------------------------------------------------")
+print(f"✅ Vorgang abgeschlossen.")
+print(f"Dateien verschoben: {moved_count}")
+print(f"Neue Ordner erstellt: {created_folder_count}")
+print("------------------------------------------------")
