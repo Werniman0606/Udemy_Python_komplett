@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="25.10.2025">
-      <change afterPath="$PROJECT_DIR$/Marcos Übungen/Ähnlichkeitssuche der Personen in der gleichen Datei.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Marcos Übungen/Automatische Digikam-Tags-Korrektur.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_auto_sortierung_neuordner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_auto_sortierung_neuordner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_modellordner_taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_modellordner_taggen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_name_sortieren_uebergreifend.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_klammer_sortieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_ordner_umbenennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_ordner_umbenennen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateien_nach_muster_in_chaosordner_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/dateien_nach_muster_in_chaosordner_verschieben.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiendung_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/dateiendung_korrigieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_aus_digikam_tags_rekonstruieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/dateiname_aus_digikam_tags_rekonstruieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_namen_titel_formatieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/dateiname_namen_titel_formatieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_prefix_aus_name_setzen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/dateiname_prefix_aus_name_setzen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/ordnernamen_fuzzy_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/Marcos Übungen/ordnernamen_fuzzy_korrigieren.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +100,7 @@
     "Python.Air Brake Sample Test.executor": "Run",
     "Python.Air Brake Test.executor": "Run",
     "Python.Alle-Nicht-Digikam-Tags löschen.executor": "Run",
+    "Python.Automatische Digikam-Tags-Korrektur.executor": "Run",
     "Python.BIlder suchen und in Unterordner verschieben.executor": "Run",
     "Python.Bilder in Ordnern nach Ordner benennen.executor": "Run",
     "Python.Bilder nach Ordner benennen.executor": "Run",
