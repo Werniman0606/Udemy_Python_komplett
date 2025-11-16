@@ -4,835 +4,172 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="25.10.2025" />
+    <list default="true" id="34babd37-3cd9-4a5d-9b48-a8fc4abd71a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.102 Einfügung in Crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.103 - Exkurs - Was ist HTML überhaupt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.104 HTML-Code holen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.105 beautifulsoup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.106 Exkurs css-selectors 1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.107 Exkurs css-selectors 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.108 Elemente finden 1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.109 Elemente finden 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.110 Elemente finden - urllib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.114 Ergebnisse als CSV-Datei schreiben.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.118 Python Wissen - Generatoren.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.119 Generatoren im Crawler einbauen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.121 Crawler in ein richtiges Programm wandeln.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.123 Exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.9 Strings in Python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.11 Listen in Python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.12 Listen - Die pop-Funktion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.15 Daten umwandeln (1).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.16 Daten umwandeln (2).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.22 Einführung Kontrollstrukturen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.23 If-else.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.24 Vergleichsoperatoren.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.25 Ausdrücke verknüpfen und Booleans.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.28 Der in-Operator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.29 Der Not-Operator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.32 Elif.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.33 Die While-Schleife.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.34 Die For-Schleife.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.35 Wann welche Liste.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.37 Schleifen mit Break und Continue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.38 Wie gehst du mit Problemen um.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.43 Funktionen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.44 Funktionen 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.45 Ausblick auf Objekte.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.46 Arbeiten mit Dateien.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.48 Dateien öffnen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.49 Datei schreiben.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.50 Das With-Construct.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.51 CSV öffnen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.52 CSV-Dateien lesen und Einträge überspringen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.53 Grafiken zeichnen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.54 Geburtsstatistiken.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.56 Aufgabe Geburtsstatistiken.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.59 Übungsblatt Funktionen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.63 Arbeiten mit Listen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.64 List slicing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.68 Dictionaries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.70 Tupel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.71 Tupel packen und entpacken.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.72 Dictionaries und Schleifen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.73 Aufgabe zu Dictionaries und schleifen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.76 Datenstrukturen ineinander verschachteln.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.79 Klassen und Methoden erstellen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.80 Construktor und Methoden erstellen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.81 Warum private Eigenschaften und Methoden.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.82 Private Eigenschaften und Methoden.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.83 Warum kapseln wir Daten.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.84 Besondere Methoden.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.85 Vererbung in Python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.86 Aufgabe Vererbung und Objektorientierung.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.88 Typen von Variablen überprüfen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.89 In Python ist alles ein Objekt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.90 Wie Variablen, Klassen und Methoden benennen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.91 Statische Variablen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.94 Übungen Objektorientierung.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.101 Beispiele für ein Modul.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.95 Module in Python - Einführung.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.96 Code aus separater Datei laden.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.97 Verschiedene Importmöglichkeiten für Module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.98 Module in einem Ordner erstellen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Elemente im HTML finden (2).ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fibonacci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generatoren-Demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Automatische Digikam-Tags-Korrektur.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automatische Digikam-Tags-Korrektur.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Bilder_abgleich_nach_vorname.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder_abgleich_nach_vorname.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Practise Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Practise Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Sample Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Sample Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/General Knowledge Practise Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/General Knowledge Practise Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/General Knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/General Knowledge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Passenger Endorsement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Passenger Endorsement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Practise Passenger Transport Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Practise Passenger Transport Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/S Endorsement Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/S Endorsement Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_auto_sortierung_neuordner.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_auto_sortierung_neuordner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_defekte_entfernen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_defekte_entfernen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_modellordner_taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_modellordner_taggen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_face_tagging_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_face_tagging_verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_klammer_sortieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_klammer_sortieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_ordner_umbenennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_ordner_umbenennen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_ordner_tag_prefix.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_ordner_tag_prefix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_tag_qualitaet_sortierer.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_tag_qualitaet_sortierer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_videos_initial_sortierung.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_videos_initial_sortierung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateien_nach_muster_in_chaosordner_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateien_nach_muster_in_chaosordner_verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiendung_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiendung_korrigieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_aus_digikam_tags_rekonstruieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_namen_titel_formatieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_namen_titel_formatieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_prefix_aus_name_setzen.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_prefix_aus_name_setzen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_prefix_jahr_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_prefix_jahr_verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_tag_haeufigkeit_zaehlen.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_tag_haeufigkeit_zaehlen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateisuche_pfad_ueberpruefung.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateisuche_pfad_ueberpruefung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/exif_fehlerhafte_face_tags_loeschen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_fehlerhafte_face_tags_loeschen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/exif_metadaten_bereinigung.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_metadaten_bereinigung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/exif_namen_aus_dateiname_taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_namen_aus_dateiname_taggen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/exif_prefix_umbenennung_zwei_stufen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_prefix_umbenennung_zwei_stufen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/laengster_dateiname_finden.py" beforeDir="false" afterPath="$PROJECT_DIR$/laengster_dateiname_finden.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/mp3_archiv_duplikat_bereinigung.py" beforeDir="false" afterPath="$PROJECT_DIR$/mp3_archiv_duplikat_bereinigung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/ordner_entschachteln_pfadlimit_umgehen.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordner_entschachteln_pfadlimit_umgehen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/ordnernamen_fuzzy_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/tagging_inkonsistenzen_finden.py" beforeDir="false" afterPath="$PROJECT_DIR$/tagging_inkonsistenzen_finden.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Ähnlichkeitssuche der Personen in der gleichen Datei.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ähnlichkeitssuche der Personen in der gleichen Datei.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Merkblatt+-+Module+in+Python.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_output.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler_output_generator.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datei.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datei2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hallo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/magic1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/schreiben.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Werniman0606&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Werniman0606/Udemy_Python_komplett&quot;,
-    &quot;accountId&quot;: &quot;ab259af5-9775-4150-8028-fa83919f3635&quot;
-  }
-}</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2si8v4eBN4u7M5DfL19YXxrRIVE" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="35Wkcy3R5INRp0pX6WTB3OCxdrU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.10.104 HTML-Code holen.executor": "Run",
-    "Python.10.105 beautifulsoup.executor": "Run",
-    "Python.10.108 Elemente finden 1.executor": "Run",
-    "Python.10.109 Elemente finden 2.executor": "Run",
-    "Python.10.110 - Elemente finden - urllib.executor": "Run",
-    "Python.10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.executor": "Run",
-    "Python.10.114 Ergebnisse als CSV-Datei schreiben.executor": "Run",
-    "Python.10.118 Python Wissen - Generatoren.executor": "Run",
-    "Python.10.119 Generatoren im Crawler einbauen.executor": "Run",
-    "Python.11.123 Exceptions.executor": "Run",
-    "Python.2.9 Strings in Python.executor": "Run",
-    "Python.3.11 Listen in Python.executor": "Run",
-    "Python.3.12 Listen - Die pop-Funktion.executor": "Run",
-    "Python.4.25 Ausdrücke verknüpfen und Booleans.executor": "Run",
-    "Python.4.28 Der in-Operator.executor": "Run",
-    "Python.4.32 Elif.executor": "Run",
-    "Python.5.33 - Die While-Schleife.executor": "Run",
-    "Python.5.34 Die For-Schleife.executor": "Run",
-    "Python.5.35 Wann welche Liste.executor": "Run",
-    "Python.5.39 Schleifen mit Break und Continue.executor": "Run",
-    "Python.6.43 Funktionen.executor": "Run",
-    "Python.6.44 Funktionen 2.executor": "Run",
-    "Python.6.45 Ausblick auf Objekte.executor": "Run",
-    "Python.6.48 Dateien öffnen.executor": "Run",
-    "Python.6.49 Datei schreiben.executor": "Run",
-    "Python.6.50 Das With-Construct.executor": "Run",
-    "Python.6.51 CSV öffnen.executor": "Run",
-    "Python.6.52 CSV-Dateien lesen und Einträge überspringen.executor": "Run",
-    "Python.6.53 Grafiken zeichnen.executor": "Run",
-    "Python.6.54 Geburtsstatistiken.executor": "Run",
-    "Python.6.56 Aufgabe Geburtsstatistiken.executor": "Run",
-    "Python.6.59 Übungsblatt Funktionen.executor": "Run",
-    "Python.7.64 List slicing.executor": "Run",
-    "Python.7.64 List stitching.executor": "Run",
-    "Python.7.68 Dictionaries.executor": "Run",
-    "Python.7.70 Tupel.executor": "Run",
-    "Python.7.71 Tupel packen und entpacken.executor": "Run",
-    "Python.7.72 Dictionaries und Schleifen.executor": "Run",
-    "Python.7.73 Aufgabe zu Dictionaries und schleifen.executor": "Run",
-    "Python.8.89 In Python ist alles ein Objekt.executor": "Run",
-    "Python.8.91 Statische Variablen.executor": "Run",
-    "Python.8.94 Übungen Objektorientierung.executor": "Run",
-    "Python.9.101 Beispiele für ein Modul.executor": "Run",
-    "Python.9.96 Code aus separater Datei laden.executor": "Run",
-    "Python.9.97 Verschiednee Importmöglichkeiten für Module.executor": "Run",
-    "Python.9.98 Module in einem Ordner erstellen.executor": "Run",
-    "Python.Air Brake Practise Test.executor": "Run",
-    "Python.Air Brake Sample Test.executor": "Run",
-    "Python.Air Brake Test.executor": "Run",
-    "Python.Alle-Nicht-Digikam-Tags löschen.executor": "Run",
-    "Python.Automatische Digikam-Tags-Korrektur.executor": "Run",
-    "Python.BIlder suchen und in Unterordner verschieben.executor": "Run",
-    "Python.Bilder in Ordnern nach Ordner benennen.executor": "Run",
-    "Python.Bilder nach Ordner benennen.executor": "Run",
-    "Python.Bilder nach ihrem Ordner benennen.executor": "Run",
-    "Python.Bilder taggen.executor": "Run",
-    "Python.Bilder von Personen finden,zu denen es einen Ordner gibt.executor": "Run",
-    "Python.Dateien verschieben.executor": "Run",
-    "Python.Dateiname aus Facetags generieren.executor": "Run",
-    "Python.Dateiname umbenennen 2.executor": "Run",
-    "Python.Dateinamen umbenennen.executor": "Run",
-    "Python.Dateinamensformat ändern.executor": "Run",
-    "Python.Defekte Bilder löschen.executor": "Run",
-    "Python.Doppelte MP3s finden und auf D verschieben.executor": "Run",
-    "Python.DoppelteDateipfade.executor": "Run",
-    "Python.Echten Dateityp prüfen.executor": "Run",
-    "Python.Fibonacci.executor": "Run",
-    "Python.Files verschieben nach Namensabgleich.executor": "Run",
-    "Python.General Knowledge Practise Test.executor": "Run",
-    "Python.General Knowledge.executor": "Run",
-    "Python.Generatoren-Demo.executor": "Run",
-    "Python.Gepackte Dateien aufräumen.executor": "Run",
-    "Python.Getaggte Bilder verschieben.executor": "Run",
-    "Python.Häufigsten Personennamen im Dateinamen finden.executor": "Run",
-    "Python.Löscht Tags ohne Region.executor": "Run",
-    "Python.Modelnamen erkennen.executor": "Run",
-    "Python.Namenskorrektur der Ordner im Ripme-Ordner.executor": "Run",
-    "Python.Nicht-Modelnamen erkennen und verschieben.executor": "Run",
-    "Python.Passenger Endorsement.executor": "Run",
-    "Python.Practise Passenger Transport Test.executor": "Run",
-    "Python.RipMe-Ordner aufräumen, indem Bilder in den Subreddit-Ordner verschoben und Unterordner gelöscht werden.executor": "Run",
-    "Python.S Endorsement Test.executor": "Run",
-    "Python.Testskript.executor": "Run",
-    "Python.Textdateien ersetzen.executor": "Run",
-    "Python.Umbenannte FIles auf doppelte Namen prüfen.executor": "Run",
-    "Python.Umlauf-Fix-Script.executor": "Run",
-    "Python.Wechselkursrechner.executor": "Run",
-    "Python.Zeichenzählen.executor": "Run",
-    "Python.bilder_auto_sortierung_neuordner.executor": "Run",
-    "Python.bilder_defekte_entfernen.executor": "Run",
-    "Python.bilder_modellordner_taggen.executor": "Run",
-    "Python.bilder_nach_klammer_sortieren.executor": "Run",
-    "Python.bilder_nach_name_sortieren_uebergreifend.executor": "Run",
-    "Python.bilder_nach_ordner_umbenennen.executor": "Run",
-    "Python.crawler.executor": "Run",
-    "Python.datei.executor": "Run",
-    "Python.dateien_nach_muster_in_chaosordner_verschieben.executor": "Run",
-    "Python.dateiendung_korrigieren.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.dateiname_aus_digikam_tags_rekonstruieren.executor": "Run",
-    "Python.dateiname_namen_titel_formatieren.executor": "Run",
-    "Python.dateiname_prefix_aus_name_setzen.executor": "Run",
-    "Python.installer_duplikate_manuell_bereinigen.executor": "Run",
-    "Python.komplett getaggte Bilder verschieben.executor": "Run",
-    "Python.laengster_dateiname_finden.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mp3_archiv_duplikat_bereinigung.executor": "Run",
-    "Python.ordner_entschachteln_pfadlimit_umgehen.executor": "Run",
-    "Python.ordnernamen_fuzzy_korrigieren.executor": "Run",
-    "Python.scratch.executor": "Run",
-    "Python.setup.executor": "Run",
-    "Python.tagging_inkonsistenzen_finden.executor": "Run",
-    "Python.Ähnlichkeitssuche der Personen in der gleichen Datei.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu\Marcos Übungen" />
-      <recent name="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="2.9 Strings in Python" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Udemy_Python_komplett" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.9 Strings in Python.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4.28 Der in-Operator" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Udemy_Python_komplett" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.28 Der in-Operator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="5.33 Die While-Schleife" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Udemy_Python_komplett" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5.33 Die While-Schleife.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="5.34 Die For-Schleife" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Udemy_Python_komplett" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5.34 Die For-Schleife.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="DoppelteDateipfade" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Udemy_Python_komplett" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DoppelteDateipfade.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Umlauf-Fix-Script" type="PythonConfigurationType" factoryName="Python">
-      <module name="Udemy_Python_komplett" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYTHONIOENCODING" value="utf8" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu\Marcos Übungen\exif_prefix_umbenennung_zwei_stufen.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dateiname_prefix_aus_name_setzen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Udemy_Python_komplett" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett_neu\Marcos Übungen\dateiname_prefix_aus_name_setzen.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.2.9 Strings in Python" />
-      <item itemvalue="Python.4.28 Der in-Operator" />
-      <item itemvalue="Python.5.33 Die While-Schleife" />
-      <item itemvalue="Python.5.34 Die For-Schleife" />
-      <item itemvalue="Python.DoppelteDateipfade" />
-      <item itemvalue="Python.Umlauf-Fix-Script" />
-      <item itemvalue="Python.4.32 Elif" />
-      <item itemvalue="Python.dateiname_prefix_aus_name_setzen" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.dateiname_prefix_aus_name_setzen" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-python-sdk-f69e5c277ee4-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.27397.106" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5a426a19-40b2-4d43-af7c-bdecb460a0d1" name="Changes" comment="" />
-      <created>1738927261635</created>
+      <changelist id="34babd37-3cd9-4a5d-9b48-a8fc4abd71a8" name="Changes" comment="" />
+      <created>1763233299385</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1738927261635</updated>
-      <workItem from="1747400300857" duration="235000" />
-      <workItem from="1747400697411" duration="1867000" />
-      <workItem from="1747487718166" duration="31000" />
+      <updated>1763233299385</updated>
     </task>
-    <task id="LOCAL-00008" summary="10.03.2025">
-      <option name="closed" value="true" />
-      <created>1741617595022</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1741617595023</updated>
-    </task>
-    <task id="LOCAL-00009" summary="17.03.2025">
-      <option name="closed" value="true" />
-      <created>1742223161991</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1742223161991</updated>
-    </task>
-    <task id="LOCAL-00010" summary="17.03.2025">
-      <option name="closed" value="true" />
-      <created>1742308204216</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1742308204217</updated>
-    </task>
-    <task id="LOCAL-00011" summary="24.03.2025">
-      <option name="closed" value="true" />
-      <created>1742827120636</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1742827120637</updated>
-    </task>
-    <task id="LOCAL-00012" summary="25.03.2025">
-      <option name="closed" value="true" />
-      <created>1742914212356</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1742914212356</updated>
-    </task>
-    <task id="LOCAL-00013" summary="25.03.2025">
-      <option name="closed" value="true" />
-      <created>1743001352713</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1743001352713</updated>
-    </task>
-    <task id="LOCAL-00014" summary="17.05.25">
-      <option name="closed" value="true" />
-      <created>1747504301860</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1747504301860</updated>
-    </task>
-    <task id="LOCAL-00015" summary="24.05.25">
-      <option name="closed" value="true" />
-      <created>1748192183840</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1748192183840</updated>
-    </task>
-    <task id="LOCAL-00016" summary="24.05.25">
-      <option name="closed" value="true" />
-      <created>1748213375802</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1748213375802</updated>
-    </task>
-    <task id="LOCAL-00017" summary="25.05.25">
-      <option name="closed" value="true" />
-      <created>1748286717276</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1748286717276</updated>
-    </task>
-    <task id="LOCAL-00018" summary="28.05.25">
-      <option name="closed" value="true" />
-      <created>1748551982823</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1748551982823</updated>
-    </task>
-    <task id="LOCAL-00019" summary="31.05.25">
-      <option name="closed" value="true" />
-      <created>1748704650847</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1748704650847</updated>
-    </task>
-    <task id="LOCAL-00020" summary="31.05.25">
-      <option name="closed" value="true" />
-      <created>1748705938983</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1748705938983</updated>
-    </task>
-    <task id="LOCAL-00021" summary="31.05.25">
-      <option name="closed" value="true" />
-      <created>1748708771383</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1748708771383</updated>
-    </task>
-    <task id="LOCAL-00022" summary="31.05.25">
-      <option name="closed" value="true" />
-      <created>1748713920006</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1748713920006</updated>
-    </task>
-    <task id="LOCAL-00023" summary="31.05.25">
-      <option name="closed" value="true" />
-      <created>1748723882200</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1748723882200</updated>
-    </task>
-    <task id="LOCAL-00024" summary="03.05.25">
-      <option name="closed" value="true" />
-      <created>1748990630883</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1748990630883</updated>
-    </task>
-    <task id="LOCAL-00025" summary="05.06.25">
-      <option name="closed" value="true" />
-      <created>1749159310440</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1749159310440</updated>
-    </task>
-    <task id="LOCAL-00026" summary="09.06.25">
-      <option name="closed" value="true" />
-      <created>1749487147900</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1749487147900</updated>
-    </task>
-    <task id="LOCAL-00027" summary="11.06.25">
-      <option name="closed" value="true" />
-      <created>1749676072893</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1749676072893</updated>
-    </task>
-    <task id="LOCAL-00028" summary="11.06.25">
-      <option name="closed" value="true" />
-      <created>1749676592202</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1749676592202</updated>
-    </task>
-    <task id="LOCAL-00029" summary="11.06.25">
-      <option name="closed" value="true" />
-      <created>1749677109518</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1749677109518</updated>
-    </task>
-    <task id="LOCAL-00030" summary="13.06.25">
-      <option name="closed" value="true" />
-      <created>1749865150581</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1749865150581</updated>
-    </task>
-    <task id="LOCAL-00031" summary="16.06.25">
-      <option name="closed" value="true" />
-      <created>1750091897329</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1750091897329</updated>
-    </task>
-    <task id="LOCAL-00032" summary="16.06.25">
-      <option name="closed" value="true" />
-      <created>1750105579973</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1750105579973</updated>
-    </task>
-    <task id="LOCAL-00033" summary="18.06.25">
-      <option name="closed" value="true" />
-      <created>1750281891010</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1750281891010</updated>
-    </task>
-    <task id="LOCAL-00034" summary="23.06.25">
-      <option name="closed" value="true" />
-      <created>1750695387654</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1750695387654</updated>
-    </task>
-    <task id="LOCAL-00035" summary="23.06.25">
-      <option name="closed" value="true" />
-      <created>1750700947540</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1750700947540</updated>
-    </task>
-    <task id="LOCAL-00036" summary="23.06.25">
-      <option name="closed" value="true" />
-      <created>1750705421148</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1750705421148</updated>
-    </task>
-    <task id="LOCAL-00037" summary="04.07.25">
-      <option name="closed" value="true" />
-      <created>1751636549547</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1751636549547</updated>
-    </task>
-    <task id="LOCAL-00038" summary="04.07.25">
-      <option name="closed" value="true" />
-      <created>1753654089134</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1753654089134</updated>
-    </task>
-    <task id="LOCAL-00039" summary="31.07.2025">
-      <option name="closed" value="true" />
-      <created>1754021268535</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1754021268535</updated>
-    </task>
-    <task id="LOCAL-00040" summary="31.07.2025">
-      <option name="closed" value="true" />
-      <created>1754084643152</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1754084643152</updated>
-    </task>
-    <task id="LOCAL-00041" summary="31.07.2025">
-      <option name="closed" value="true" />
-      <created>1754093974331</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1754093974331</updated>
-    </task>
-    <task id="LOCAL-00042" summary="31.07.2025">
-      <option name="closed" value="true" />
-      <created>1754104212879</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1754104212879</updated>
-    </task>
-    <task id="LOCAL-00043" summary="04.08.2025">
-      <option name="closed" value="true" />
-      <created>1754343962577</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1754343962577</updated>
-    </task>
-    <task id="LOCAL-00044" summary="04.08.2025">
-      <option name="closed" value="true" />
-      <created>1754355271502</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1754355271502</updated>
-    </task>
-    <task id="LOCAL-00045" summary="04.08.2025">
-      <option name="closed" value="true" />
-      <created>1754360833509</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1754360833509</updated>
-    </task>
-    <task id="LOCAL-00046" summary="04.08.2025">
-      <option name="closed" value="true" />
-      <created>1754439242065</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1754439242065</updated>
-    </task>
-    <task id="LOCAL-00047" summary="04.08.2025">
-      <option name="closed" value="true" />
-      <created>1754530823499</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1754530823499</updated>
-    </task>
-    <task id="LOCAL-00048" summary="18.08.25">
-      <option name="closed" value="true" />
-      <created>1755553339348</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1755553339348</updated>
-    </task>
-    <task id="LOCAL-00049" summary="18.08.25">
-      <option name="closed" value="true" />
-      <created>1755788158065</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1755788158065</updated>
-    </task>
-    <task id="LOCAL-00050" summary="06.10.2025">
-      <option name="closed" value="true" />
-      <created>1759758371709</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1759758371709</updated>
-    </task>
-    <task id="LOCAL-00051" summary="06.10.2025">
-      <option name="closed" value="true" />
-      <created>1760123466206</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1760123466206</updated>
-    </task>
-    <task id="LOCAL-00052" summary="06.10.2025">
-      <option name="closed" value="true" />
-      <created>1760123477922</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1760123477922</updated>
-    </task>
-    <task id="LOCAL-00053" summary="06.10.2025">
-      <option name="closed" value="true" />
-      <created>1760326664209</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1760326664209</updated>
-    </task>
-    <task id="LOCAL-00054" summary="15.10.2025">
-      <option name="closed" value="true" />
-      <created>1760550624978</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1760550624980</updated>
-    </task>
-    <task id="LOCAL-00055" summary="25.10.2025">
-      <option name="closed" value="true" />
-      <created>1761415126038</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1761415126038</updated>
-    </task>
-    <task id="LOCAL-00056" summary="25.10.2025">
-      <option name="closed" value="true" />
-      <created>1763154361772</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1763154361772</updated>
-    </task>
-    <option name="localTasksCounter" value="57" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="09.03.2025" />
-    <MESSAGE value="10.03.2025" />
-    <MESSAGE value="17.03.2025" />
-    <MESSAGE value="24.03.2025" />
-    <MESSAGE value="25.03.2025" />
-    <MESSAGE value="17.05.25" />
-    <MESSAGE value="24.05.25" />
-    <MESSAGE value="25.05.25" />
-    <MESSAGE value="28.05.25" />
-    <MESSAGE value="31.05.25" />
-    <MESSAGE value="03.05.25" />
-    <MESSAGE value="05.06.25" />
-    <MESSAGE value="09.06.25" />
-    <MESSAGE value="11.06.25" />
-    <MESSAGE value="13.06.25" />
-    <MESSAGE value="16.06.25" />
-    <MESSAGE value="18.06.25" />
-    <MESSAGE value="23.06.25" />
-    <MESSAGE value="04.07.25" />
-    <MESSAGE value="31.07.2025" />
-    <MESSAGE value="04.08.2025" />
-    <MESSAGE value="18.08.25" />
-    <MESSAGE value="06.10.2025" />
-    <MESSAGE value="15.10.2025" />
-    <MESSAGE value="25.10.2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="25.10.2025" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.54 Geburtsstatistiken.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="github-copilot-workspace">
-    <instructionFileLocations>
-      <option value=".github/instructions" />
-    </instructionFileLocations>
-    <promptFileLocations>
-      <option value=".github/prompts" />
-    </promptFileLocations>
   </component>
 </project>
