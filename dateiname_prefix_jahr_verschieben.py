@@ -96,4 +96,3 @@ for filename in os.listdir(source_directory):
 
 print("\n--- Prozess abgeschlossen! ---")
 
-Would you like me to help you draft another script, or perhaps refine the Regex used in this one?

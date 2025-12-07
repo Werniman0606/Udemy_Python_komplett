@@ -5,140 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34babd37-3cd9-4a5d-9b48-a8fc4abd71a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.102 Einfügung in Crawler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.103 - Exkurs - Was ist HTML überhaupt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.104 HTML-Code holen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.105 beautifulsoup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.106 Exkurs css-selectors 1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.107 Exkurs css-selectors 2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.108 Elemente finden 1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.109 Elemente finden 2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.110 Elemente finden - urllib.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.111 Aufgabe Mehrere Seiten mit Crawler einlesen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.114 Ergebnisse als CSV-Datei schreiben.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.118 Python Wissen - Generatoren.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.119 Generatoren im Crawler einbauen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.121 Crawler in ein richtiges Programm wandeln.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/11.123 Exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.9 Strings in Python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.11 Listen in Python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.12 Listen - Die pop-Funktion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.15 Daten umwandeln (1).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.16 Daten umwandeln (2).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.22 Einführung Kontrollstrukturen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.23 If-else.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.24 Vergleichsoperatoren.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.25 Ausdrücke verknüpfen und Booleans.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.28 Der in-Operator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.29 Der Not-Operator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.32 Elif.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.33 Die While-Schleife.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.34 Die For-Schleife.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.35 Wann welche Liste.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.37 Schleifen mit Break und Continue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.38 Wie gehst du mit Problemen um.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.43 Funktionen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.44 Funktionen 2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.45 Ausblick auf Objekte.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.46 Arbeiten mit Dateien.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.48 Dateien öffnen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.49 Datei schreiben.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.50 Das With-Construct.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.51 CSV öffnen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.52 CSV-Dateien lesen und Einträge überspringen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.53 Grafiken zeichnen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.54 Geburtsstatistiken.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.56 Aufgabe Geburtsstatistiken.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.59 Übungsblatt Funktionen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.63 Arbeiten mit Listen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.64 List slicing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.68 Dictionaries.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.70 Tupel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.71 Tupel packen und entpacken.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.72 Dictionaries und Schleifen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.73 Aufgabe zu Dictionaries und schleifen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.76 Datenstrukturen ineinander verschachteln.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.79 Klassen und Methoden erstellen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.80 Construktor und Methoden erstellen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.81 Warum private Eigenschaften und Methoden.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.82 Private Eigenschaften und Methoden.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.83 Warum kapseln wir Daten.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.84 Besondere Methoden.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.85 Vererbung in Python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.86 Aufgabe Vererbung und Objektorientierung.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.88 Typen von Variablen überprüfen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.89 In Python ist alles ein Objekt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.90 Wie Variablen, Klassen und Methoden benennen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.91 Statische Variablen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.94 Übungen Objektorientierung.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.101 Beispiele für ein Modul.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.95 Module in Python - Einführung.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.96 Code aus separater Datei laden.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.97 Verschiedene Importmöglichkeiten für Module.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.98 Module in einem Ordner erstellen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Elemente im HTML finden (2).ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fibonacci.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generatoren-Demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Automatische Digikam-Tags-Korrektur.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automatische Digikam-Tags-Korrektur.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Bilder_abgleich_nach_vorname.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder_abgleich_nach_vorname.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Practise Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Practise Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Sample Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Sample Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Air Brake Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/General Knowledge Practise Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/General Knowledge Practise Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/General Knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/General Knowledge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Passenger Endorsement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Passenger Endorsement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/Practise Passenger Transport Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Practise Passenger Transport Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Busführerschein/S Endorsement Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/S Endorsement Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_auto_sortierung_neuordner.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_auto_sortierung_neuordner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_defekte_entfernen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_defekte_entfernen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_modellordner_taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_modellordner_taggen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_face_tagging_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_face_tagging_verschieben.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_klammer_sortieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_klammer_sortieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_nach_ordner_umbenennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_ordner_umbenennen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_ordner_tag_prefix.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_ordner_tag_prefix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_tag_qualitaet_sortierer.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_tag_qualitaet_sortierer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/bilder_videos_initial_sortierung.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_videos_initial_sortierung.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateien_nach_muster_in_chaosordner_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateien_nach_muster_in_chaosordner_verschieben.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiendung_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiendung_korrigieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_aus_digikam_tags_rekonstruieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_namen_titel_formatieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_namen_titel_formatieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_prefix_aus_name_setzen.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_prefix_aus_name_setzen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_prefix_jahr_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_prefix_jahr_verschieben.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateiname_tag_haeufigkeit_zaehlen.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_tag_haeufigkeit_zaehlen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/dateisuche_pfad_ueberpruefung.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateisuche_pfad_ueberpruefung.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/exif_fehlerhafte_face_tags_loeschen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_fehlerhafte_face_tags_loeschen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/exif_metadaten_bereinigung.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_metadaten_bereinigung.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/exif_namen_aus_dateiname_taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_namen_aus_dateiname_taggen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/exif_prefix_umbenennung_zwei_stufen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_prefix_umbenennung_zwei_stufen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/laengster_dateiname_finden.py" beforeDir="false" afterPath="$PROJECT_DIR$/laengster_dateiname_finden.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/mp3_archiv_duplikat_bereinigung.py" beforeDir="false" afterPath="$PROJECT_DIR$/mp3_archiv_duplikat_bereinigung.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/ordner_entschachteln_pfadlimit_umgehen.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordner_entschachteln_pfadlimit_umgehen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/ordnernamen_fuzzy_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/tagging_inkonsistenzen_finden.py" beforeDir="false" afterPath="$PROJECT_DIR$/tagging_inkonsistenzen_finden.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Marcos Übungen/Ähnlichkeitssuche der Personen in der gleichen Datei.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ähnlichkeitssuche der Personen in der gleichen Datei.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Merkblatt+-+Module+in+Python.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_output.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler_output_generator.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datei.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datei2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hallo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/magic1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/schreiben.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateiendung_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiendung_korrigieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateiname_prefix_jahr_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_prefix_jahr_verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Werniman0606&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Werniman0606/Udemy_Python_komplett&quot;,
+    &quot;accountId&quot;: &quot;ab259af5-9775-4150-8028-fa83919f3635&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -150,7 +52,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.executor": "Run",
+    "Python.dateiendung_korrigieren.executor": "Run",
     "Python.dateiname_aus_digikam_tags_rekonstruieren.executor": "Run",
+    "Python.dateiname_prefix_jahr_verschieben.executor": "Run",
+    "Python.ordnernamen_fuzzy_korrigieren.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -159,8 +65,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wilco\PycharmProjects\Udemy_Python_komplett" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-7bb8055f9097-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.28238.29" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -171,5 +85,13 @@
       <updated>1763233299385</updated>
     </task>
     <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

@@ -14,10 +14,10 @@ import codecs
 import re
 
 # Konfigurieren des zu durchsuchenden Ordners
-ROOT_FOLDER = r"/run/media/marcoj/Laufwerk E/Bilder/Celebrities"
+ROOT_FOLDER = r"d:\RedditDownloads\reddit_sub_GermanCelebs\Lena Meyer-Landruth"
 
 # EXIFTOOL PFAD ANPASSUNG
-EXIFTOOL_PATH = r"/usr/bin/vendor_perl/exiftool"
+EXIFTOOL_PATH = r'D:\exiftool-13.43_64\exiftool-13.43_64\exiftool(-k).exe'
 
 
 def get_persons_from_file(filepath):
