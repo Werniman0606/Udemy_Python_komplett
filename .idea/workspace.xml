@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34babd37-3cd9-4a5d-9b48-a8fc4abd71a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="34babd37-3cd9-4a5d-9b48-a8fc4abd71a8" name="Changes" comment="Nikolaus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dateiendung_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiendung_korrigieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bilder_auto_sortierung_neuordner.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_auto_sortierung_neuordner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dateiname_prefix_jahr_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_prefix_jahr_verschieben.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +48,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.4.32 Elif.executor": "Run",
     "Python.Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.executor": "Run",
+    "Python.bilder_auto_sortierung_neuordner.executor": "Run",
     "Python.dateiendung_korrigieren.executor": "Run",
     "Python.dateiname_aus_digikam_tags_rekonstruieren.executor": "Run",
     "Python.dateiname_prefix_jahr_verschieben.executor": "Run",
     "Python.ordnernamen_fuzzy_korrigieren.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -72,7 +73,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-7bb8055f9097-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.28238.29" />
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-PY-253.28294.336" />
+        <option value="bundled-python-sdk-0978a7220b69-9867c7d4c0a4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.28294.336" />
       </set>
     </attachedChunks>
   </component>
@@ -83,8 +85,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763233299385</updated>
+      <workItem from="1765634765568" duration="15000" />
+      <workItem from="1765634884733" duration="1156000" />
+      <workItem from="1765638981738" duration="10000" />
+      <workItem from="1765639146325" duration="4020000" />
     </task>
+    <task id="LOCAL-00001" summary="Nikolaus">
+      <option name="closed" value="true" />
+      <created>1765076753166</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765076753166</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nikolaus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nikolaus" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$dateiname_aus_digikam_tags_rekonstruieren.coverage" NAME="dateiname_aus_digikam_tags_rekonstruieren Coverage Results" MODIFIED="1765646581955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$4_32_Elif.coverage" NAME="4.32 Elif Coverage Results" MODIFIED="1765638440753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Namen_aus_Celeb_Ordner_auslesen__Files_im_Redditordner_danach_umbenennen.coverage" NAME="Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen Coverage Results" MODIFIED="1765641615556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$bilder_auto_sortierung_neuordner.coverage" NAME="bilder_auto_sortierung_neuordner Coverage Results" MODIFIED="1765646720354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

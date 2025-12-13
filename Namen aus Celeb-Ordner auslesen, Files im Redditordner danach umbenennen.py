@@ -18,7 +18,7 @@ MASTER_FOLDER = r'E:\Bilder\Celebrities'
 DOWNLOAD_FOLDER = r'd:\RedditDownloads'
 
 # PFAD ZU EXIFTOOL.EXE (Wird hier nur für die Metadaten-Schreibfunktion benötigt)
-EXIFTOOL_PATH = r'D:\exiftool-13.43_64\exiftool-13.43_64\exiftool(-k).exe'
+EXIFTOOL_PATH = r'D:\exiftool-13.43_64\exiftool-13.43_64\exiftool.exe'
 
 # Dateitypen, die verarbeitet werden sollen
 FILE_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.tif','.gif','.png')

@@ -14,16 +14,16 @@ import codecs
 import re
 
 # Konfigurieren des zu durchsuchenden Ordners
-ROOT_FOLDER = r"d:\RedditDownloads\reddit_sub_GermanCelebs\Lena Meyer-Landruth"
+ROOT_FOLDER = r"d:\RedditDownloads\reddit_sub_GermanCelebs"
 
 # EXIFTOOL PFAD ANPASSUNG
-EXIFTOOL_PATH = r'D:\exiftool-13.43_64\exiftool-13.43_64\exiftool(-k).exe'
+EXIFTOOL_PATH = r'D:\exiftool-13.43_64\exiftool-13.43_64\exiftool.exe'
 
 
 def get_persons_from_file(filepath):
     """
     Ruft ExifTool auf, um die TagsList zu lesen und extrahiert die Personennamen.
-    Entfernt doppelte Namen.
+    Entfernt doppelte Namen. Enthält Debug-Ausgaben zur Fehlersuche.
     """
     persons = []
     # Verwende '-TagsList' um die Digikam-Hierarchie (z.B. Personen/Max) zu erhalten.
@@ -32,7 +32,10 @@ def get_persons_from_file(filepath):
     try:
         # Verwende das 'ignore'-Verhalten für Fehler beim Dekodieren
         result = subprocess.run(cmd, capture_output=True, text=True, check=True, encoding='utf-8', errors='ignore')
+
         if not result.stdout.strip():
+            ### DEBUG-ZEILE ZUR FEHLERSUCHE (Punkt 1)
+            print(f"!!! DEBUG: ExifTool gibt keinen Output für '{os.path.basename(filepath)}' zurück.")
             return persons
 
         # ExifTool gibt ein JSON-Array zurück, auch bei einer Datei
@@ -40,6 +43,10 @@ def get_persons_from_file(filepath):
 
         if output_json and output_json[0] and 'TagsList' in output_json[0]:
             digikam_tags = output_json[0]['TagsList']
+
+            ### DEBUG-ZEILE ZUR FEHLERSUCHE (Punkt 2)
+            # Gibt den gesamten Inhalt der TagsList aus
+            print(f"!!! DEBUG: TagsList gefunden für '{os.path.basename(filepath)}'. Inhalt: {digikam_tags}")
 
             # Stelle sicher, dass digikam_tags als Liste behandelt wird
             tags_to_process = digikam_tags if isinstance(digikam_tags, list) else [digikam_tags]
@@ -101,7 +108,7 @@ def find_existing_prefix(filename):
 def rename_file_with_persons(filepath, persons):
     """
     Benennt die Datei um, indem der aktuelle Präfix basierend auf den gefundenen
-    Tags (oder deren Fehlen) aktualisiert wird.
+    Tags (oder deren Fehlen) aktualisiert wird. (Logik unverändert)
     """
     original_dirname = os.path.dirname(filepath)
     original_basename = os.path.basename(filepath)
@@ -224,11 +231,15 @@ def main():
     print("--------------------------------------------------------------------------------")
     renamed_count = 0
 
+    # ⭐ ANPASSUNG: Erweiterung der Liste um Videoformate und andere
+    SUPPORTED_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.gif', '.mp4', '.mov', '.webp')
+
     for dirpath, _, filenames in os.walk(ROOT_FOLDER):
         for filename in filenames:
             filepath = os.path.join(dirpath, filename)
 
-            if not filename.lower().endswith(('.jpg', '.jpeg', '.png', '.gif')):
+            # Prüft, ob die Datei eine unterstützte Endung hat
+            if not filename.lower().endswith(SUPPORTED_EXTENSIONS):
                 continue
 
             # Liest immer die aktuellen Metadaten
