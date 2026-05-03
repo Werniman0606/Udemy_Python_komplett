@@ -18,10 +18,10 @@ import time
 
 # --- KONFIGURATION START ---
 # Pfad zu exiftool
-EXIFTOOL_PATH = r'd:\exiftool-13.33_64\exiftool-13.33_64\exiftool.exe'
+EXIFTOOL_PATH = r'd:\exiftool-13.52_64\exiftool-13.52_64\exiftool.exe'
 
 # Basisverzeichnis, in dem nach Bildern gesucht werden soll
-SOURCE_DIR = r'd:\RedditDownloads\reddit_sub_GermanCelebs'
+SOURCE_DIR = r'e:\Bilder\Celebrities\C\Chloe Morgane'
 
 # Erlaubte Bildformate
 ALLOWED_EXTENSIONS = ('.jpg', '.jpeg')

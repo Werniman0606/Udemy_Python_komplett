@@ -1,72 +1,70 @@
 # ==============================================================================
-# Dateiname Vorschlag (Deutsch): ordnernamen_fuzzy_korrigieren.py
-# Dateiname Vorschlag (Technisch): folder_name_fuzzy_corrector.py
+# Dateiname: folder_name_fuzzy_corrector_v2.py
 #
-# Beschreibung: Dieses Skript dient der Standardisierung und Korrektur von
-#               Ordnernamen (z.B. in einem Download-Ordner) anhand einer
-#               bestehenden, korrekten Ordnerstruktur (dem Archiv).
-#               1. Es liest alle korrekten Ordnernamen aus ZIEL_PFAD (rekursiv) ein.
-#               2. Es durchsucht die oberste Ebene des QUELLE_PFAD nach Abweichungen.
-#               3. Es verwendet Fuzzy Matching (fuzz.token_sort_ratio) und einen
-#                  Schwellenwert (SCHWELLENWERT), um Tippfehler zu erkennen und
-#                  den korrekten Namen vorzuschlagen.
-#               4. Bei 100% Übereinstimmung (ohne Berücksichtigung der Groß-/
-#                  Kleinschreibung) wird eine Zweischritt-Umbenennung durchgeführt,
-#                  um nur das korrekte Casing des Namens zu erzwingen.
-#               5. Der Benutzer muss jede Umbenennung manuell bestätigen.
+# Beschreibung: Standardisiert Ordnernamen basierend auf einem Archiv.
+#               - Korrigiert Tippfehler (Fuzzy Matching)
+#               - Korrigiert Groß-/Kleinschreibung (Windows NTFS Fix)
+#               - NEU: Mergt Ordner, falls der Zielname bereits existiert.
 # ==============================================================================
 
 import os
 import sys
+import shutil
 from fuzzywuzzy import fuzz  # Benötigt: pip install fuzzywuzzy python-levenshtein
 
 # --- Konfiguration ---
-# Das Archiv/die Sammlung, aus der die KORREKTEN Ordnernamen gelesen werden (rekursiv)
 ZIEL_PFAD = r"e:\Bilder\Celebrities"
-# Der Ordner mit den zu prüfenden Ordnern (z.B. neue Downloads)
-QUELLE_PFAD = r"d:\RedditDownloads\reddit_sub_GermanCelebs"
-# Ähnlichkeitsschwelle (0-100), ab der eine Korrektur vorgeschlagen wird
+QUELLE_PFAD = r"d:\extracted\rips\reddit_sub_GermanCelebs"
 SCHWELLENWERT = 75
 
-
-# --- Ende Konfiguration ---
 
 def sammle_zielnamen(pfad):
     """Sammelt ALLE Namen der Unterordner im Zielpfad, REKURSIV."""
     print(f"Lese korrekte Zielnamen (rekursiv) aus: {pfad}")
-    # Speichert: {kleingeschriebener_name: Name_mit_korrektem_Casing}
     korrekte_namen = {}
     try:
-        # Durchläuft rekursiv alle Unterordner
         for root, dirs, files in os.walk(pfad):
-            # Wir sind nur an den Namen interessiert, nicht an den Pfad-Bestandteilen
             for d in dirs:
-                if len(d) > 1:  # Ignoriert möglicherweise "." oder kurze Platzhalter
-                    # Speichert den kleingeschriebenen Namen als Schlüssel, den Originalnamen als Wert
+                if len(d) > 1:
                     korrekte_namen[d.lower()] = d
-
         print(f"-> {len(korrekte_namen)} korrekte Namen zur Prüfung gefunden.")
         return korrekte_namen
-
-    except FileNotFoundError:
-        print(f"FEHLER: Zielpfad '{pfad}' nicht gefunden. Bitte prüfen Sie die ZIEL_PFAD Variable.")
-        sys.exit(1)
     except Exception as e:
         print(f"FEHLER beim Lesen des Zielpfads: {e}")
         sys.exit(1)
 
 
+def merge_ordner(quell_ordner_pfad, ziel_ordner_pfad):
+    """Verschiebt den Inhalt von Quelle in Ziel und löscht die leere Quelle."""
+    try:
+        for item in os.listdir(quell_ordner_pfad):
+            s = os.path.join(quell_ordner_pfad, item)
+            d = os.path.join(ziel_ordner_pfad, item)
+
+            # Falls Datei/Ordner im Ziel existiert, Suffix anhängen um Überschreiben zu verhindern
+            if os.path.exists(d):
+                base, extension = os.path.splitext(item)
+                d = os.path.join(ziel_ordner_pfad, f"{base}_DUPLIKAT{extension}")
+
+            shutil.move(s, d)
+
+        # Leeren Quellordner entfernen
+        os.rmdir(quell_ordner_pfad)
+        return True
+    except Exception as e:
+        print(f"   ❌ Fehler beim Mergen: {e}")
+        return False
+
+
 def korrigiere_ordnernamen(ziel_namen_map, quelle_pfad):
-    """Durchsucht den Quellpfad, findet ähnliche Namen und schlägt Korrekturen vor."""
-    print(f"\nStarte Überprüfung im Quellpfad: {quelle_pfad}")
+    """Durchsucht den Quellpfad und schlägt Korrekturen oder Merges vor."""
+    print(f"\nStarte Überprüfung in: {quelle_pfad}")
     korrekte_namen_lower = ziel_namen_map.keys()
 
     try:
-        # Nur Ordner in der obersten Ebene des Quellpfads prüfen
         quell_ordner = [d for d in os.listdir(quelle_pfad) if os.path.isdir(os.path.join(quelle_pfad, d))]
-        print(f"-> {len(quell_ordner)} Quellordner zum Prüfen gefunden.")
     except FileNotFoundError:
-        print(f"FEHLER: Quellpfad '{quelle_pfad}' nicht gefunden. Bitte prüfen Sie die QUELLE_PFAD Variable.")
+        print(f"FEHLER: Quellpfad '{quelle_pfad}' nicht gefunden.")
         return
 
     korrektur_zaehler = 0
@@ -75,83 +73,67 @@ def korrigiere_ordnernamen(ziel_namen_map, quelle_pfad):
         beste_uebereinstimmung = 0
         bester_zielname_korrekt = None
 
-        # 1. Prüfen auf exakte Übereinstimmung (ohne Casing)
+        # 1. Exakte Übereinstimmung (ohne Case)
         if falsch_name.lower() in ziel_namen_map:
             beste_uebereinstimmung = 100
             bester_zielname_korrekt = ziel_namen_map[falsch_name.lower()]
 
-        # 2. Fuzzy Matching, falls keine perfekte Übereinstimmung gefunden wurde
-        # (Dies fängt Tippfehler ab, aber nicht 100% Casing-Fehler)
+        # 2. Fuzzy Matching
         if beste_uebereinstimmung < 100:
             for ziel_name_lower in korrekte_namen_lower:
-                # Nutzt Token Sort Ratio für robusten Vergleich
                 score = fuzz.token_sort_ratio(falsch_name.lower(), ziel_name_lower)
-
                 if score > beste_uebereinstimmung:
                     beste_uebereinstimmung = score
                     bester_zielname_korrekt = ziel_namen_map[ziel_name_lower]
 
-        # 3. Vorschlag und Ausführung, wenn der Schwellenwert erreicht ist
+        # 3. Ausführung
         if bester_zielname_korrekt and beste_uebereinstimmung >= SCHWELLENWERT:
-
-            # Wenn der Name bereits exakt stimmt (inkl. Casing), überspringen
             if falsch_name == bester_zielname_korrekt:
                 continue
 
             quell_pfad_voll = os.path.join(quelle_pfad, falsch_name)
             ziel_pfad_voll = os.path.join(quelle_pfad, bester_zielname_korrekt)
 
-            print(f"\n--- POTENZIELLE KORREKTUR VORGESCHLAGEN ---")
-            print(f"Falscher Name:  '{falsch_name}'")
-            print(f"Vorschlag:     '{bester_zielname_korrekt}' (Ähnlichkeit: {beste_uebereinstimmung}%)")
+            print(f"\n--- AKTION VORGESCHLAGEN ({beste_uebereinstimmung}%) ---")
+            print(f"Quelle: '{falsch_name}'")
+            print(f"Ziel:   '{bester_zielname_korrekt}'")
 
-            antwort = input("Umbenennen? (j/n/s - 's' für springen): ").lower()
+            status = "MERGE" if os.path.exists(
+                ziel_pfad_voll) and falsch_name.lower() != bester_zielname_korrekt.lower() else "RENAME"
+            print(f"Modus:  {status}")
+
+            antwort = input(f"Zustimmen? (j/n/s): ").lower()
 
             if antwort == 'j':
                 try:
-                    if beste_uebereinstimmung == 100 and os.path.isdir(quell_pfad_voll) and not os.path.exists(
-                            ziel_pfad_voll):
-                        # NEUE LOGIK: Zweischritt-Umbenennung, um Casing-Korrektur auf NTFS zu erzwingen
-                        # (Da Windows NTFS Case-Insensitive ist, kann man 'a' nicht direkt in 'A' umbenennen)
-                        temp_name = falsch_name + "_TEMP_RENAME"
-                        temp_pfad_voll = os.path.join(quelle_pfad, temp_name)
-
-                        os.rename(quell_pfad_voll, temp_pfad_voll)
-                        os.rename(temp_pfad_voll, ziel_pfad_voll)
-
-                        print(f"-> ERFOLGREICH (Casing-Korrektur) umbenannt zu: '{bester_zielname_korrekt}'")
-                        korrektur_zaehler += 1
-                    else:
-                        # Normale Fuzzy-Treffer (< 100%) oder andere Fälle
-                        if os.path.exists(ziel_pfad_voll):
-                            # KORREKTUR: Der f-String wird hier abgeschlossen
-                            print(
-                                f"ACHTUNG: Zielordner '{bester_zielname_korrekt}' existiert bereits. Umbenennung übersprungen.")
-                        else:
-                            # Normale Umbenennung
-                            os.rename(quell_pfad_voll, ziel_pfad_voll)
-                            print(f"-> ERFOLGREICH umbenannt zu: '{bester_zielname_korrekt}'")
+                    # FALL: Zielordner existiert -> MERGEN
+                    if os.path.exists(ziel_pfad_voll) and quell_pfad_voll.lower() != ziel_pfad_voll.lower():
+                        if merge_ordner(quell_pfad_voll, ziel_pfad_voll):
+                            print(f"-> Erfolgreich zusammengeführt.")
                             korrektur_zaehler += 1
 
+                    # FALL: Nur Groß-/Kleinschreibung falsch (NTFS-Safe Rename)
+                    elif beste_uebereinstimmung == 100:
+                        temp_pfad = quell_pfad_voll + "_TEMP"
+                        os.rename(quell_pfad_voll, temp_pfad)
+                        os.rename(temp_pfad, ziel_pfad_voll)
+                        print(f"-> Schreibweise korrigiert.")
+                        korrektur_zaehler += 1
+
+                    # FALL: Normales Umbenennen
+                    else:
+                        os.rename(quell_pfad_voll, ziel_pfad_voll)
+                        print(f"-> Ordner umbenannt.")
+                        korrektur_zaehler += 1
+
                 except Exception as e:
-                    print(f"❌ FEHLER beim Umbenennen von '{falsch_name}' zu '{bester_zielname_korrekt}': {e}")
+                    print(f"❌ Fehler: {e}")
 
-            elif antwort == 's':
-                print(f"-> Umbenennung von '{falsch_name}' übersprungen.")
-            else:
-                print("-> Aktion abgebrochen oder ungültige Eingabe.")
+    print(f"\n--- FERTIG: {korrektur_zaehler} Korrekturen durchgeführt. ---")
 
-    print(f"\n--- ZUSAMMENFASSUNG ---")
-    print(f"Insgesamt {len(quell_ordner)} Ordner geprüft.")
-    print(f"Anzahl erfolgreicher Korrekturen: {korrektur_zaehler}")
-    print("-" * 30)
-
-# --- Hauptfunktion und Start ---
 
 def main():
-    """Startet den gesamten Prozess."""
     ziel_namen_map = sammle_zielnamen(ZIEL_PFAD)
-
     if ziel_namen_map:
         korrigiere_ordnernamen(ziel_namen_map, QUELLE_PFAD)
 

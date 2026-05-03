@@ -14,59 +14,51 @@ import codecs
 import re
 
 # Konfigurieren des zu durchsuchenden Ordners
-ROOT_FOLDER = r"d:\RedditDownloads\reddit_sub_GermanCelebs"
+ROOT_FOLDER = r"e:\Bilder\Celebrities\C\Chloe Morgane"
+
 
 # EXIFTOOL PFAD ANPASSUNG
-EXIFTOOL_PATH = r'D:\exiftool-13.43_64\exiftool-13.43_64\exiftool.exe'
+EXIFTOOL_PATH = r'D:\exiftool-13.52_64\exiftool-13.52_64\exiftool.exe'
 
 
 def get_persons_from_file(filepath):
     """
     Ruft ExifTool auf, um die TagsList zu lesen und extrahiert die Personennamen.
-    Entfernt doppelte Namen. Enthält Debug-Ausgaben zur Fehlersuche.
     """
     persons = []
-    # Verwende '-TagsList' um die Digikam-Hierarchie (z.B. Personen/Max) zu erhalten.
     cmd = [EXIFTOOL_PATH, '-TagsList', '-j', filepath]
 
     try:
-        # Verwende das 'ignore'-Verhalten für Fehler beim Dekodieren
         result = subprocess.run(cmd, capture_output=True, text=True, check=True, encoding='utf-8', errors='ignore')
 
         if not result.stdout.strip():
-            ### DEBUG-ZEILE ZUR FEHLERSUCHE (Punkt 1)
-            print(f"!!! DEBUG: ExifTool gibt keinen Output für '{os.path.basename(filepath)}' zurück.")
             return persons
 
-        # ExifTool gibt ein JSON-Array zurück, auch bei einer Datei
         output_json = json.loads(result.stdout)
 
-        if output_json and output_json[0] and 'TagsList' in output_json[0]:
+        if output_json and len(output_json) > 0 and 'TagsList' in output_json[0]:
             digikam_tags = output_json[0]['TagsList']
 
-            ### DEBUG-ZEILE ZUR FEHLERSUCHE (Punkt 2)
-            # Gibt den gesamten Inhalt der TagsList aus
-            print(f"!!! DEBUG: TagsList gefunden für '{os.path.basename(filepath)}'. Inhalt: {digikam_tags}")
-
-            # Stelle sicher, dass digikam_tags als Liste behandelt wird
-            tags_to_process = digikam_tags if isinstance(digikam_tags, list) else [digikam_tags]
+            # --- KORREKTUR HIER ---
+            # Wir stellen sicher, dass wir immer eine Liste von Strings haben
+            if isinstance(digikam_tags, str):
+                tags_to_process = [digikam_tags]
+            elif isinstance(digikam_tags, list):
+                tags_to_process = digikam_tags
+            else:
+                tags_to_process = []
+            # ----------------------
 
             for tag in tags_to_process:
-                # Prüfe nur Tags, die mit der Digikam-Kategorie 'Personen/' beginnen
+                # Jetzt ist 'tag' garantiert der ganze String (z.B. "Personen/Yeliz Kocz")
                 if isinstance(tag, str) and tag.startswith("Personen/"):
-                    # Füge den reinen Namen ohne das Präfix 'Personen/' hinzu
-                    persons.append(tag.split("/", 1)[1].strip())
+                    name = tag.split("/", 1)[1].strip()
+                    persons.append(name)
 
-    except subprocess.CalledProcessError as e:
-        print(f"FEHLER bei ExifTool-Ausführung für '{filepath}': {e.stderr}")
-    except json.JSONDecodeError:
-        print(f"FEHLER: Ungültiges JSON von ExifTool für '{filepath}' erhalten.")
     except Exception as e:
-        print(f"FEHLER beim Verarbeiten der ExifTool-Ausgabe für '{filepath}': {e}")
+        print(f"FEHLER beim Verarbeiten von '{os.path.basename(filepath)}': {e}")
 
-    # Duplikate entfernen und alphabetisch sortieren
     return sorted(list(set(persons)))
-
 
 def create_prefix(persons, safe_mode=False):
     """

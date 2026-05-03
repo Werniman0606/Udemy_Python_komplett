@@ -12,13 +12,13 @@ from collections import defaultdict
 # --- KONFIGURATION ---
 
 # 1. QUELLE der gültigen Personennamen (Master-Sammlung)
-MASTER_FOLDER = r'E:\Bilder\Celebrities'
+MASTER_FOLDER = r'e:\Bilder\Celebrities'
 
 # 2. ZIELORDNER der Umbenennung (Downloads mit unsortierten Dateien)
-DOWNLOAD_FOLDER = r'd:\RedditDownloads'
+DOWNLOAD_FOLDER = r'e:\Bilder\Celebrities'
 
 # PFAD ZU EXIFTOOL.EXE (Wird hier nur für die Metadaten-Schreibfunktion benötigt)
-EXIFTOOL_PATH = r'D:\exiftool-13.43_64\exiftool-13.43_64\exiftool.exe'
+EXIFTOOL_PATH = r'd:\exiftool-13.52_64\exiftool-13.52_64\exiftool.exe'
 
 # Dateitypen, die verarbeitet werden sollen
 FILE_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.tif','.gif','.png')
