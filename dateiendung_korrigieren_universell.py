@@ -1,15 +1,17 @@
+import os
 import filetype  # Installation: pip install filetype
 from pathlib import Path
 
 # =========================== KONFIGURATION ===========================
-# Pfad zu deinem Bilder-Ordner
-ROOT_FOLDER = r"d:\extracted\rips"
+# Automatische Erkennung des Pfads zum Bilder-Ordner
+if os.name == 'nt':  # Windows
+    ROOT_FOLDER = Path(r"d:\extracted\rips")
+else:  # Linux (CachyOS)
+    ROOT_FOLDER = Path("/run/media/marcoj/Laufwerk D/extracted/rips")
 
 # DRY_RUN = True  -> Es wird nur angezeigt, was korrigiert würde.
 # DRY_RUN = False -> Die Dateien werden tatsächlich umbenannt.
 DRY_RUN = False
-
-
 # =====================================================================
 
 def get_real_extension(file_path):
@@ -28,20 +30,19 @@ def get_real_extension(file_path):
 
 
 def main():
-    root = Path(ROOT_FOLDER)
-
-    if not root.is_dir():
+    # ROOT_FOLDER ist jetzt bereits ein Path-Objekt
+    if not ROOT_FOLDER.is_dir():
         print(f"❌ Fehler: Der Ordner '{ROOT_FOLDER}' existiert nicht.")
         return
 
     mode_label = " [VORSCHAU-MODUS] " if DRY_RUN else " [LIVE-MODUS] "
-    print(f"{'=' * 60}\n{mode_label} Starte Analyse in: {root}\n{'=' * 60}")
+    print(f"{'=' * 60}\n{mode_label} Starte Analyse in: {ROOT_FOLDER}\n{'=' * 60}")
 
     checked_count = 0
     renamed_count = 0
 
     # Durchläuft rekursiv alle Dateien (auch in Unterordnern)
-    for file in root.rglob('*'):
+    for file in ROOT_FOLDER.rglob('*'):
         # Nur Dateien bearbeiten, keine Verzeichnisse
         if file.is_file():
             checked_count += 1

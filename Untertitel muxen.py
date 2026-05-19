@@ -1,78 +1,78 @@
 import os
 import subprocess
+import glob
 
-# Pfade definieren
-# Nutze r"" (Raw-Strings), um Probleme mit Backslashes zu vermeiden
-ffmpeg_path = r"C:\Program Files\digiKam\ffmpeg.exe"
-source_dir = r"D:\Marco Jahn - Musik"
-target_dir = os.path.join(source_dir, "Fertig")
-
-# Zielordner erstellen, falls er nicht existiert
-if not os.path.exists(target_dir):
-    os.makedirs(target_dir)
+# --- KONFIGURATION ---
+ROOT_DIR = r'f:\IT-Videos'
+MKVMERGE_PATH = r'C:\Program Files\MKVToolNix\mkvmerge.exe'
 
 
-def mux_videos():
-    if not os.path.exists(ffmpeg_path):
-        print(f"Fehler: FFmpeg wurde unter {ffmpeg_path} nicht gefunden!")
-        return
+# ---------------------
 
-    files = os.listdir(source_dir)
-    video_extensions = ('.mp4', '.mkv')
-    videos = [f for f in files if f.lower().endswith(video_extensions)]
+def process_mkv_files(root_path):
+    for subdir, dirs, files in os.walk(root_path):
+        for file in files:
+            # Wir suchen nach MKV-Dateien
+            if file.lower().endswith('.mkv'):
+                video_path = os.path.join(subdir, file)
+                # Den reinen Dateinamen ohne .mkv holen
+                base_name = os.path.splitext(file)[0]
 
-    for video in videos:
-        # Basisname ohne Erweiterung
-        base_name = os.path.splitext(video)[0]
+                # Wir suchen nach SRT-Dateien, die exakt so heißen wie das Video...
+                # ODER die mit dem Videonamen plus einem Punkt beginnen (z.B. .Englisch.srt)
+                # Das verhindert, dass "Video 1.mkv" die Untertitel von "Video 10.srt" greift.
+                srt_pattern = os.path.join(subdir, f"{base_name}*.srt")
+                potential_srts = glob.glob(srt_pattern)
 
-        # Suche nach einer passenden .srt Datei
-        subtitle_file = None
-        for f in files:
-            # Prüft, ob der Dateiname mit dem Videonamen beginnt und auf .srt endet
-            if f.lower().startswith(base_name.lower()) and f.lower().endswith('.srt'):
-                subtitle_file = f
-                break
+                # Wir filtern die Liste manuell, um sicherzugehen, dass es
+                # entweder "Name.srt" oder "Name.Irgendetwas.srt" ist.
+                matching_srts = [
+                    s for s in potential_srts
+                    if os.path.basename(s) == f"{base_name}.srt"
+                       or os.path.basename(s).startswith(f"{base_name}.")
+                ]
 
-        # Nur bearbeiten, wenn ein Untertitel gefunden wurde
-        if subtitle_file:
-            input_video = os.path.join(source_dir, video)
-            input_srt = os.path.join(source_dir, subtitle_file)
-            # Zieldatei ist immer .mkv im Unterordner "Fertig"
-            output_mkv = os.path.join(target_dir, f"{base_name}.mkv")
+                if matching_srts:
+                    # Nimm die erste gefundene passende Untertiteldatei
+                    srt_path = matching_srts[0]
+                    srt_filename = os.path.basename(srt_path)
 
-            print(f"Muxe: {video} + {subtitle_file} -> Fertig\\{base_name}.mkv")
+                    output_file = os.path.join(subdir, f"{base_name}_temp.mkv")
 
-            # FFmpeg Befehl
-            # -i: Inputs
-            # -c copy: Video und Audio werden ohne Qualitätsverlust kopiert
-            # -c:s srt: Untertitel werden in das mkv-kompatible Format eingebettet
-            cmd = [
-                ffmpeg_path, '-y',
-                '-i', input_video,
-                '-i', input_srt,
-                '-c', 'copy',
-                '-c:s', 'srt',
-                output_mkv
-            ]
+                    print(f"Gefunden: {file}")
+                    print(f"Muxe mit: {srt_filename}")
 
-            try:
-                # Ausführung (stdout/stderr unterdrückt, außer bei Fehlern)
-                result = subprocess.run(cmd, capture_output=True, text=True)
+                    cmd = [
+                        MKVMERGE_PATH,
+                        '-o', output_file,
+                        video_path,
+                        srt_path
+                    ]
 
-                if result.returncode == 0:
-                    print("Erfolg! Lösche Quelldateien...")
-                    os.remove(input_video)
-                    os.remove(input_srt)
+                    try:
+                        result = subprocess.run(cmd, check=True, capture_output=True, text=True)
+
+                        if result.returncode == 0:
+                            # Sicherheitshalber prüfen, ob die Temp-Datei erstellt wurde
+                            if os.path.exists(output_file):
+                                os.remove(video_path)
+                                os.remove(srt_path)
+                                os.rename(output_file, video_path)
+                                print(f"Erfolg: Untertitel integriert.\n")
+
+                    except subprocess.CalledProcessError as e:
+                        print(f"FEHLER bei {file}: {e.stderr}")
+                        if os.path.exists(output_file):
+                            os.remove(output_file)
                 else:
-                    print(f"FFmpeg Fehler bei {video}: {result.stderr}")
-            except Exception as e:
-                print(f"Systemfehler bei {video}: {e}")
-        else:
-            # Optional: Zeigt an, welche Videos übersprungen wurden
-            # print(f"Überspringe (kein SRT): {video}")
-            pass
+                    # Hier passiert nichts, wenn kein passender Untertitel da ist
+                    pass
 
 
 if __name__ == "__main__":
-    mux_videos()
-    print("\nAlle passenden Dateien wurden verarbeitet.")
+    if os.path.exists(ROOT_DIR):
+        print("--- Suche startet ---\n")
+        process_mkv_files(ROOT_DIR)
+        print("--- Fertig! ---")
+    else:
+        print(f"Pfad nicht gefunden: {ROOT_DIR}")

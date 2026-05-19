@@ -14,7 +14,7 @@ import codecs
 import re
 
 # Konfigurieren des zu durchsuchenden Ordners
-ROOT_FOLDER = r"e:\Bilder\Celebrities\C\Chloe Morgane"
+ROOT_FOLDER = r"d:\extracted\rips"
 
 
 # EXIFTOOL PFAD ANPASSUNG

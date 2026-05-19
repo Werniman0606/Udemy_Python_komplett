@@ -5,24 +5,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34babd37-3cd9-4a5d-9b48-a8fc4abd71a8" name="Changes" comment="Nikolaus">
-      <change afterPath="$PROJECT_DIR$/Dashcamvideos_zusammenbauen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Playboy-Modelnamen auslesen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Untertitel in mkv muxen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Untertitel muxen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Untertitel_Test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dashcamvideos_zusammenbauen_universell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ebooks splitten.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen_universell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bilder_auto_sortierung_neuordner_univerell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dateiendung_korrigieren_universell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren_universell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren_universell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udemy_Python_komplett.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/4_32_Elif.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/4_32_Elif.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PythonSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PythonSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Udemy_Python_komplett.slnx/v18/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Udemy_Python_komplett.slnx/v18/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Udemy_Python_komplett.slnx/v18/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Udemy_Python_komplett.slnx/v18/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automatische Digikam-Tags-Korrektur.py" beforeDir="false" afterPath="$PROJECT_DIR$/Automatische Digikam-Tags-Korrektur.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bilder_abgleich_nach_vorname.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bilder_abgleich_nach_vorname.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Air Brake Practise Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Practise Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Air Brake Sample Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Sample Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Air Brake Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Air Brake Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/General Knowledge Practise Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/General Knowledge Practise Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/General Knowledge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/General Knowledge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Passenger Endorsement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Passenger Endorsement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/Practise Passenger Transport Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/Practise Passenger Transport Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Busführerschein/S Endorsement Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Busführerschein/S Endorsement Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/ArticleFetcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/ArticleFetcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/CrawledArticle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/CrawledArticle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashcamvideos_zusammenbauen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dashcamvideos_zusammenbauen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Playboy-Modelnamen auslesen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Playboy-Modelnamen auslesen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untertitel in mkv muxen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Untertitel in mkv muxen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untertitel muxen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Untertitel muxen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untertitel_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Untertitel_Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bilder_auto_sortierung_neuordner.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_auto_sortierung_neuordner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bilder_defekte_entfernen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_defekte_entfernen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bilder_modellordner_taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_modellordner_taggen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bilder_nach_face_tagging_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_face_tagging_verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bilder_nach_klammer_sortieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_klammer_sortieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bilder_nach_ordner_umbenennen.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_nach_ordner_umbenennen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bilder_ordner_tag_prefix.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_ordner_tag_prefix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bilder_tag_qualitaet_sortierer.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_tag_qualitaet_sortierer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bilder_videos_initial_sortierung.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilder_videos_initial_sortierung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateien_nach_muster_in_chaosordner_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateien_nach_muster_in_chaosordner_verschieben.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dateiendung_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiendung_korrigieren.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_aus_digikam_tags_rekonstruieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateiname_namen_titel_formatieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_namen_titel_formatieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateiname_prefix_aus_name_setzen.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_prefix_aus_name_setzen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateiname_prefix_jahr_verschieben.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_prefix_jahr_verschieben.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateiname_tag_haeufigkeit_zaehlen.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateiname_tag_haeufigkeit_zaehlen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateisuche_pfad_ueberpruefung.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateisuche_pfad_ueberpruefung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exif_fehlerhafte_face_tags_loeschen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_fehlerhafte_face_tags_loeschen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exif_metadaten_bereinigung.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_metadaten_bereinigung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exif_namen_aus_dateiname_taggen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_namen_aus_dateiname_taggen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exif_prefix_umbenennung_zwei_stufen.py" beforeDir="false" afterPath="$PROJECT_DIR$/exif_prefix_umbenennung_zwei_stufen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hallom/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/hallom/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hallom/datei.py" beforeDir="false" afterPath="$PROJECT_DIR$/hallom/datei.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlbeispiel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlbeispiel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laengster_dateiname_finden.py" beforeDir="false" afterPath="$PROJECT_DIR$/laengster_dateiname_finden.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp3_archiv_duplikat_bereinigung.py" beforeDir="false" afterPath="$PROJECT_DIR$/mp3_archiv_duplikat_bereinigung.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordner_entschachteln_pfadlimit_umgehen.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordner_entschachteln_pfadlimit_umgehen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tagging_inkonsistenzen_finden.py" beforeDir="false" afterPath="$PROJECT_DIR$/tagging_inkonsistenzen_finden.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ähnlichkeitssuche der Personen in der gleichen Datei.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ähnlichkeitssuche der Personen in der gleichen Datei.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/wilco/PycharmProjects/Udemy_Python_komplett" value="35Wkcy3R5INRp0pX6WTB3OCxdrU" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,6 +114,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="35Wkcy3R5INRp0pX6WTB3OCxdrU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,6 +126,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.4.32 Elif.executor&quot;: &quot;Run&quot;,
     &quot;Python.Dashcamvideos_zusammenbauen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Ebooks splitten.executor&quot;: &quot;Run&quot;,
     &quot;Python.Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen.executor&quot;: &quot;Run&quot;,
     &quot;Python.Playboy-Modelnamen auslesen.executor&quot;: &quot;Run&quot;,
     &quot;Python.Untertitel in mkv muxen.executor&quot;: &quot;Run&quot;,
@@ -95,8 +163,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
-        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.33514.19" />
+        <option value="bundled-python-sdk-83fa46d5d5d4-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.33514.19" />
       </set>
     </attachedChunks>
   </component>
@@ -177,7 +245,19 @@
       <workItem from="1777076259761" duration="1557000" />
       <workItem from="1777214646586" duration="4683000" />
       <workItem from="1777598529093" duration="1596000" />
-      <workItem from="1777770735406" duration="596000" />
+      <workItem from="1777770735406" duration="1453000" />
+      <workItem from="1777816198586" duration="15519000" />
+      <workItem from="1777949412981" duration="2002000" />
+      <workItem from="1778205954577" duration="966000" />
+      <workItem from="1778539321570" duration="691000" />
+      <workItem from="1778541798657" duration="400000" />
+      <workItem from="1778542341514" duration="1701000" />
+      <workItem from="1778679062074" duration="1733000" />
+      <workItem from="1778895148865" duration="1131000" />
+      <workItem from="1778938550449" duration="2638000" />
+      <workItem from="1778959374750" duration="5030000" />
+      <workItem from="1779033289126" duration="2361000" />
+      <workItem from="1779047758075" duration="1960000" />
     </task>
     <task id="LOCAL-00001" summary="Nikolaus">
       <option name="closed" value="true" />
@@ -195,7 +275,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765647352283</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Nikolaus">
+      <option name="closed" value="true" />
+      <created>1777775265306</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777775265306</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Nikolaus">
+      <option name="closed" value="true" />
+      <created>1777775281330</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777775281330</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,20 +301,32 @@
     <MESSAGE value="Nikolaus" />
     <option name="LAST_COMMIT_MESSAGE" value="Nikolaus" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ordnernamen_fuzzy_korrigieren.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Udemy_Python_komplett$4_32_Elif.coverage" NAME="4.32 Elif Coverage Results" MODIFIED="1765638440753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$dateiendung_korrigieren.coverage" NAME="dateiendung_korrigieren Coverage Results" MODIFIED="1777218772310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Dashcamvideos_zusammenbauen.coverage" NAME="Dashcamvideos_zusammenbauen Coverage Results" MODIFIED="1777599023039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Namen_aus_Celeb_Ordner_auslesen__Files_im_Redditordner_danach_umbenennen.coverage" NAME="Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen Coverage Results" MODIFIED="1776214645528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Dashcamvideos_zusammenbauen.coverage" NAME="Dashcamvideos_zusammenbauen Coverage Results" MODIFIED="1778896684977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$dateiendung_korrigieren.coverage" NAME="dateiendung_korrigieren Coverage Results" MODIFIED="1778938572162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Namen_aus_Celeb_Ordner_auslesen__Files_im_Redditordner_danach_umbenennen.coverage" NAME="Namen aus Celeb-Ordner auslesen, Files im Redditordner danach umbenennen Coverage Results" MODIFIED="1779035026915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Udemy_Python_komplett$bilder_modellordner_taggen.coverage" NAME="bilder_modellordner_taggen Coverage Results" MODIFIED="1766627099183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$bilder_auto_sortierung_neuordner.coverage" NAME="bilder_auto_sortierung_neuordner Coverage Results" MODIFIED="1775405127628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$ordnernamen_fuzzy_korrigieren.coverage" NAME="ordnernamen_fuzzy_korrigieren Coverage Results" MODIFIED="1775260865312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$bilder_auto_sortierung_neuordner.coverage" NAME="bilder_auto_sortierung_neuordner Coverage Results" MODIFIED="1779051501324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$ordnernamen_fuzzy_korrigieren.coverage" NAME="ordnernamen_fuzzy_korrigieren Coverage Results" MODIFIED="1778959551157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Udemy_Python_komplett$bilder_nach_face_tagging_verschieben.coverage" NAME="bilder_nach_face_tagging_verschieben Coverage Results" MODIFIED="1765647699373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$bilder_nach_ordner_umbenennen.coverage" NAME="bilder_nach_ordner_umbenennen Coverage Results" MODIFIED="1770944913964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Ebooks_splitten.coverage" NAME="Ebooks splitten Coverage Results" MODIFIED="1778679220825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$bilder_nach_ordner_umbenennen.coverage" NAME="bilder_nach_ordner_umbenennen Coverage Results" MODIFIED="1779051476141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Playboy_Modelnamen_auslesen.coverage" NAME="Playboy-Modelnamen auslesen Coverage Results" MODIFIED="1775260579478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Untertitel_Test.coverage" NAME="Untertitel_Test Coverage Results" MODIFIED="1775419930091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$dateiname_aus_digikam_tags_rekonstruieren.coverage" NAME="dateiname_aus_digikam_tags_rekonstruieren Coverage Results" MODIFIED="1776215811460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Untertitel_muxen.coverage" NAME="Untertitel muxen Coverage Results" MODIFIED="1772288368228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$dateiname_aus_digikam_tags_rekonstruieren.coverage" NAME="dateiname_aus_digikam_tags_rekonstruieren Coverage Results" MODIFIED="1779051349635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Untertitel_muxen.coverage" NAME="Untertitel muxen Coverage Results" MODIFIED="1777950504607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Untertitel_in_mkv_muxen.coverage" NAME="Untertitel in mkv muxen Coverage Results" MODIFIED="1775423416721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Udemy_Python_komplett$Ähnlichkeitssuche_der_Personen_in_der_gleichen_Datei.coverage" NAME="Ähnlichkeitssuche der Personen in der gleichen Datei Coverage Results" MODIFIED="1771106149060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Udemy_Python_komplett$bilder_ordner_tag_prefix.coverage" NAME="bilder_ordner_tag_prefix Coverage Results" MODIFIED="1770511591009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
