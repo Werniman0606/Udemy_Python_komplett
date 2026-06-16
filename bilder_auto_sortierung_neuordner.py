@@ -21,7 +21,7 @@ import re
 
 # --- Definiere die Pfade ---
 source_folder_with_celebs = r'e:\Bilder\Celebrities'
-folder_with_files_to_move = r'd:\extracted\rips'
+folder_with_files_to_move = r'd:\Bilder'
 # Regulärer Ausdruck, um den Namen in eckigen Klammern zu finden: \[([^\]]+)\]
 # Gruppe 1 ([^\]]+) fängt den Inhalt der Klammern (z.B. "Heidi Klum, Leni Klum").
 NAME_PATTERN = re.compile(r'\[([^\]]+)\]')

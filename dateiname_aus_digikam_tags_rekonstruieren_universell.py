@@ -14,10 +14,10 @@ from pathlib import Path
 
 # --- KONFIGURATION & BETRIEBSSYSTEM-ERKENNUNG ---
 if os.name == 'nt':  # Windows
-    ROOT_FOLDER = Path(r"d:\extracted\rips")
+    ROOT_FOLDER = Path(r"e:\Bilder\Celebrities")
     EXIFTOOL_PATH = Path(r'D:\exiftool-13.52_64\exiftool-13.52_64\exiftool.exe')
 else:  # Linux (CachyOS)
-    ROOT_FOLDER = Path("/run/media/marcoj/Laufwerk D/extracted/rips")
+    ROOT_FOLDER = Path("/run/media/marcoj/Laufwerk E/Bilder/Celebrities/Playboy")
     EXIFTOOL_PATH = Path("/usr/bin/exiftool")
     # Falls es dort nicht liegt, Standardfall für den globalen Aufruf:
     if not EXIFTOOL_PATH.exists():

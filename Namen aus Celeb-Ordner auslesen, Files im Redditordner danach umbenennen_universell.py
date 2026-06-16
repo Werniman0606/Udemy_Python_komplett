@@ -14,11 +14,11 @@ from pathlib import Path
 # --- KONFIGURATION & BETRIEBSSYSTEM-ERKENNUNG ---
 if os.name == 'nt':  # Windows
     MASTER_FOLDER = Path(r'e:\Bilder\Celebrities')
-    DOWNLOAD_FOLDER = Path(r'd:\extracted\rips')
+    DOWNLOAD_FOLDER = Path(r'd:\Bilder')
     EXIFTOOL_PATH = Path(r'd:\exiftool-13.52_64\exiftool-13.52_64\exiftool.exe')
 else:  # Linux (CachyOS)
     MASTER_FOLDER = Path("/run/media/marcoj/Laufwerk E/Bilder/Celebrities")
-    DOWNLOAD_FOLDER = Path("/run/media/marcoj/Laufwerk D/extracted/rips")
+    DOWNLOAD_FOLDER = Path("/run/media/marcoj/Laufwerk E/Bilder/Celebrities/Playboy")
     EXIFTOOL_PATH = Path("/usr/bin/exiftool")
     # Falls es dort nicht liegt, Standardfall für den globalen Aufruf:
     if not EXIFTOOL_PATH.exists():

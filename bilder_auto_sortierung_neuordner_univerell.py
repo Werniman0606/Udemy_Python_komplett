@@ -17,10 +17,10 @@ from pathlib import Path
 # --- Automatische Betriebssystem-Erkennung & Pfad-Zuweisung ---
 if os.name == 'nt':  # Windows
     SOURCE_CELEBS_BASE = Path(r"E:\Bilder\Celebrities")
-    FOLDER_TO_MOVE_BASE = Path(r"D:\extracted\rips")
+    FOLDER_TO_MOVE_BASE = Path(r"d:\Bilder")
 else:  # Linux (CachyOS)
     SOURCE_CELEBS_BASE = Path("/run/media/marcoj/Laufwerk E/Bilder/Celebrities")
-    FOLDER_TO_MOVE_BASE = Path("/run/media/marcoj/Laufwerk D/extracted/rips")
+    FOLDER_TO_MOVE_BASE = Path("/run/media/marcoj/Laufwerk D/Playboy")
 
 # Regulärer Ausdruck, um den Namen in eckigen Klammern zu finden: \[([^\]]+)\]
 NAME_PATTERN = re.compile(r'\[([^\]]+)\]')

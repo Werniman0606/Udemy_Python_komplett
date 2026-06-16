@@ -3,7 +3,7 @@ import subprocess
 import glob
 
 # --- KONFIGURATION ---
-ROOT_DIR = r'f:\IT-Videos'
+ROOT_DIR = r'd:\extracted\Verschiedene Dateien\Udemy.-.Englisch.B2.-.Vokabular,.Grammatik.Und.Mehr!\Englisch B2 Vokabular Grammatik und mehr'
 MKVMERGE_PATH = r'C:\Program Files\MKVToolNix\mkvmerge.exe'
 
 

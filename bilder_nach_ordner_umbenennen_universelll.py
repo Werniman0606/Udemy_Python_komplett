@@ -18,7 +18,7 @@ from pathlib import Path
 if os.name == 'nt':  # Windows
     BASE_DIRECTORY = Path(r'd:\extracted\rips\reddit_sub_GermanCelebs')
 else:  # Linux (CachyOS)
-    BASE_DIRECTORY = Path("/run/media/marcoj/Laufwerk D/extracted/rips/reddit_sub_GermanCelebs")
+    BASE_DIRECTORY = Path("/run/media/marcoj/Laufwerk E/Bilder/Celebrities")
 
 IMAGE_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp', '.avif')
 

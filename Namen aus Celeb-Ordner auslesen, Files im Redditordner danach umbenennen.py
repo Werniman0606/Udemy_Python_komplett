@@ -15,7 +15,7 @@ from collections import defaultdict
 MASTER_FOLDER = r'e:\Bilder\Celebrities'
 
 # 2. ZIELORDNER der Umbenennung (Downloads mit unsortierten Dateien)
-DOWNLOAD_FOLDER = r'd:\extracted\rips'
+DOWNLOAD_FOLDER = r'd:\Bilder'
 
 # PFAD ZU EXIFTOOL.EXE (Wird hier nur für die Metadaten-Schreibfunktion benötigt)
 EXIFTOOL_PATH = r'd:\exiftool-13.52_64\exiftool-13.52_64\exiftool.exe'
